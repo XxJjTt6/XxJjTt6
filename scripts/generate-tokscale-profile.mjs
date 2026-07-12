@@ -13,10 +13,10 @@ const outDir = path.resolve(options.outDir ?? process.cwd());
 const graphPath = path.resolve(options.graphPath ?? path.join(outDir, "data", "tokscale-graph.json"));
 const profileName = options.profileName ?? "XxJjTt6";
 const handle = options.handle ?? "@XxJjTt6";
-const rankText = options.rankText ?? "Submit for rank";
 
 const graph = JSON.parse(fs.readFileSync(graphPath, "utf8"));
 const summary = summarizeTokscaleGraph(graph);
+const rankText = options.rankText ?? graph.profile?.rankText ?? "Submit for rank";
 
 fs.mkdirSync(path.join(outDir, "assets"), { recursive: true });
 fs.mkdirSync(path.join(outDir, "data"), { recursive: true });

@@ -1,0 +1,40 @@
+name: Refresh Tokscale profile
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Refresh public Tokscale data
+        run: npm run refresh:public
+
+      - name: Verify generated files
+        run: npm test
+
+      - name: Commit refreshed profile
+        run: |
+          if [[ -z "$(git status --porcelain)" ]]; then
+            echo "No Tokscale profile changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md README.tokscale-v3.md assets data
+          git commit -m "chore: refresh Tokscale profile data"
+          git push

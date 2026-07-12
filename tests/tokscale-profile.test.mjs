@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
-import { renderTokscaleCard, renderTokscaleHeatmap, summarizeTokscaleGraph } from "../scripts/lib/tokscale-profile.mjs";
+import { renderTokscaleCard, renderTokscaleHeatmap, renderTokscaleReadme, summarizeTokscaleGraph } from "../scripts/lib/tokscale-profile.mjs";
 
 test("summarizeTokscaleGraph builds periods and provider totals from graph JSON", () => {
   const summary = summarizeTokscaleGraph({
@@ -73,6 +73,45 @@ test("summarizeTokscaleGraph builds periods and provider totals from graph JSON"
   assert.equal(summary.models["claude-test"].totalTokens, 500);
 });
 
+test("summarizeTokscaleGraph uses nested public Tokscale model totals when modelId is empty", () => {
+  const summary = summarizeTokscaleGraph({
+    meta: {
+      generatedAt: "2026-07-13T00:00:00Z",
+      version: "4.5.0",
+      dateRange: { start: "2026-07-13", end: "2026-07-13" }
+    },
+    summary: {
+      totalTokens: 300,
+      totalCost: 3,
+      totalDays: 1,
+      activeDays: 1
+    },
+    contributions: [
+      {
+        date: "2026-07-13",
+        totals: { tokens: 300, cost: 3, messages: 2 },
+        clients: [
+          {
+            client: "codex",
+            modelId: "",
+            models: {
+              "gpt-test": { tokens: 100, cost: 1, messages: 1, input: 10, output: 20, cacheRead: 70, cacheWrite: 0, reasoning: 0 },
+              "gpt-next": { tokens: 200, cost: 2, messages: 1, input: 20, output: 30, cacheRead: 150, cacheWrite: 0, reasoning: 0 }
+            },
+            tokens: { input: 30, output: 50, cacheRead: 220, cacheWrite: 0, reasoning: 0 },
+            cost: 3,
+            messages: 2
+          }
+        ]
+      }
+    ]
+  });
+
+  assert.equal(summary.models["gpt-test"].totalTokens, 100);
+  assert.equal(summary.models["gpt-next"].totalCost, 2);
+  assert.equal(summary.models[""], undefined);
+});
+
 test("renderTokscaleHeatmap leaves vertical room for all rows and the legend", () => {
   const summary = summarizeTokscaleGraph({
     meta: {
@@ -129,4 +168,32 @@ test("renderTokscaleCard keeps metric values inside the inner card border", () =
 
   const separatorBottoms = [...svg.matchAll(/<line x1="\d+" y1="\d+" x2="\d+" y2="(?<y2>\d+)" stroke="#d8dee4"\/>/g)].map((match) => Number(match.groups.y2));
   assert.ok(separatorBottoms.every((y) => y <= cardBottom), "metric dividers should not cross the inner card border");
+});
+
+test("renderTokscaleReadme uses live Tokscale badge endpoints for top metrics", () => {
+  const bucket = { totalTokens: 0, totalCost: 0 };
+  const readme = renderTokscaleReadme({
+    profileName: "XxJjTt6",
+    handle: "@XxJjTt6",
+    summary: {
+      asOfDate: "2026-07-12",
+      tokscaleVersion: "4.5.0",
+      totals: { totalTokens: 13_000_000_000, totalCost: 12_174.85 },
+      periods: {
+        today: bucket,
+        thisWeek: bucket,
+        thisMonth: bucket,
+        last7Days: bucket,
+        last30Days: bucket
+      },
+      providers: {},
+      models: {}
+    }
+  });
+
+  assert.match(readme, /https:\/\/shieldcn\.dev\/tokscale\/tokens\/XxJjTt6\.svg/);
+  assert.match(readme, /https:\/\/shieldcn\.dev\/tokscale\/cost\/XxJjTt6\.svg/);
+  assert.match(readme, /https:\/\/shieldcn\.dev\/tokscale\/rank\/XxJjTt6\.svg/);
+  assert.match(readme, /https:\/\/shieldcn\.dev\/tokscale\/active-days\/XxJjTt6\.svg/);
+  assert.doesNotMatch(readme, /tokscale-ai-usage-card\.svg/);
 });
