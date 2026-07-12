@@ -130,21 +130,21 @@ export function renderTokscaleCard({ summary, profileName, handle, rankText = "S
   <text x="34" y="48" class="muted">${escapeXml(profileName)} / README.md</text>
   <text x="460" y="96" text-anchor="middle" class="title">AI Usage</text>
   <line x1="34" y1="118" x2="886" y2="118" stroke="#d8dee4"/>
-  <rect x="112" y="148" width="696" height="146" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <rect x="112" y="148" width="696" height="176" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
   <text x="142" y="188" class="name">${escapeXml(profileName)}</text>
   <text x="142" y="215" class="handle">${escapeXml(handle)}</text>
   <text x="732" y="188" text-anchor="end" class="muted">Tokscale</text>
   <line x1="142" y1="236" x2="778" y2="236" stroke="#d8dee4"/>
-  <text x="142" y="267" class="label">Tokens</text>
-  <text x="142" y="310" class="blue">${formatCompact(summary.totals.totalTokens)}</text>
-  <line x1="306" y1="248" x2="306" y2="315" stroke="#d8dee4"/>
-  <text x="334" y="267" class="label">Cost</text>
-  <text x="334" y="310" class="green">${formatMoneyCompact(summary.totals.totalCost)}</text>
-  <line x1="514" y1="248" x2="514" y2="315" stroke="#d8dee4"/>
-  <text x="542" y="267" class="label">Rank (Tokens)</text>
-  <text x="542" y="306" class="dark">${escapeXml(rankText)}</text>
-  <text x="112" y="331" class="tiny">Updated ${formatDisplayDate(summary.asOfDate)}</text>
-  <text x="808" y="331" text-anchor="end" class="tiny">tokscale.ai</text>
+  <text x="142" y="265" class="label">Tokens</text>
+  <text x="142" y="303" class="blue">${formatCompact(summary.totals.totalTokens)}</text>
+  <line x1="306" y1="248" x2="306" y2="309" stroke="#d8dee4"/>
+  <text x="334" y="265" class="label">Cost</text>
+  <text x="334" y="303" class="green">${formatMoneyCompact(summary.totals.totalCost)}</text>
+  <line x1="514" y1="248" x2="514" y2="309" stroke="#d8dee4"/>
+  <text x="542" y="265" class="label">Rank (Tokens)</text>
+  <text x="542" y="301" class="dark">${escapeXml(rankText)}</text>
+  <text x="112" y="345" class="tiny">Updated ${formatDisplayDate(summary.asOfDate)}</text>
+  <text x="808" y="345" text-anchor="end" class="tiny">tokscale.ai</text>
 </svg>
 `;
 }

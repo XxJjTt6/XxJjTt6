@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
-import { renderTokscaleHeatmap, summarizeTokscaleGraph } from "../scripts/lib/tokscale-profile.mjs";
+import { renderTokscaleCard, renderTokscaleHeatmap, summarizeTokscaleGraph } from "../scripts/lib/tokscale-profile.mjs";
 
 test("summarizeTokscaleGraph builds periods and provider totals from graph JSON", () => {
   const summary = summarizeTokscaleGraph({
@@ -103,4 +103,30 @@ test("renderTokscaleHeatmap leaves vertical room for all rows and the legend", (
 
   assert.equal(height >= 226, true);
   assert.equal(legendY >= 208, true);
+});
+
+test("renderTokscaleCard keeps metric values inside the inner card border", () => {
+  const svg = renderTokscaleCard({
+    profileName: "XxJjTt6",
+    handle: "@XxJjTt6",
+    rankText: "#453",
+    summary: {
+      asOfDate: "2026-07-13",
+      totals: {
+        totalTokens: 13_100_000_000,
+        totalCost: 12_300
+      }
+    }
+  });
+
+  const card = svg.match(/<rect x="112" y="(?<y>\d+)" width="696" height="(?<height>\d+)"/)?.groups;
+  assert.ok(card, "inner card rectangle should be present");
+  const cardBottom = Number(card.y) + Number(card.height);
+
+  const metricBaselines = [...svg.matchAll(/<text x="\d+" y="(?<y>\d+)" class="(?:blue|green|dark)">/g)].map((match) => Number(match.groups.y));
+  assert.equal(metricBaselines.length, 3);
+  assert.ok(metricBaselines.every((y) => y <= cardBottom - 18), "metric text baselines need bottom padding inside the card");
+
+  const separatorBottoms = [...svg.matchAll(/<line x1="\d+" y1="\d+" x2="\d+" y2="(?<y2>\d+)" stroke="#d8dee4"\/>/g)].map((match) => Number(match.groups.y2));
+  assert.ok(separatorBottoms.every((y) => y <= cardBottom), "metric dividers should not cross the inner card border");
 });
