@@ -1,0 +1,15 @@
+{
+  "name": "xxjjtt6-profile-ai-usage",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "generate": "node scripts/generate-tokscale-profile.mjs",
+    "refresh": "node scripts/update-from-tokscale.mjs",
+    "tokscale:graph": "npx -y tokscale@latest graph --client codex,claude --no-spinner --output data/tokscale-graph.json"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
