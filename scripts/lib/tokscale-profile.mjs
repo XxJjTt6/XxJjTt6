@@ -65,7 +65,7 @@ export function summarizeTokscaleGraph(graph) {
 export function renderTokscaleReadme({ summary, profileName, handle }) {
   const username = handle.replace(/^@/, "");
   const profileUrl = `https://tokscale.ai/u/${encodeURIComponent(username)}`;
-  const badgeBaseUrl = `https://shieldcn.dev/tokscale`;
+  const embedUrl = `https://tokscale.ai/api/embed/${encodeURIComponent(username)}/svg?theme=light&compact=1`;
   const providerRows = Object.entries(summary.providers)
     .sort((a, b) => b[1].totalTokens - a[1].totalTokens)
     .map(([provider, stats]) => `| ${provider} | ${formatInteger(stats.totalTokens)} | ${formatMoney(stats.totalCost)} | ${formatInteger(stats.messages)} |`)
@@ -78,7 +78,7 @@ export function renderTokscaleReadme({ summary, profileName, handle }) {
 
   return `<!--
 Generated from Tokscale public profile data.
-Top badges are live ShieldCN/Tokscale endpoints; the heatmap is refreshed by the repository workflow.
+The visible Tokscale card is the official live Tokscale embed.
 -->
 
 <div align="center">
@@ -88,13 +88,10 @@ Top badges are live ShieldCN/Tokscale endpoints; the heatmap is refreshed by the
 **AI-native builder | local agents | automation loops**
 
 <p>
-  <a href="${profileUrl}"><img src="${badgeBaseUrl}/tokens/${encodeURIComponent(username)}.svg" alt="${profileName} live Tokscale token total"></a>
-  <a href="${profileUrl}"><img src="${badgeBaseUrl}/cost/${encodeURIComponent(username)}.svg" alt="${profileName} live Tokscale cost"></a>
-  <a href="${profileUrl}"><img src="${badgeBaseUrl}/rank/${encodeURIComponent(username)}.svg" alt="${profileName} live Tokscale rank"></a>
-  <a href="${profileUrl}"><img src="${badgeBaseUrl}/active-days/${encodeURIComponent(username)}.svg" alt="${profileName} live Tokscale active days"></a>
+  <a href="${profileUrl}">
+    <img src="${embedUrl}" alt="${profileName} live Tokscale stats" width="640">
+  </a>
 </p>
-
-<img src="./assets/tokscale-ai-token-heatmap.svg" alt="${profileName} daily AI token heatmap" width="920">
 
 </div>
 
@@ -121,7 +118,7 @@ ${providerRows || "| No usage found | 0 | $0.00 | 0 |"}
 | --- | ---: | ---: | ---: |
 ${modelRows || "| No usage found | 0 | $0.00 | 0 |"}
 
-<sub>Updated ${summary.asOfDate}. Public aggregate data from Tokscale ${summary.tokscaleVersion ?? ""}; live badges served by ShieldCN.</sub>
+<sub>Updated ${summary.asOfDate}. Public aggregate data from Tokscale ${summary.tokscaleVersion ?? ""}; live card served by Tokscale.</sub>
 `;
 }
 

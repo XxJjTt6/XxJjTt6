@@ -170,7 +170,7 @@ test("renderTokscaleCard keeps metric values inside the inner card border", () =
   assert.ok(separatorBottoms.every((y) => y <= cardBottom), "metric dividers should not cross the inner card border");
 });
 
-test("renderTokscaleReadme uses live Tokscale badge endpoints for top metrics", () => {
+test("renderTokscaleReadme uses the official live Tokscale embed instead of local or badge SVGs", () => {
   const bucket = { totalTokens: 0, totalCost: 0 };
   const readme = renderTokscaleReadme({
     profileName: "XxJjTt6",
@@ -191,9 +191,8 @@ test("renderTokscaleReadme uses live Tokscale badge endpoints for top metrics", 
     }
   });
 
-  assert.match(readme, /https:\/\/shieldcn\.dev\/tokscale\/tokens\/XxJjTt6\.svg/);
-  assert.match(readme, /https:\/\/shieldcn\.dev\/tokscale\/cost\/XxJjTt6\.svg/);
-  assert.match(readme, /https:\/\/shieldcn\.dev\/tokscale\/rank\/XxJjTt6\.svg/);
-  assert.match(readme, /https:\/\/shieldcn\.dev\/tokscale\/active-days\/XxJjTt6\.svg/);
+  assert.match(readme, /https:\/\/tokscale\.ai\/api\/embed\/XxJjTt6\/svg\?theme=light&compact=1/);
+  assert.doesNotMatch(readme, /https:\/\/shieldcn\.dev\/tokscale\//);
   assert.doesNotMatch(readme, /tokscale-ai-usage-card\.svg/);
+  assert.doesNotMatch(readme, /tokscale-ai-token-heatmap\.svg/);
 });

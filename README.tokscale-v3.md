@@ -1,6 +1,6 @@
 <!--
 Generated from Tokscale public profile data.
-Top badges are live ShieldCN/Tokscale endpoints; the heatmap is refreshed by the repository workflow.
+The visible Tokscale card is the official live Tokscale embed.
 -->
 
 <div align="center">
@@ -10,13 +10,10 @@ Top badges are live ShieldCN/Tokscale endpoints; the heatmap is refreshed by the
 **AI-native builder | local agents | automation loops**
 
 <p>
-  <a href="https://tokscale.ai/u/XxJjTt6"><img src="https://shieldcn.dev/tokscale/tokens/XxJjTt6.svg" alt="XxJjTt6 live Tokscale token total"></a>
-  <a href="https://tokscale.ai/u/XxJjTt6"><img src="https://shieldcn.dev/tokscale/cost/XxJjTt6.svg" alt="XxJjTt6 live Tokscale cost"></a>
-  <a href="https://tokscale.ai/u/XxJjTt6"><img src="https://shieldcn.dev/tokscale/rank/XxJjTt6.svg" alt="XxJjTt6 live Tokscale rank"></a>
-  <a href="https://tokscale.ai/u/XxJjTt6"><img src="https://shieldcn.dev/tokscale/active-days/XxJjTt6.svg" alt="XxJjTt6 live Tokscale active days"></a>
+  <a href="https://tokscale.ai/u/XxJjTt6">
+    <img src="https://tokscale.ai/api/embed/XxJjTt6/svg?theme=light&compact=1" alt="XxJjTt6 live Tokscale stats" width="640">
+  </a>
 </p>
-
-<img src="./assets/tokscale-ai-token-heatmap.svg" alt="XxJjTt6 daily AI token heatmap" width="920">
 
 </div>
 
@@ -51,4 +48,4 @@ Top badges are live ShieldCN/Tokscale endpoints; the heatmap is refreshed by the
 | gpt-5.3-codex | 22,779,318 | $10.82 | 235 |
 | gpt-5.2-codex | 4,885,099 | $3.21 | 123 |
 
-<sub>Updated 2026-07-12. Public aggregate data from Tokscale 4.5.0; live badges served by ShieldCN.</sub>
+<sub>Updated 2026-07-12. Public aggregate data from Tokscale 4.5.0; live card served by Tokscale.</sub>
