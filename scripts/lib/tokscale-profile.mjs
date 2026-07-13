@@ -65,7 +65,7 @@ export function summarizeTokscaleGraph(graph) {
 export function renderTokscaleReadme({ summary, profileName, handle }) {
   const username = handle.replace(/^@/, "");
   const profileUrl = `https://tokscale.ai/u/${encodeURIComponent(username)}`;
-  const heatmap2dUrl = `https://tokscale.ai/api/embed/${encodeURIComponent(username)}/svg?theme=light&graph=1&color=blue`;
+  const heatmap2dUrl = `https://tokscale.ai/api/embed/${encodeURIComponent(username)}/svg?theme=light&graph=1&color=blue&tokens=compact&cost=compact`;
   const heatmap3dUrl = `https://tokscale.ai/api/embed/${encodeURIComponent(username)}/svg?theme=light&view=3d&compact=1&color=blue`;
   const providerRows = Object.entries(summary.providers)
     .sort((a, b) => b[1].totalTokens - a[1].totalTokens)
@@ -101,7 +101,7 @@ Click targets open the Tokscale public profile, not image files.
   </a>
 </p>
 
-<p><a href="${profileUrl}">Open live interactive 2D / 3D heatmap on Tokscale</a></p>
+<p><a href="${profileUrl}">Open live daily token hover details on Tokscale</a></p>
 
 </div>
 

@@ -12,7 +12,7 @@ Click targets open the Tokscale public profile, not image files.
 
 <p>
   <a href="https://tokscale.ai/u/XxJjTt6">
-    <img src="https://tokscale.ai/api/embed/XxJjTt6/svg?theme=light&graph=1&color=blue" alt="XxJjTt6 live Tokscale 2D usage graph" width="680">
+    <img src="https://tokscale.ai/api/embed/XxJjTt6/svg?theme=light&graph=1&color=blue&tokens=compact&cost=compact" alt="XxJjTt6 live Tokscale 2D usage graph" width="680">
   </a>
 </p>
 
@@ -22,7 +22,7 @@ Click targets open the Tokscale public profile, not image files.
   </a>
 </p>
 
-<p><a href="https://tokscale.ai/u/XxJjTt6">Open live interactive 2D / 3D heatmap on Tokscale</a></p>
+<p><a href="https://tokscale.ai/u/XxJjTt6">Open live daily token hover details on Tokscale</a></p>
 
 </div>
 
