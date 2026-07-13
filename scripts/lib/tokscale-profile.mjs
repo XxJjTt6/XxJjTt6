@@ -65,7 +65,8 @@ export function summarizeTokscaleGraph(graph) {
 export function renderTokscaleReadme({ summary, profileName, handle }) {
   const username = handle.replace(/^@/, "");
   const profileUrl = `https://tokscale.ai/u/${encodeURIComponent(username)}`;
-  const embedUrl = `https://tokscale.ai/api/embed/${encodeURIComponent(username)}/svg?theme=light&compact=1`;
+  const heatmap2dUrl = `https://tokscale.ai/api/embed/${encodeURIComponent(username)}/svg?theme=light&graph=1&color=blue`;
+  const heatmap3dUrl = `https://tokscale.ai/api/embed/${encodeURIComponent(username)}/svg?theme=light&view=3d&compact=1&color=blue`;
   const providerRows = Object.entries(summary.providers)
     .sort((a, b) => b[1].totalTokens - a[1].totalTokens)
     .map(([provider, stats]) => `| ${provider} | ${formatInteger(stats.totalTokens)} | ${formatMoney(stats.totalCost)} | ${formatInteger(stats.messages)} |`)
@@ -78,7 +79,8 @@ export function renderTokscaleReadme({ summary, profileName, handle }) {
 
   return `<!--
 Generated from Tokscale public profile data.
-The visible Tokscale card is the official live Tokscale embed.
+The visible Tokscale graphs are official live Tokscale embeds.
+Click targets open the Tokscale public profile, not image files.
 -->
 
 <div align="center">
@@ -89,9 +91,17 @@ The visible Tokscale card is the official live Tokscale embed.
 
 <p>
   <a href="${profileUrl}">
-    <img src="${embedUrl}" alt="${profileName} live Tokscale stats" width="640">
+    <img src="${heatmap2dUrl}" alt="${profileName} live Tokscale 2D usage graph" width="680">
   </a>
 </p>
+
+<p>
+  <a href="${profileUrl}">
+    <img src="${heatmap3dUrl}" alt="${profileName} live Tokscale 3D usage graph" width="680">
+  </a>
+</p>
+
+<p><a href="${profileUrl}">Open live interactive 2D / 3D heatmap on Tokscale</a></p>
 
 </div>
 
@@ -118,7 +128,7 @@ ${providerRows || "| No usage found | 0 | $0.00 | 0 |"}
 | --- | ---: | ---: | ---: |
 ${modelRows || "| No usage found | 0 | $0.00 | 0 |"}
 
-<sub>Updated ${summary.asOfDate}. Public aggregate data from Tokscale ${summary.tokscaleVersion ?? ""}; live card served by Tokscale.</sub>
+<sub>Updated ${summary.asOfDate}. Public aggregate data from Tokscale ${summary.tokscaleVersion ?? ""}; live graphs served by Tokscale.</sub>
 `;
 }
 

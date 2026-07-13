@@ -1,11 +1,11 @@
 # XxJjTt6 GitHub Profile Setup
 
 这是一套可直接放进 `XxJjTt6/XxJjTt6` 个人主页仓库的 Tokscale 风格 README 方案。
-主页顶部使用 Tokscale 官方动态 Embed，而不是仓库里的本地静态 SVG。
+主页顶部使用 Tokscale 官方动态 2D / 3D Embed，而不是仓库里的本地静态 SVG。
 
 ## 文件用途
 
-- `README.md`：GitHub 个人主页正文，顶部引用 Tokscale 官方动态 Embed：`https://tokscale.ai/api/embed/XxJjTt6/svg?theme=light&compact=1`。
+- `README.md`：GitHub 个人主页正文，顶部引用 Tokscale 官方动态 2D / 3D 热力图 Embed，并且所有点击链接都跳到 `https://tokscale.ai/u/XxJjTt6`。
 - `assets/tokscale-ai-usage-card.svg`：旧版本地预览卡片，README 不再引用。
 - `assets/tokscale-ai-token-heatmap.svg`：旧版本地热力图，README 不再引用；真实交互热力图请打开 Tokscale 公开页。
 - `data/tokscale-graph.json`：Tokscale 原始聚合图数据，只包含日期、client、model、token、cost、messages 等聚合信息。
@@ -61,8 +61,8 @@ npm run refresh:public
 
 ## 真实动态机制
 
-- README 顶部卡片使用 Tokscale 官方动态接口 `tokscale.ai/api/embed/...`，读取 Tokscale 公开页数据，呈现形式与 gaofeng21cn 的主页一致。
-- GitHub README 不能运行 Tokscale 页面里的交互式 JavaScript，因此不再把本地生成的热力图放到主页里；需要看真实交互热力图时点击顶部 Tokscale 卡片进入公开页。
+- README 顶部 2D / 3D 热力图使用 Tokscale 官方动态接口 `tokscale.ai/api/embed/...`，读取 Tokscale 公开页数据，呈现形式与 Tokscale 官方页面一致。
+- GitHub README 不能运行 Tokscale 页面里的交互式 JavaScript，因此 README 内展示的是 Tokscale 官方动态图片；需要切换和交互查看 2D / 3D 时，点击顶部热力图进入 Tokscale 公开页。
 - GitHub Actions 每小时从 Tokscale 公开页拉取一次真实聚合数据，用于刷新 README 下方的每日/每周/每月表格。
 - 本机 Codex / Claude Code 的最新用量需要先提交到 Tokscale，GitHub Actions 才能拿到公开数据。
 

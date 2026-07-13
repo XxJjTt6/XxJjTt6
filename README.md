@@ -1,6 +1,7 @@
 <!--
 Generated from Tokscale public profile data.
-The visible Tokscale card is the official live Tokscale embed.
+The visible Tokscale graphs are official live Tokscale embeds.
+Click targets open the Tokscale public profile, not image files.
 -->
 
 <div align="center">
@@ -11,9 +12,17 @@ The visible Tokscale card is the official live Tokscale embed.
 
 <p>
   <a href="https://tokscale.ai/u/XxJjTt6">
-    <img src="https://tokscale.ai/api/embed/XxJjTt6/svg?theme=light&compact=1" alt="XxJjTt6 live Tokscale stats" width="640">
+    <img src="https://tokscale.ai/api/embed/XxJjTt6/svg?theme=light&graph=1&color=blue" alt="XxJjTt6 live Tokscale 2D usage graph" width="680">
   </a>
 </p>
+
+<p>
+  <a href="https://tokscale.ai/u/XxJjTt6">
+    <img src="https://tokscale.ai/api/embed/XxJjTt6/svg?theme=light&view=3d&compact=1&color=blue" alt="XxJjTt6 live Tokscale 3D usage graph" width="680">
+  </a>
+</p>
+
+<p><a href="https://tokscale.ai/u/XxJjTt6">Open live interactive 2D / 3D heatmap on Tokscale</a></p>
 
 </div>
 
@@ -48,4 +57,4 @@ The visible Tokscale card is the official live Tokscale embed.
 | gpt-5.3-codex | 22,779,318 | $10.82 | 235 |
 | gpt-5.2-codex | 4,885,099 | $3.21 | 123 |
 
-<sub>Updated 2026-07-12. Public aggregate data from Tokscale 4.5.0; live card served by Tokscale.</sub>
+<sub>Updated 2026-07-12. Public aggregate data from Tokscale 4.5.0; live graphs served by Tokscale.</sub>
