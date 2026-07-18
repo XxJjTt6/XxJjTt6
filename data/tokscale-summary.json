@@ -1,96 +1,96 @@
 {
-  "generatedAt": "2026-07-18T03:41:54.156Z",
+  "generatedAt": "2026-07-18T03:57:08.581Z",
   "tokscaleVersion": "4.5.3",
   "asOfDate": "2026-07-18",
   "firstActivityDate": "2026-01-07",
   "totalDays": 130,
   "activeDays": 130,
   "totals": {
-    "totalTokens": 14357913249,
-    "totalCost": 13768.4386,
+    "totalTokens": 14365663314,
+    "totalCost": 13774.6511,
     "messages": 0,
-    "inputTokens": 702478498,
-    "outputTokens": 65207290,
-    "cacheReadTokens": 13422515767,
+    "inputTokens": 702826548,
+    "outputTokens": 65226999,
+    "cacheReadTokens": 13429891639,
     "cacheWriteTokens": 156002042,
-    "reasoningTokens": 11709652
+    "reasoningTokens": 11716086
   },
   "periods": {
     "today": {
-      "totalTokens": 68012225,
-      "totalCost": 60.859,
+      "totalTokens": 75762290,
+      "totalCost": 67.0715,
       "messages": 0,
-      "inputTokens": 3878410,
-      "outputTokens": 247201,
-      "cacheReadTokens": 63815168,
+      "inputTokens": 4226460,
+      "outputTokens": 266910,
+      "cacheReadTokens": 71191040,
       "cacheWriteTokens": 0,
-      "reasoningTokens": 71446
+      "reasoningTokens": 77880
     },
     "thisWeek": {
-      "totalTokens": 1378889081,
-      "totalCost": 1605.2479999999998,
+      "totalTokens": 1386639146,
+      "totalCost": 1611.4605,
       "messages": 0,
-      "inputTokens": 31432184,
-      "outputTokens": 5259431,
-      "cacheReadTokens": 1318494968,
+      "inputTokens": 31780234,
+      "outputTokens": 5279140,
+      "cacheReadTokens": 1325870840,
       "cacheWriteTokens": 22965141,
-      "reasoningTokens": 737357
+      "reasoningTokens": 743791
     },
     "thisMonth": {
-      "totalTokens": 4100392910,
-      "totalCost": 4232.1428,
+      "totalTokens": 4108142975,
+      "totalCost": 4238.355299999999,
       "messages": 0,
-      "inputTokens": 81406078,
-      "outputTokens": 19210561,
-      "cacheReadTokens": 3904885114,
+      "inputTokens": 81754128,
+      "outputTokens": 19230270,
+      "cacheReadTokens": 3912260986,
       "cacheWriteTokens": 93213545,
-      "reasoningTokens": 1677612
+      "reasoningTokens": 1684046
     },
     "last7Days": {
-      "totalTokens": 2189069208,
-      "totalCost": 2179.3579,
+      "totalTokens": 2196819273,
+      "totalCost": 2185.5704,
       "messages": 0,
-      "inputTokens": 45156377,
-      "outputTokens": 7574659,
-      "cacheReadTokens": 2106268840,
+      "inputTokens": 45504427,
+      "outputTokens": 7594368,
+      "cacheReadTokens": 2113644712,
       "cacheWriteTokens": 28987722,
-      "reasoningTokens": 1081610
+      "reasoningTokens": 1088044
     },
     "last30Days": {
-      "totalTokens": 6875146364,
-      "totalCost": 6755.875600000001,
+      "totalTokens": 6882896429,
+      "totalCost": 6762.088100000001,
       "messages": 0,
-      "inputTokens": 175428203,
-      "outputTokens": 35742265,
-      "cacheReadTokens": 6524532002,
+      "inputTokens": 175776253,
+      "outputTokens": 35761974,
+      "cacheReadTokens": 6531907874,
       "cacheWriteTokens": 136118747,
-      "reasoningTokens": 3325147
+      "reasoningTokens": 3331581
     },
     "lastYear": {
-      "totalTokens": 14357913249,
-      "totalCost": 13768.438600000001,
+      "totalTokens": 14365663314,
+      "totalCost": 13774.651100000001,
       "messages": 0,
-      "inputTokens": 702478498,
-      "outputTokens": 65207290,
-      "cacheReadTokens": 13422515767,
+      "inputTokens": 702826548,
+      "outputTokens": 65226999,
+      "cacheReadTokens": 13429891639,
       "cacheWriteTokens": 156002042,
-      "reasoningTokens": 11709652
+      "reasoningTokens": 11716086
     }
   },
   "providers": {
     "Codex": {
-      "totalTokens": 10387938444,
-      "totalCost": 9441.492338850003,
-      "messages": 78078,
-      "inputTokens": 683702348,
-      "outputTokens": 38316480,
-      "cacheReadTokens": 9665919616,
+      "totalTokens": 10395682075,
+      "totalCost": 9447.70481485,
+      "messages": 78134,
+      "inputTokens": 684050398,
+      "outputTokens": 38336189,
+      "cacheReadTokens": 9673295488,
       "cacheWriteTokens": 0,
-      "reasoningTokens": 11709652
+      "reasoningTokens": 11716086
     },
     "Claude Code": {
       "totalTokens": 3958265153,
-      "totalCost": 4326.946406950001,
+      "totalCost": 4326.94640695,
       "messages": 22996,
       "inputTokens": 18776150,
       "outputTokens": 26890810,
@@ -102,7 +102,7 @@
   "models": {
     "gpt-5.2-codex": {
       "totalTokens": 4885099,
-      "totalCost": 3.2052474999999996,
+      "totalCost": 3.2052475,
       "messages": 123,
       "inputTokens": 640906,
       "outputTokens": 60449,
@@ -172,7 +172,7 @@
     },
     "claude-opus-4-8": {
       "totalTokens": 3073669880,
-      "totalCost": 2848.0007247500002,
+      "totalCost": 2848.00072475,
       "messages": 19367,
       "inputTokens": 16095865,
       "outputTokens": 22210292,
@@ -202,7 +202,7 @@
     },
     "claude-fable-5": {
       "totalTokens": 856375051,
-      "totalCost": 1471.1553895000004,
+      "totalCost": 1471.1553895000002,
       "messages": 2776,
       "inputTokens": 1740519,
       "outputTokens": 4464927,
@@ -211,14 +211,14 @@
       "reasoningTokens": 0
     },
     "gpt-5.6-sol": {
-      "totalTokens": 1211403237,
-      "totalCost": 922.076958,
-      "messages": 7028,
-      "inputTokens": 41679480,
-      "outputTokens": 3327770,
-      "cacheReadTokens": 1165357056,
+      "totalTokens": 1219153302,
+      "totalCost": 928.289434,
+      "messages": 7084,
+      "inputTokens": 42027530,
+      "outputTokens": 3347479,
+      "cacheReadTokens": 1172732928,
       "cacheWriteTokens": 0,
-      "reasoningTokens": 1038931
+      "reasoningTokens": 1045365
     }
   },
   "daily": [
@@ -240,7 +240,7 @@
           "modelId": "",
           "models": {
             "gpt-5.2-codex": {
-              "cost": 0.0083251,
+              "cost": 0.008325099999999998,
               "input": 2426,
               "output": 157,
               "tokens": 13335,
@@ -257,7 +257,7 @@
             "cacheWrite": 0,
             "reasoning": 0
           },
-          "cost": 0.0083251,
+          "cost": 0.008325099999999998,
           "messages": 3
         }
       ]
@@ -410,7 +410,7 @@
           "modelId": "",
           "models": {
             "gpt-5.2-codex": {
-              "cost": 0.3092579,
+              "cost": 0.30925790000000003,
               "input": 110458,
               "output": 2329,
               "tokens": 553683,
@@ -427,7 +427,7 @@
             "cacheWrite": 0,
             "reasoning": 448
           },
-          "cost": 0.3092579,
+          "cost": 0.30925790000000003,
           "messages": 10
         }
       ]
@@ -450,7 +450,7 @@
           "modelId": "",
           "models": {
             "gpt-5.2-codex": {
-              "cost": 0.8283624999999999,
+              "cost": 0.8283625000000001,
               "input": 128590,
               "output": 11543,
               "tokens": 2118245,
@@ -467,7 +467,7 @@
             "cacheWrite": 0,
             "reasoning": 6912
           },
-          "cost": 0.8283624999999999,
+          "cost": 0.8283625000000001,
           "messages": 25
         }
       ]
@@ -570,7 +570,7 @@
           "modelId": "",
           "models": {
             "gpt-5.3-codex": {
-              "cost": 2.9246189000000005,
+              "cost": 2.9246188999999996,
               "input": 412246,
               "output": 61407,
               "tokens": 6927031,
@@ -587,7 +587,7 @@
             "cacheWrite": 0,
             "reasoning": 15490
           },
-          "cost": 2.9246189000000005,
+          "cost": 2.9246188999999996,
           "messages": 119
         }
       ]
@@ -650,7 +650,7 @@
           "modelId": "",
           "models": {
             "gpt-5.4": {
-              "cost": 6.5786485,
+              "cost": 6.578648500000001,
               "input": 1421245,
               "output": 80336,
               "tokens": 6943709,
@@ -677,7 +677,7 @@
             "cacheWrite": 0,
             "reasoning": 31184
           },
-          "cost": 6.5870127499999995,
+          "cost": 6.58701275,
           "messages": 129
         }
       ]
@@ -760,7 +760,7 @@
           "modelId": "",
           "models": {
             "gpt-5.4": {
-              "cost": 24.0510975,
+              "cost": 24.051097500000004,
               "input": 5685321,
               "output": 189400,
               "tokens": 27734102,
@@ -797,7 +797,7 @@
             "cacheWrite": 0,
             "reasoning": 125758
           },
-          "cost": 31.055161849999998,
+          "cost": 31.05516185,
           "messages": 362
         }
       ]
@@ -910,7 +910,7 @@
           "modelId": "",
           "models": {
             "gpt-5.4": {
-              "cost": 6.4034555,
+              "cost": 6.403455500000001,
               "input": 882829,
               "output": 87743,
               "tokens": 9373374,
@@ -927,7 +927,7 @@
             "cacheWrite": 0,
             "reasoning": 52850
           },
-          "cost": 6.4034555,
+          "cost": 6.403455500000001,
           "messages": 132
         }
       ]
@@ -1170,7 +1170,7 @@
           "modelId": "",
           "models": {
             "gpt-5.4": {
-              "cost": 11.074272000000004,
+              "cost": 11.074272000000006,
               "input": 2164108,
               "output": 125977,
               "tokens": 14094506,
@@ -1187,7 +1187,7 @@
             "cacheWrite": 0,
             "reasoning": 55813
           },
-          "cost": 11.074272000000004,
+          "cost": 11.074272000000006,
           "messages": 161
         }
       ]
@@ -1460,7 +1460,7 @@
           "modelId": "",
           "models": {
             "gpt-5.4": {
-              "cost": 4.3910485,
+              "cost": 4.391048499999998,
               "input": 885543,
               "output": 63992,
               "tokens": 4173328,
@@ -1477,7 +1477,7 @@
             "cacheWrite": 0,
             "reasoning": 27889
           },
-          "cost": 4.3910485,
+          "cost": 4.391048499999998,
           "messages": 82
         }
       ]
@@ -1500,7 +1500,7 @@
           "modelId": "",
           "models": {
             "gpt-5.4": {
-              "cost": 2.1805375000000007,
+              "cost": 2.1805375000000002,
               "input": 501797,
               "output": 28517,
               "tokens": 2120504,
@@ -1517,7 +1517,7 @@
             "cacheWrite": 0,
             "reasoning": 6830
           },
-          "cost": 2.1805375000000007,
+          "cost": 2.1805375000000002,
           "messages": 40
         }
       ]
@@ -2160,7 +2160,7 @@
           "modelId": "",
           "models": {
             "gpt-5.4": {
-              "cost": 33.957859499999984,
+              "cost": 33.95785949999998,
               "input": 3355385,
               "output": 213097,
               "tokens": 87923828,
@@ -2177,7 +2177,7 @@
             "cacheWrite": 0,
             "reasoning": 87058
           },
-          "cost": 33.957859499999984,
+          "cost": 33.95785949999998,
           "messages": 467
         }
       ]
@@ -2200,7 +2200,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 39.17974999999999,
+              "cost": 39.179749999999984,
               "input": 2340474,
               "output": 193057,
               "tokens": 41966680,
@@ -2217,7 +2217,7 @@
             "cacheWrite": 0,
             "reasoning": 66749
           },
-          "cost": 39.17974999999999,
+          "cost": 39.179749999999984,
           "messages": 406
         }
       ]
@@ -2240,7 +2240,7 @@
           "modelId": "",
           "models": {
             "gpt-5.4": {
-              "cost": 6.441800999999999,
+              "cost": 6.441801,
               "input": 1158922,
               "output": 51998,
               "tokens": 10672602,
@@ -2250,7 +2250,7 @@
               "cacheWrite": 0
             },
             "gpt-5.5": {
-              "cost": 244.601586,
+              "cost": 244.60158599999994,
               "input": 11718866,
               "output": 872362,
               "tokens": 315320518,
@@ -2267,7 +2267,7 @@
             "cacheWrite": 0,
             "reasoning": 314236
           },
-          "cost": 251.043387,
+          "cost": 251.04338699999994,
           "messages": 2622
         }
       ]
@@ -2300,7 +2300,7 @@
               "cacheWrite": 0
             },
             "gpt-5.5": {
-              "cost": 186.63665000000003,
+              "cost": 186.63665000000006,
               "input": 10342904,
               "output": 637750,
               "tokens": 229741279,
@@ -2317,7 +2317,7 @@
             "cacheWrite": 0,
             "reasoning": 219373
           },
-          "cost": 186.93978300000003,
+          "cost": 186.93978300000006,
           "messages": 1850
         }
       ]
@@ -2340,7 +2340,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 233.8105360000001,
+              "cost": 233.81053599999996,
               "input": 13762856,
               "output": 942122,
               "tokens": 265004056,
@@ -2357,7 +2357,7 @@
             "cacheWrite": 0,
             "reasoning": 392646
           },
-          "cost": 233.8105360000001,
+          "cost": 233.81053599999996,
           "messages": 2101
         }
       ]
@@ -2390,7 +2390,7 @@
               "cacheWrite": 0
             },
             "gpt-5.5": {
-              "cost": 155.53819300000004,
+              "cost": 155.53819299999998,
               "input": 9765009,
               "output": 700905,
               "tokens": 165137075,
@@ -2407,7 +2407,7 @@
             "cacheWrite": 0,
             "reasoning": 283217
           },
-          "cost": 155.59163350000003,
+          "cost": 155.59163349999997,
           "messages": 1298
         }
       ]
@@ -2430,7 +2430,7 @@
           "modelId": "",
           "models": {
             "gpt-5.4": {
-              "cost": 32.639248499999994,
+              "cost": 32.63924849999999,
               "input": 2409619,
               "output": 158744,
               "tokens": 96569218,
@@ -2530,7 +2530,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 47.37706799999998,
+              "cost": 47.377067999999994,
               "input": 3988704,
               "output": 188252,
               "tokens": 44120314,
@@ -2547,7 +2547,7 @@
             "cacheWrite": 0,
             "reasoning": 61502
           },
-          "cost": 47.37706799999998,
+          "cost": 47.377067999999994,
           "messages": 480
         }
       ]
@@ -2650,7 +2650,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 34.29481000000002,
+              "cost": 34.29481,
               "input": 2908144,
               "output": 112504,
               "tokens": 33824331,
@@ -2667,7 +2667,7 @@
             "cacheWrite": 0,
             "reasoning": 33123
           },
-          "cost": 34.29481000000002,
+          "cost": 34.29481,
           "messages": 328
         }
       ]
@@ -2850,7 +2850,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 50.60390099999999,
+              "cost": 50.60390100000001,
               "input": 4754467,
               "output": 191769,
               "tokens": 44440204,
@@ -2867,7 +2867,7 @@
             "cacheWrite": 0,
             "reasoning": 45136
           },
-          "cost": 50.60390099999999,
+          "cost": 50.60390100000001,
           "messages": 489
         }
       ]
@@ -3070,7 +3070,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 187.55496300000004,
+              "cost": 187.55496299999996,
               "input": 11066075,
               "output": 531778,
               "tokens": 236198005,
@@ -3087,7 +3087,7 @@
             "cacheWrite": 0,
             "reasoning": 134616
           },
-          "cost": 187.55496300000004,
+          "cost": 187.55496299999996,
           "messages": 1816
         }
       ]
@@ -3110,7 +3110,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 92.18692399999996,
+              "cost": 92.186924,
               "input": 6662518,
               "output": 276952,
               "tokens": 103694103,
@@ -3127,7 +3127,7 @@
             "cacheWrite": 0,
             "reasoning": 74185
           },
-          "cost": 92.18692399999996,
+          "cost": 92.186924,
           "messages": 885
         }
       ]
@@ -3150,7 +3150,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 224.15602399999995,
+              "cost": 224.156024,
               "input": 7980320,
               "output": 497467,
               "tokens": 342615380,
@@ -3167,7 +3167,7 @@
             "cacheWrite": 0,
             "reasoning": 76665
           },
-          "cost": 224.15602399999995,
+          "cost": 224.156024,
           "messages": 2382
         }
       ]
@@ -3190,7 +3190,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 216.10475699999995,
+              "cost": 216.10475699999998,
               "input": 8742583,
               "output": 491193,
               "tokens": 321621014,
@@ -3207,7 +3207,7 @@
             "cacheWrite": 0,
             "reasoning": 49574
           },
-          "cost": 216.10475699999995,
+          "cost": 216.10475699999998,
           "messages": 2075
         }
       ]
@@ -3230,7 +3230,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 103.28585500000001,
+              "cost": 103.285855,
               "input": 4562561,
               "output": 305690,
               "tokens": 143250852,
@@ -3247,7 +3247,7 @@
             "cacheWrite": 0,
             "reasoning": 71561
           },
-          "cost": 103.28585500000001,
+          "cost": 103.285855,
           "messages": 1030
         }
       ]
@@ -3280,7 +3280,7 @@
               "cacheWrite": 0
             },
             "gpt-5.5": {
-              "cost": 141.60753099999988,
+              "cost": 141.60753099999997,
               "input": 7241157,
               "output": 495823,
               "tokens": 178662444,
@@ -3297,7 +3297,7 @@
             "cacheWrite": 0,
             "reasoning": 172620
           },
-          "cost": 142.6785924999999,
+          "cost": 142.67859249999998,
           "messages": 1473
         }
       ]
@@ -3320,7 +3320,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 83.74905300000003,
+              "cost": 83.74905300000005,
               "input": 4958315,
               "output": 295792,
               "tokens": 100445896,
@@ -3337,7 +3337,7 @@
             "cacheWrite": 0,
             "reasoning": 84333
           },
-          "cost": 83.74905300000003,
+          "cost": 83.74905300000005,
           "messages": 739
         }
       ]
@@ -3560,7 +3560,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 175.60546000000005,
+              "cost": 175.60546,
               "input": 11397556,
               "output": 393677,
               "tokens": 216894220,
@@ -3577,7 +3577,7 @@
             "cacheWrite": 0,
             "reasoning": 144267
           },
-          "cost": 175.60546000000005,
+          "cost": 175.60546,
           "messages": 1487
         }
       ]
@@ -3640,7 +3640,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 188.444544,
+              "cost": 188.44454399999998,
               "input": 12985582,
               "output": 665857,
               "tokens": 211196881,
@@ -3657,7 +3657,7 @@
             "cacheWrite": 0,
             "reasoning": 161634
           },
-          "cost": 188.444544,
+          "cost": 188.44454399999998,
           "messages": 1541
         }
       ]
@@ -3680,7 +3680,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 156.84166300000004,
+              "cost": 156.84166299999998,
               "input": 12444195,
               "output": 444391,
               "tokens": 169229435,
@@ -3697,7 +3697,7 @@
             "cacheWrite": 0,
             "reasoning": 105713
           },
-          "cost": 156.84166300000004,
+          "cost": 156.84166299999998,
           "messages": 1148
         }
       ]
@@ -3880,7 +3880,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 249.83639200000002,
+              "cost": 249.83639200000005,
               "input": 19237112,
               "output": 1362500,
               "tokens": 242666736,
@@ -3897,7 +3897,7 @@
             "cacheWrite": 0,
             "reasoning": 59060
           },
-          "cost": 249.83639200000002,
+          "cost": 249.83639200000005,
           "messages": 1709
         }
       ]
@@ -3920,7 +3920,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 44.91931000000001,
+              "cost": 44.91931,
               "input": 4845486,
               "output": 164140,
               "tokens": 33779066,
@@ -3937,7 +3937,7 @@
             "cacheWrite": 0,
             "reasoning": 46880
           },
-          "cost": 44.91931000000001,
+          "cost": 44.91931,
           "messages": 277
         }
       ]
@@ -4320,7 +4320,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 115.67471600000003,
+              "cost": 115.67471600000002,
               "input": 10149038,
               "output": 513604,
               "tokens": 99224163,
@@ -4337,7 +4337,7 @@
             "cacheWrite": 0,
             "reasoning": 177649
           },
-          "cost": 115.67471600000003,
+          "cost": 115.67471600000002,
           "messages": 738
         },
         {
@@ -4355,7 +4355,7 @@
               "cacheWrite": 0
             },
             "claude-opus-4-8": {
-              "cost": 124.78570624999999,
+              "cost": 124.78570625000002,
               "input": 4048989,
               "output": 957396,
               "tokens": 56812731,
@@ -4372,7 +4372,7 @@
             "cacheWrite": 9513511,
             "reasoning": 0
           },
-          "cost": 124.78570624999999,
+          "cost": 124.78570625000002,
           "messages": 3168
         }
       ]
@@ -4515,7 +4515,7 @@
               "cacheWrite": 0
             },
             "claude-opus-4-8": {
-              "cost": 95.36162499999998,
+              "cost": 95.36162499999996,
               "input": 190673,
               "output": 690627,
               "tokens": 101406707,
@@ -4532,7 +4532,7 @@
             "cacheWrite": 4674762,
             "reasoning": 0
           },
-          "cost": 95.36162499999998,
+          "cost": 95.36162499999996,
           "messages": 569
         }
       ]
@@ -4555,7 +4555,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 84.66033199999997,
+              "cost": 84.66033199999995,
               "input": 7372234,
               "output": 432557,
               "tokens": 69655677,
@@ -4572,7 +4572,7 @@
             "cacheWrite": 0,
             "reasoning": 132102
           },
-          "cost": 84.66033199999997,
+          "cost": 84.66033199999995,
           "messages": 521
         },
         {
@@ -4590,7 +4590,7 @@
               "cacheWrite": 0
             },
             "claude-opus-4-8": {
-              "cost": 126.05527649999996,
+              "cost": 126.05527649999999,
               "input": 467750,
               "output": 1443807,
               "tokens": 134673858,
@@ -4600,7 +4600,7 @@
               "cacheWrite": 3693948
             },
             "claude-haiku-4-5": {
-              "cost": 0.9353079499999999,
+              "cost": 0.9353079499999997,
               "input": 70315,
               "output": 37000,
               "tokens": 3485776,
@@ -4617,7 +4617,7 @@
             "cacheWrite": 3991467,
             "reasoning": 0
           },
-          "cost": 126.99058444999996,
+          "cost": 126.99058444999999,
           "messages": 1177
         }
       ]
@@ -4640,7 +4640,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 16.261787,
+              "cost": 16.261786999999998,
               "input": 1722685,
               "output": 75502,
               "tokens": 10643928,
@@ -4657,7 +4657,7 @@
             "cacheWrite": 0,
             "reasoning": 32557
           },
-          "cost": 16.261787,
+          "cost": 16.261786999999998,
           "messages": 112
         },
         {
@@ -4705,7 +4705,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 3.221801,
+              "cost": 3.2218010000000006,
               "input": 251051,
               "output": 14755,
               "tokens": 2924434,
@@ -4722,7 +4722,7 @@
             "cacheWrite": 0,
             "reasoning": 6596
           },
-          "cost": 3.221801,
+          "cost": 3.2218010000000006,
           "messages": 37
         },
         {
@@ -4780,7 +4780,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 302.1658809999999,
+              "cost": 302.16588099999996,
               "input": 15126905,
               "output": 1288931,
               "tokens": 374143499,
@@ -4797,7 +4797,7 @@
             "cacheWrite": 0,
             "reasoning": 305071
           },
-          "cost": 302.1658809999999,
+          "cost": 302.16588099999996,
           "messages": 2629
         },
         {
@@ -4815,7 +4815,7 @@
               "cacheWrite": 0
             },
             "claude-opus-4-8": {
-              "cost": 245.68632149999993,
+              "cost": 245.6863214999999,
               "input": 1739772,
               "output": 1869160,
               "tokens": 300478535,
@@ -4825,7 +4825,7 @@
               "cacheWrite": 7273680
             },
             "claude-haiku-4-5": {
-              "cost": 0.4484280999999999,
+              "cost": 0.44842809999999994,
               "input": 57964,
               "output": 15075,
               "tokens": 1744570,
@@ -4842,7 +4842,7 @@
             "cacheWrite": 7402320,
             "reasoning": 0
           },
-          "cost": 246.13474959999994,
+          "cost": 246.1347495999999,
           "messages": 2821
         }
       ]
@@ -4865,7 +4865,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 32.673207999999995,
+              "cost": 32.673208,
               "input": 2440090,
               "output": 113948,
               "tokens": 35097935,
@@ -4882,7 +4882,7 @@
             "cacheWrite": 0,
             "reasoning": 26521
           },
-          "cost": 32.673207999999995,
+          "cost": 32.673208,
           "messages": 226
         },
         {
@@ -4900,7 +4900,7 @@
               "cacheWrite": 0
             },
             "claude-opus-4-8": {
-              "cost": 146.7668152500001,
+              "cost": 146.76681525,
               "input": 713227,
               "output": 948009,
               "tokens": 194499433,
@@ -4917,7 +4917,7 @@
             "cacheWrite": 4014149,
             "reasoning": 0
           },
-          "cost": 146.7668152500001,
+          "cost": 146.76681525,
           "messages": 958
         }
       ]
@@ -4975,7 +4975,7 @@
               "cacheWrite": 0
             },
             "claude-opus-4-8": {
-              "cost": 91.19354924999999,
+              "cost": 91.19354924999998,
               "input": 469979,
               "output": 1021344,
               "tokens": 78449291,
@@ -5002,7 +5002,7 @@
             "cacheWrite": 4452413,
             "reasoning": 0
           },
-          "cost": 91.66588434999998,
+          "cost": 91.66588434999997,
           "messages": 721
         }
       ]
@@ -5035,7 +5035,7 @@
               "cacheWrite": 0
             },
             "gpt-5.5": {
-              "cost": 276.519983,
+              "cost": 276.51998299999997,
               "input": 14299273,
               "output": 1455790,
               "tokens": 321326904,
@@ -5052,7 +5052,7 @@
             "cacheWrite": 0,
             "reasoning": 309136
           },
-          "cost": 280.1703425,
+          "cost": 280.17034249999995,
           "messages": 2493
         },
         {
@@ -5060,7 +5060,7 @@
           "modelId": "",
           "models": {
             "claude-opus-4-8": {
-              "cost": 155.12881975000005,
+              "cost": 155.12881975,
               "input": 610028,
               "output": 1481932,
               "tokens": 170544770,
@@ -5087,7 +5087,7 @@
             "cacheWrite": 5770139,
             "reasoning": 0
           },
-          "cost": 156.87874905000004,
+          "cost": 156.87874904999998,
           "messages": 842
         }
       ]
@@ -5110,7 +5110,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 49.56206099999999,
+              "cost": 49.562061,
               "input": 4433973,
               "output": 233320,
               "tokens": 41884755,
@@ -5127,7 +5127,7 @@
             "cacheWrite": 0,
             "reasoning": 60470
           },
-          "cost": 49.56206099999999,
+          "cost": 49.562061,
           "messages": 326
         },
         {
@@ -5145,7 +5145,7 @@
               "cacheWrite": 0
             },
             "claude-opus-4-8": {
-              "cost": 14.302141749999999,
+              "cost": 14.30214175,
               "input": 384770,
               "output": 136796,
               "tokens": 7811441,
@@ -5162,7 +5162,7 @@
             "cacheWrite": 924079,
             "reasoning": 0
           },
-          "cost": 14.302141749999999,
+          "cost": 14.30214175,
           "messages": 111
         }
       ]
@@ -5185,7 +5185,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 266.0769840000001,
+              "cost": 266.076984,
               "input": 16671026,
               "output": 1095819,
               "tokens": 299621347,
@@ -5202,7 +5202,7 @@
             "cacheWrite": 0,
             "reasoning": 302374
           },
-          "cost": 266.0769840000001,
+          "cost": 266.076984,
           "messages": 2097
         },
         {
@@ -5260,7 +5260,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 85.53587699999999,
+              "cost": 85.535877,
               "input": 5968147,
               "output": 383866,
               "tokens": 87358288,
@@ -5277,7 +5277,7 @@
             "cacheWrite": 0,
             "reasoning": 124611
           },
-          "cost": 85.53587699999999,
+          "cost": 85.535877,
           "messages": 627
         },
         {
@@ -5325,7 +5325,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 35.59095000000001,
+              "cost": 35.59094999999999,
               "input": 2863190,
               "output": 158715,
               "tokens": 32738810,
@@ -5342,7 +5342,7 @@
             "cacheWrite": 0,
             "reasoning": 56105
           },
-          "cost": 35.59095000000001,
+          "cost": 35.59094999999999,
           "messages": 288
         },
         {
@@ -5475,7 +5475,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 71.901187,
+              "cost": 71.90118700000001,
               "input": 5357777,
               "output": 309409,
               "tokens": 71263466,
@@ -5492,7 +5492,7 @@
             "cacheWrite": 0,
             "reasoning": 102776
           },
-          "cost": 71.901187,
+          "cost": 71.90118700000001,
           "messages": 581
         },
         {
@@ -5560,7 +5560,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 34.374514,
+              "cost": 34.374514000000005,
               "input": 2086300,
               "output": 155776,
               "tokens": 37827001,
@@ -5577,7 +5577,7 @@
             "cacheWrite": 0,
             "reasoning": 50077
           },
-          "cost": 34.374514,
+          "cost": 34.374514000000005,
           "messages": 278
         },
         {
@@ -5595,7 +5595,7 @@
               "cacheWrite": 0
             },
             "claude-fable-5": {
-              "cost": 18.782654000000004,
+              "cost": 18.782654000000008,
               "input": 114249,
               "output": 142795,
               "tokens": 6334926,
@@ -5680,7 +5680,7 @@
               "cacheWrite": 0
             },
             "claude-fable-5": {
-              "cost": 13.657330000000002,
+              "cost": 13.65733,
               "input": 17626,
               "output": 25904,
               "tokens": 1561517,
@@ -5765,7 +5765,7 @@
               "cacheWrite": 0
             },
             "claude-fable-5": {
-              "cost": 65.73999750000002,
+              "cost": 65.7399975,
               "input": 204288,
               "output": 262812,
               "tokens": 38308884,
@@ -5775,7 +5775,7 @@
               "cacheWrite": 1105629
             },
             "claude-opus-4-8": {
-              "cost": 67.20736050000002,
+              "cost": 67.20736050000001,
               "input": 161985,
               "output": 459100,
               "tokens": 76819431,
@@ -5792,7 +5792,7 @@
             "cacheWrite": 4030979,
             "reasoning": 0
           },
-          "cost": 132.94735800000004,
+          "cost": 132.947358,
           "messages": 449
         }
       ]
@@ -5815,7 +5815,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 9.167605000000004,
+              "cost": 9.167605000000002,
               "input": 836965,
               "output": 34245,
               "tokens": 8076135,
@@ -5832,7 +5832,7 @@
             "cacheWrite": 0,
             "reasoning": 11965
           },
-          "cost": 9.167605000000004,
+          "cost": 9.167605000000002,
           "messages": 65
         },
         {
@@ -5850,7 +5850,7 @@
               "cacheWrite": 0
             },
             "claude-fable-5": {
-              "cost": 182.3912145000002,
+              "cost": 182.3912145,
               "input": 410432,
               "output": 597563,
               "tokens": 95638220,
@@ -5860,7 +5860,7 @@
               "cacheWrite": 4676393
             },
             "claude-opus-4-8": {
-              "cost": 284.7607105000001,
+              "cost": 284.7607105,
               "input": 1218067,
               "output": 1667587,
               "tokens": 342460378,
@@ -5877,7 +5877,7 @@
             "cacheWrite": 16362191,
             "reasoning": 0
           },
-          "cost": 467.15192500000023,
+          "cost": 467.151925,
           "messages": 1643
         }
       ]
@@ -5900,7 +5900,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 125.74456500000002,
+              "cost": 125.74456500000001,
               "input": 10149983,
               "output": 424884,
               "tokens": 125305506,
@@ -5917,7 +5917,7 @@
             "cacheWrite": 0,
             "reasoning": 165519
           },
-          "cost": 125.74456500000002,
+          "cost": 125.74456500000001,
           "messages": 1019
         },
         {
@@ -5945,7 +5945,7 @@
               "cacheWrite": 5109201
             },
             "claude-opus-4-8": {
-              "cost": 75.3765865,
+              "cost": 75.37658649999999,
               "input": 158865,
               "output": 331580,
               "tokens": 62635593,
@@ -5985,7 +5985,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 2.585798,
+              "cost": 2.5857980000000005,
               "input": 257226,
               "output": 16017,
               "tokens": 1658272,
@@ -6002,7 +6002,7 @@
             "cacheWrite": 0,
             "reasoning": 4293
           },
-          "cost": 2.585798,
+          "cost": 2.5857980000000005,
           "messages": 25
         },
         {
@@ -6020,7 +6020,7 @@
               "cacheWrite": 0
             },
             "claude-opus-4-8": {
-              "cost": 190.79251850000003,
+              "cost": 190.7925185,
               "input": 634710,
               "output": 1942246,
               "tokens": 213842237,
@@ -6037,7 +6037,7 @@
             "cacheWrite": 5813944,
             "reasoning": 0
           },
-          "cost": 190.79251850000003,
+          "cost": 190.7925185,
           "messages": 813
         }
       ]
@@ -6060,7 +6060,7 @@
           "modelId": "",
           "models": {
             "claude-opus-4-8": {
-              "cost": 66.1967175,
+              "cost": 66.19671750000002,
               "input": 333990,
               "output": 529707,
               "tokens": 67709616,
@@ -6077,7 +6077,7 @@
             "cacheWrite": 3106284,
             "reasoning": 0
           },
-          "cost": 66.1967175,
+          "cost": 66.19671750000002,
           "messages": 415
         }
       ]
@@ -6100,7 +6100,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 5.123814999999999,
+              "cost": 5.123815,
               "input": 527825,
               "output": 29587,
               "tokens": 2649688,
@@ -6117,7 +6117,7 @@
             "cacheWrite": 0,
             "reasoning": 18676
           },
-          "cost": 5.123814999999999,
+          "cost": 5.123815,
           "messages": 44
         },
         {
@@ -6135,7 +6135,7 @@
               "cacheWrite": 0
             },
             "claude-opus-4-8": {
-              "cost": 54.135298999999996,
+              "cost": 54.135299,
               "input": 299278,
               "output": 932194,
               "tokens": 27597424,
@@ -6152,7 +6152,7 @@
             "cacheWrite": 2808884,
             "reasoning": 0
           },
-          "cost": 54.135298999999996,
+          "cost": 54.135299,
           "messages": 430
         }
       ]
@@ -6250,7 +6250,7 @@
           "modelId": "",
           "models": {
             "gpt-5.6-sol": {
-              "cost": 7.688386000000002,
+              "cost": 7.688386,
               "input": 412270,
               "output": 62702,
               "tokens": 5740736,
@@ -6267,7 +6267,7 @@
             "cacheWrite": 0,
             "reasoning": 37732
           },
-          "cost": 7.688386000000002,
+          "cost": 7.688386,
           "messages": 114
         },
         {
@@ -6325,7 +6325,7 @@
           "modelId": "",
           "models": {
             "gpt-5.6-sol": {
-              "cost": 397.7053840000001,
+              "cost": 397.70538400000015,
               "input": 13365438,
               "output": 1150522,
               "tokens": 586930101,
@@ -6342,7 +6342,7 @@
             "cacheWrite": 0,
             "reasoning": 344253
           },
-          "cost": 397.7053840000001,
+          "cost": 397.70538400000015,
           "messages": 2844
         },
         {
@@ -6350,7 +6350,7 @@
           "modelId": "",
           "models": {
             "claude-opus-4-8": {
-              "cost": 176.40454825000003,
+              "cost": 176.40454825,
               "input": 358755,
               "output": 1164706,
               "tokens": 223250026,
@@ -6367,7 +6367,7 @@
             "cacheWrite": 6022581,
             "reasoning": 0
           },
-          "cost": 176.40454825000003,
+          "cost": 176.40454825,
           "messages": 559
         }
       ]
@@ -6390,7 +6390,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 40.76983200000004,
+              "cost": 40.76983200000001,
               "input": 2347146,
               "output": 162546,
               "tokens": 47368031,
@@ -6400,7 +6400,7 @@
               "cacheWrite": 0
             },
             "gpt-5.6-sol": {
-              "cost": 106.51271500000007,
+              "cost": 106.51271500000006,
               "input": 3336573,
               "output": 352279,
               "tokens": 155404864,
@@ -6417,7 +6417,7 @@
             "cacheWrite": 0,
             "reasoning": 173967
           },
-          "cost": 147.2825470000001,
+          "cost": 147.28254700000008,
           "messages": 1222
         },
         {
@@ -6435,7 +6435,7 @@
               "cacheWrite": 0
             },
             "claude-fable-5": {
-              "cost": 313.074512,
+              "cost": 313.07451199999997,
               "input": 144320,
               "output": 942777,
               "tokens": 187595046,
@@ -6445,7 +6445,7 @@
               "cacheWrite": 6781262
             },
             "claude-opus-4-8": {
-              "cost": 73.12483525000002,
+              "cost": 73.12483525,
               "input": 35816,
               "output": 336007,
               "tokens": 109606635,
@@ -6462,7 +6462,7 @@
             "cacheWrite": 8507901,
             "reasoning": 0
           },
-          "cost": 386.1993472500001,
+          "cost": 386.19934724999996,
           "messages": 766
         }
       ]
@@ -6485,7 +6485,7 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 8.165992,
+              "cost": 8.165992000000001,
               "input": 694370,
               "output": 55769,
               "tokens": 5505139,
@@ -6580,7 +6580,7 @@
           "modelId": "",
           "models": {
             "gpt-5.6-sol": {
-              "cost": 118.73116599999994,
+              "cost": 118.731166,
               "input": 6322456,
               "output": 524600,
               "tokens": 139832469,
@@ -6597,7 +6597,7 @@
             "cacheWrite": 0,
             "reasoning": 165701
           },
-          "cost": 118.73116599999994,
+          "cost": 118.731166,
           "messages": 1091
         },
         {
@@ -6605,7 +6605,7 @@
           "modelId": "",
           "models": {
             "claude-fable-5": {
-              "cost": 196.15502300000006,
+              "cost": 196.15502300000003,
               "input": 75838,
               "output": 414267,
               "tokens": 141556782,
@@ -6622,7 +6622,7 @@
             "cacheWrite": 2923184,
             "reasoning": 0
           },
-          "cost": 196.15502300000006,
+          "cost": 196.15502300000003,
           "messages": 307
         }
       ]
@@ -6680,7 +6680,7 @@
               "cacheWrite": 0
             },
             "claude-fable-5": {
-              "cost": 11.801918500000005,
+              "cost": 11.8019185,
               "input": 35341,
               "output": 68978,
               "tokens": 4869932,
@@ -6697,7 +6697,7 @@
             "cacheWrite": 281217,
             "reasoning": 0
           },
-          "cost": 11.801918500000005,
+          "cost": 11.8019185,
           "messages": 42
         }
       ]
@@ -6720,7 +6720,7 @@
           "modelId": "",
           "models": {
             "gpt-5.6-sol": {
-              "cost": 63.71519100000003,
+              "cost": 63.715191000000026,
               "input": 4048925,
               "output": 282964,
               "tokens": 69763450,
@@ -6737,7 +6737,7 @@
             "cacheWrite": 0,
             "reasoning": 76809
           },
-          "cost": 63.71519100000003,
+          "cost": 63.715191000000026,
           "messages": 494
         }
       ]
@@ -6745,14 +6745,14 @@
     {
       "date": "2026-07-18",
       "intensity": 1,
-      "totalTokens": 68012225,
-      "totalCost": 60.859,
+      "totalTokens": 75762290,
+      "totalCost": 67.0715,
       "messages": 0,
-      "inputTokens": 3878410,
-      "outputTokens": 247201,
-      "cacheReadTokens": 63815168,
+      "inputTokens": 4226460,
+      "outputTokens": 266910,
+      "cacheReadTokens": 71191040,
       "cacheWriteTokens": 0,
-      "reasoningTokens": 71446,
+      "reasoningTokens": 77880,
       "activeTimeMs": 0,
       "clients": [
         {
@@ -6760,25 +6760,25 @@
           "modelId": "",
           "models": {
             "gpt-5.6-sol": {
-              "cost": 60.859044000000004,
-              "input": 3878410,
-              "output": 247201,
-              "tokens": 68012225,
-              "messages": 461,
-              "cacheRead": 63815168,
-              "reasoning": 71446,
+              "cost": 67.07152000000002,
+              "input": 4226460,
+              "output": 266910,
+              "tokens": 75762290,
+              "messages": 517,
+              "cacheRead": 71191040,
+              "reasoning": 77880,
               "cacheWrite": 0
             }
           },
           "tokens": {
-            "input": 3878410,
-            "output": 247201,
-            "cacheRead": 63815168,
+            "input": 4226460,
+            "output": 266910,
+            "cacheRead": 71191040,
             "cacheWrite": 0,
-            "reasoning": 71446
+            "reasoning": 77880
           },
-          "cost": 60.859044000000004,
-          "messages": 461
+          "cost": 67.07152000000002,
+          "messages": 517
         }
       ]
     }
