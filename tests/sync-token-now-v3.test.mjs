@@ -33,6 +33,22 @@ test("buildSyncTokenPlan wires the one-shot token sync and push sequence", () =>
     args: ["-y", "tokscale@latest", "submit", "--client", "codex,claude"]
   });
 
+  assert.deepEqual(plan[3].retry, {
+    attempts: 8,
+    delayMs: 15000
+  });
+  assert.deepEqual(plan[3].fallback, [
+    {
+      label: "Export local Tokscale graph data",
+      command: "npx",
+      args: ["-y", "tokscale@latest", "graph", "--client", "codex,claude", "--no-spinner", "--output", "data/tokscale-graph.json"]
+    },
+    {
+      label: "Generate profile files from local Tokscale graph",
+      command: "node",
+      args: ["scripts/generate-tokscale-profile.mjs", "--graph", "data/tokscale-graph.json"]
+    }
+  ]);
   assert.deepEqual(plan[6].args, ["add", ...SYNC_TOKEN_GENERATED_PATHS]);
   assert.deepEqual(plan[7].args, ["commit", "-m", "chore: sync Tokscale token usage"]);
   assert.deepEqual(plan[8].args, ["pull", "--rebase", "-X", "theirs", "origin", "main"]);

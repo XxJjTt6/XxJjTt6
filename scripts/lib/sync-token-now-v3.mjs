@@ -32,7 +32,23 @@ export function buildSyncTokenPlan({
     {
       label: "Refresh public Tokscale profile data",
       command: "npm",
-      args: ["run", "refresh:public"]
+      args: ["run", "refresh:public"],
+      retry: {
+        attempts: 8,
+        delayMs: 15000
+      },
+      fallback: [
+        {
+          label: "Export local Tokscale graph data",
+          command: "npx",
+          args: ["-y", "tokscale@latest", "graph", "--client", clients, "--no-spinner", "--output", "data/tokscale-graph.json"]
+        },
+        {
+          label: "Generate profile files from local Tokscale graph",
+          command: "node",
+          args: ["scripts/generate-tokscale-profile.mjs", "--graph", "data/tokscale-graph.json"]
+        }
+      ]
     },
     {
       label: "Write hourly sync snapshot",
