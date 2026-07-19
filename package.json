@@ -8,6 +8,7 @@
     "generate": "node scripts/generate-tokscale-profile.mjs",
     "refresh": "node scripts/update-from-tokscale.mjs",
     "refresh:public": "node scripts/fetch-tokscale-public.mjs --username XxJjTt6 --out data/tokscale-graph.json && node scripts/generate-tokscale-profile.mjs --graph data/tokscale-graph.json",
+    "sync:hourly": "node scripts/write-hourly-sync-v2.mjs --graph data/tokscale-graph.json --out data/tokscale-hourly-sync.json",
     "tokscale:graph": "npx -y tokscale@latest graph --client codex,claude --no-spinner --output data/tokscale-graph.json"
   },
   "engines": {

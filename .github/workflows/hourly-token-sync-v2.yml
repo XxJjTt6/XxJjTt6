@@ -1,0 +1,43 @@
+name: Hourly token sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "13 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hourly-token-sync-v2-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Refresh public Tokscale data
+        run: npm run refresh:public
+
+      - name: Write hourly sync snapshot
+        run: npm run sync:hourly
+
+      - name: Verify generated files
+        run: npm test
+
+      - name: Commit and push hourly token sync
+        run: |
+          git config user.name "Xu jiangtao"
+          git config user.email "77684124+XxJjTt6@users.noreply.github.com"
+          git add README.md README.tokscale-v3.md assets data/tokscale-graph.json data/tokscale-summary.json data/tokscale-hourly-sync.json
+          git commit -m "chore: hourly Tokscale token sync"
+          git pull --rebase origin main
+          git push
