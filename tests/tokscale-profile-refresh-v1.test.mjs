@@ -7,6 +7,7 @@ import {
   buildLaunchAgentPlist,
   buildTokscaleSubmitCommand
 } from "../scripts/lib/tokscale-profile-refresh-v1.mjs";
+import { readFileSync } from "node:fs";
 
 test("buildTokscaleSubmitCommand submits Codex and Claude usage through Tokscale", () => {
   assert.deepEqual(buildTokscaleSubmitCommand(), {
@@ -58,4 +59,12 @@ test("buildLaunchAgentPlist creates a 15 minute launchd job for the sync script"
   assert.match(plist, /<string>\/repo\/scripts\/submit-and-trigger-profile-refresh-v1\.mjs<\/string>/);
   assert.match(plist, /<key>StartInterval<\/key>\n\s*<integer>900<\/integer>/);
   assert.match(plist, /<key>RunAtLoad<\/key>\n\s*<true\/>/);
+});
+
+test("fast profile refresh workflow is manual-only so hourly sync owns scheduled commits", () => {
+  const workflow = readFileSync(new URL("../.github/workflows/refresh-tokscale-profile-fast.yml", import.meta.url), "utf8");
+
+  assert.match(workflow, /workflow_dispatch:/);
+  assert.doesNotMatch(workflow, /schedule:/);
+  assert.doesNotMatch(workflow, /cron:/);
 });
