@@ -30,18 +30,18 @@ Click targets open the Tokscale public profile, not image files.
 
 | Window | Tokens | Cost |
 | --- | ---: | ---: |
-| Today | 485,332,490 | $364.33 |
-| This week | 2,098,063,306 | $1,710.80 |
-| This month | 7,231,473,778 | $6,817.90 |
-| Last 7 days | 2,883,512,081 | $2,362.41 |
-| Last 30 days | 7,832,297,795 | $7,398.39 |
-| All time | 17,491,684,666 | $16,365.95 |
+| Today | 493,973,403 | $371.74 |
+| This week | 2,106,704,219 | $1,718.21 |
+| This month | 7,240,114,691 | $6,825.31 |
+| Last 7 days | 2,892,152,994 | $2,369.82 |
+| Last 30 days | 7,840,938,708 | $7,405.80 |
+| All time | 17,500,325,579 | $16,373.35 |
 
 ## Sources
 
 | Source | Tokens | Cost | Messages |
 | --- | ---: | ---: | ---: |
-| Codex | 13,516,158,787 | $12,036.76 | 97,495 |
+| Codex | 13,524,792,384 | $12,044.17 | 97,544 |
 | Claude Code | 3,960,648,737 | $4,329.19 | 23,001 |
 
 ## Models
@@ -49,7 +49,7 @@ Click targets open the Tokscale public profile, not image files.
 | Model | Tokens | Cost | Messages |
 | --- | ---: | ---: | ---: |
 | gpt-5.5 | 8,788,393,367 | $8,346.62 | 67,692 |
-| gpt-5.6-sol | 4,216,033,129 | $3,377.84 | 25,189 |
+| gpt-5.6-sol | 4,224,674,042 | $3,385.25 | 25,238 |
 | claude-opus-4-8 | 3,074,580,747 | $2,848.57 | 19,369 |
 | claude-fable-5 | 857,847,768 | $1,472.83 | 2,778 |
 | gpt-5.4 | 495,644,618 | $295.88 | 4,165 |
