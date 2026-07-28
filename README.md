@@ -35,7 +35,7 @@ Click targets open the Tokscale public profile, not image files.
 | This month | 9,375,954,963 | $9,508.73 |
 | Last 7 days | 3,978,209,904 | $3,958.11 |
 | Last 30 days | 9,532,586,761 | $9,660.06 |
-| All time | 19,636,165,851 | $19,090.33 |
+| All time | 19,636,165,851 | $19,090.32 |
 
 ## Sources
 
