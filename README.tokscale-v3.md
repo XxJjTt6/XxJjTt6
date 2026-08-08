@@ -57,4 +57,4 @@ Click targets open the Tokscale public profile, not image files.
 | gpt-5.3-codex | 22,779,318 | $10.82 | 235 |
 | gpt-5.2-codex | 4,885,099 | $3.21 | 123 |
 
-<sub>Updated 2026-08-07. Public aggregate data from Tokscale 4.11.0; live graphs served by Tokscale.</sub>
+<sub>Updated 2026-08-07. Public aggregate data from Tokscale 4.12.0; live graphs served by Tokscale.</sub>
