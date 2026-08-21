@@ -11,10 +11,14 @@ import {
 const options = parseArgs(process.argv.slice(2));
 const outDir = path.resolve(options.outDir ?? process.cwd());
 const graphPath = path.resolve(options.graphPath ?? path.join(outDir, "data", "tokscale-graph.json"));
+const deepseekPath = path.resolve(options.deepseekPath ?? path.join(outDir, "data", "deepseek-desktop-usage.json"));
 const profileName = options.profileName ?? "XxJjTt6";
 const handle = options.handle ?? "@XxJjTt6";
 
 const graph = JSON.parse(fs.readFileSync(graphPath, "utf8"));
+const deepseekSummary = options.skipDeepseek || !fs.existsSync(deepseekPath)
+  ? null
+  : JSON.parse(fs.readFileSync(deepseekPath, "utf8"));
 const summary = summarizeTokscaleGraph(graph);
 const rankText = options.rankText ?? graph.profile?.rankText ?? "Submit for rank";
 
@@ -26,12 +30,15 @@ fs.writeFileSync(
   renderTokscaleCard({ summary, profileName, handle, rankText })
 );
 fs.writeFileSync(path.join(outDir, "assets", "tokscale-ai-token-heatmap.svg"), renderTokscaleHeatmap(summary));
-fs.writeFileSync(path.join(outDir, "README.md"), renderTokscaleReadme({ summary, profileName, handle }));
-fs.writeFileSync(path.join(outDir, "README.tokscale-v3.md"), renderTokscaleReadme({ summary, profileName, handle }));
+fs.writeFileSync(path.join(outDir, "README.md"), renderTokscaleReadme({ summary, profileName, handle, deepseekSummary }));
+fs.writeFileSync(path.join(outDir, "README.tokscale-v3.md"), renderTokscaleReadme({ summary, profileName, handle, deepseekSummary }));
 
 console.log(`Generated Tokscale profile files in ${outDir}`);
 console.log(`Tokens: ${summary.totals.totalTokens.toLocaleString("en-US")}`);
 console.log(`Cost: $${summary.totals.totalCost.toLocaleString("en-US", { maximumFractionDigits: 2 })}`);
+if (deepseekSummary) {
+  console.log(`DeepSeek Desktop tokens: ${deepseekSummary.totals.totalTokens.toLocaleString("en-US")}`);
+}
 
 function parseArgs(args) {
   const parsed = {};
@@ -53,6 +60,11 @@ function parseArgs(args) {
     } else if (arg === "--rank") {
       parsed.rankText = next;
       index += 1;
+    } else if (arg === "--deepseek") {
+      parsed.deepseekPath = next;
+      index += 1;
+    } else if (arg === "--no-deepseek") {
+      parsed.skipDeepseek = true;
     }
   }
   return parsed;

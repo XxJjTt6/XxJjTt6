@@ -1,0 +1,284 @@
+{
+  "schemaVersion": "deepseek-desktop-usage-v1",
+  "source": "DeepSeek Desktop",
+  "sourceFormat": "~/.dsh/sessions/**/session.jsonl.zstd",
+  "measurement": "provider-reported",
+  "generatedAt": "2026-08-21T09:32:27.909Z",
+  "timeZone": "Asia/Shanghai",
+  "asOfDate": "2026-08-21",
+  "firstActivityDate": "2026-08-19",
+  "firstUsageAt": "2026-08-19T13:27:54.660Z",
+  "lastUsageAt": "2026-08-21T09:32:26.275Z",
+  "sessionsScanned": 6,
+  "usageSamples": 499,
+  "totals": {
+    "totalTokens": 66934347,
+    "inputTokens": 498120,
+    "outputTokens": 422659,
+    "cacheReadTokens": 66013568,
+    "cacheWriteTokens": 0,
+    "reasoningTokens": 269499,
+    "requests": 499
+  },
+  "periods": {
+    "today": {
+      "totalTokens": 66649904,
+      "inputTokens": 464094,
+      "outputTokens": 414802,
+      "cacheReadTokens": 65771008,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 264889,
+      "requests": 484
+    },
+    "thisWeek": {
+      "totalTokens": 66934347,
+      "inputTokens": 498120,
+      "outputTokens": 422659,
+      "cacheReadTokens": 66013568,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 269499,
+      "requests": 499
+    },
+    "thisMonth": {
+      "totalTokens": 66934347,
+      "inputTokens": 498120,
+      "outputTokens": 422659,
+      "cacheReadTokens": 66013568,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 269499,
+      "requests": 499
+    },
+    "last7Days": {
+      "totalTokens": 66934347,
+      "inputTokens": 498120,
+      "outputTokens": 422659,
+      "cacheReadTokens": 66013568,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 269499,
+      "requests": 499
+    },
+    "last30Days": {
+      "totalTokens": 66934347,
+      "inputTokens": 498120,
+      "outputTokens": 422659,
+      "cacheReadTokens": 66013568,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 269499,
+      "requests": 499
+    },
+    "allTime": {
+      "totalTokens": 66934347,
+      "inputTokens": 498120,
+      "outputTokens": 422659,
+      "cacheReadTokens": 66013568,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 269499,
+      "requests": 499
+    }
+  },
+  "providers": {
+    "deepseek-official": {
+      "totalTokens": 66934347,
+      "inputTokens": 498120,
+      "outputTokens": 422659,
+      "cacheReadTokens": 66013568,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 269499,
+      "requests": 499
+    }
+  },
+  "models": {
+    "deepseek-v4-flash": {
+      "totalTokens": 1300916,
+      "inputTokens": 43701,
+      "outputTokens": 15231,
+      "cacheReadTokens": 1241984,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 7537,
+      "requests": 40
+    },
+    "deepseek-v4-pro": {
+      "totalTokens": 65633431,
+      "inputTokens": 454419,
+      "outputTokens": 407428,
+      "cacheReadTokens": 64771584,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 261962,
+      "requests": 459
+    }
+  },
+  "daily": [
+    {
+      "date": "2026-08-19",
+      "totalTokens": 284443,
+      "inputTokens": 34026,
+      "outputTokens": 7857,
+      "cacheReadTokens": 242560,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 4610,
+      "requests": 15
+    },
+    {
+      "date": "2026-08-21",
+      "totalTokens": 66649904,
+      "inputTokens": 464094,
+      "outputTokens": 414802,
+      "cacheReadTokens": 65771008,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 264889,
+      "requests": 484
+    }
+  ],
+  "sessions": [
+    {
+      "sessionId": "session-01e3df8e-59fe-4f84-aa20-6b4ab609ed0a",
+      "firstUsageAt": "2026-08-21T07:00:04.339Z",
+      "lastUsageAt": "2026-08-21T07:05:10.975Z",
+      "totals": {
+        "totalTokens": 1300916,
+        "inputTokens": 43701,
+        "outputTokens": 15231,
+        "cacheReadTokens": 1241984,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 7537,
+        "requests": 40
+      },
+      "models": {
+        "deepseek-v4-flash": {
+          "totalTokens": 1300916,
+          "inputTokens": 43701,
+          "outputTokens": 15231,
+          "cacheReadTokens": 1241984,
+          "cacheWriteTokens": 0,
+          "reasoningTokens": 7537,
+          "requests": 40
+        }
+      }
+    },
+    {
+      "sessionId": "session-020b4930-41f7-4688-92d8-d83a40b3fb54",
+      "firstUsageAt": "2026-08-21T08:03:09.436Z",
+      "lastUsageAt": "2026-08-21T09:02:38.852Z",
+      "totals": {
+        "totalTokens": 2743710,
+        "inputTokens": 71094,
+        "outputTokens": 40936,
+        "cacheReadTokens": 2631680,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 27634,
+        "requests": 38
+      },
+      "models": {
+        "deepseek-v4-pro": {
+          "totalTokens": 2743710,
+          "inputTokens": 71094,
+          "outputTokens": 40936,
+          "cacheReadTokens": 2631680,
+          "cacheWriteTokens": 0,
+          "reasoningTokens": 27634,
+          "requests": 38
+        }
+      }
+    },
+    {
+      "sessionId": "session-237981bc-a6f2-4340-8226-2f81da55fb23",
+      "firstUsageAt": "2026-08-21T09:12:14.915Z",
+      "lastUsageAt": "2026-08-21T09:32:26.275Z",
+      "totals": {
+        "totalTokens": 6662661,
+        "inputTokens": 82794,
+        "outputTokens": 56347,
+        "cacheReadTokens": 6523520,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 42250,
+        "requests": 93
+      },
+      "models": {
+        "deepseek-v4-pro": {
+          "totalTokens": 6662661,
+          "inputTokens": 82794,
+          "outputTokens": 56347,
+          "cacheReadTokens": 6523520,
+          "cacheWriteTokens": 0,
+          "reasoningTokens": 42250,
+          "requests": 93
+        }
+      }
+    },
+    {
+      "sessionId": "session-750e1c59-3690-4942-8e2b-335a727ec689",
+      "firstUsageAt": "2026-08-19T13:27:54.660Z",
+      "lastUsageAt": "2026-08-19T13:30:21.647Z",
+      "totals": {
+        "totalTokens": 284443,
+        "inputTokens": 34026,
+        "outputTokens": 7857,
+        "cacheReadTokens": 242560,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 4610,
+        "requests": 15
+      },
+      "models": {
+        "deepseek-v4-pro": {
+          "totalTokens": 284443,
+          "inputTokens": 34026,
+          "outputTokens": 7857,
+          "cacheReadTokens": 242560,
+          "cacheWriteTokens": 0,
+          "reasoningTokens": 4610,
+          "requests": 15
+        }
+      }
+    },
+    {
+      "sessionId": "session-c2c7e4a4-d38c-4f96-9076-9ea0db2911c8",
+      "firstUsageAt": "2026-08-21T07:07:42.764Z",
+      "lastUsageAt": "2026-08-21T09:14:07.498Z",
+      "totals": {
+        "totalTokens": 43241665,
+        "inputTokens": 162242,
+        "outputTokens": 210431,
+        "cacheReadTokens": 42868992,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 128758,
+        "requests": 204
+      },
+      "models": {
+        "deepseek-v4-pro": {
+          "totalTokens": 43241665,
+          "inputTokens": 162242,
+          "outputTokens": 210431,
+          "cacheReadTokens": 42868992,
+          "cacheWriteTokens": 0,
+          "reasoningTokens": 128758,
+          "requests": 204
+        }
+      }
+    },
+    {
+      "sessionId": "session-d1b6a2de-5a24-4b94-9403-9f554dbc6ae7",
+      "firstUsageAt": "2026-08-21T07:50:57.973Z",
+      "lastUsageAt": "2026-08-21T09:32:18.258Z",
+      "totals": {
+        "totalTokens": 12700952,
+        "inputTokens": 104263,
+        "outputTokens": 91857,
+        "cacheReadTokens": 12504832,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 58710,
+        "requests": 109
+      },
+      "models": {
+        "deepseek-v4-pro": {
+          "totalTokens": 12700952,
+          "inputTokens": 104263,
+          "outputTokens": 91857,
+          "cacheReadTokens": 12504832,
+          "cacheWriteTokens": 0,
+          "reasoningTokens": 58710,
+          "requests": 109
+        }
+      }
+    }
+  ]
+}

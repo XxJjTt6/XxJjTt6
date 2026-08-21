@@ -9,6 +9,8 @@
     "refresh": "node scripts/update-from-tokscale.mjs",
     "refresh:public": "node scripts/fetch-tokscale-public.mjs --username XxJjTt6 --out data/tokscale-graph.json && node scripts/generate-tokscale-profile.mjs --graph data/tokscale-graph.json",
     "sync:hourly": "node scripts/write-hourly-sync-v2.mjs --graph data/tokscale-graph.json --out data/tokscale-hourly-sync.json",
+    "scan:deepseek": "node scripts/scan-deepseek-desktop-usage-v1.mjs --out data/deepseek-desktop-usage.json",
+    "sync:tokens": "node scripts/sync-token-now-v4.mjs",
     "tokscale:graph": "npx -y tokscale@latest graph --client codex,claude --no-spinner --output data/tokscale-graph.json"
   },
   "engines": {

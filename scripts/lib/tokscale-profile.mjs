@@ -62,25 +62,34 @@ export function summarizeTokscaleGraph(graph) {
   };
 }
 
-export function renderTokscaleReadme({ summary, profileName, handle }) {
+export function renderTokscaleReadme({ summary, profileName, handle, deepseekSummary = null }) {
   const username = handle.replace(/^@/, "");
   const profileUrl = `https://tokscale.ai/u/${encodeURIComponent(username)}`;
   const heatmap2dUrl = `https://tokscale.ai/api/embed/${encodeURIComponent(username)}/svg?theme=light&graph=1&color=blue&tokens=compact&cost=compact`;
   const heatmap3dUrl = `https://tokscale.ai/api/embed/${encodeURIComponent(username)}/svg?theme=light&view=3d&compact=1&color=blue`;
-  const providerRows = Object.entries(summary.providers)
+  const combined = combineUsageSummaries(summary, deepseekSummary);
+  const providerRows = Object.entries(combined.providers)
     .sort((a, b) => b[1].totalTokens - a[1].totalTokens)
-    .map(([provider, stats]) => `| ${provider} | ${formatInteger(stats.totalTokens)} | ${formatMoney(stats.totalCost)} | ${formatInteger(stats.messages)} |`)
+    .map(([provider, stats]) => `| ${provider} | ${formatInteger(stats.totalTokens)} | ${formatOptionalMoney(stats.totalCost)} | ${formatInteger(stats.messages)} |`)
     .join("\n");
-  const modelRows = Object.entries(summary.models)
+  const modelRows = Object.entries(combined.models)
     .sort((a, b) => b[1].totalTokens - a[1].totalTokens)
-    .slice(0, 8)
-    .map(([model, stats]) => `| ${model} | ${formatInteger(stats.totalTokens)} | ${formatMoney(stats.totalCost)} | ${formatInteger(stats.messages)} |`)
+    .slice(0, 12)
+    .map(([model, stats]) => `| ${model} | ${formatInteger(stats.totalTokens)} | ${formatOptionalMoney(stats.totalCost)} | ${formatInteger(stats.messages)} |`)
     .join("\n");
+  const deepseekDisclosure = combined.includesDeepSeek
+    ? `\n> The live 2D/3D graphs above are official Tokscale embeds and currently cover Codex and Claude Code. The tables below also include provider-reported DeepSeek Desktop usage from the [auditable snapshot](./data/deepseek-desktop-usage.json).`
+    : "";
+  const costHeader = combined.includesDeepSeek ? "Known cost" : "Cost";
+  const costDisclosure = combined.includesDeepSeek
+    ? " DeepSeek Desktop logs contain token usage but no billing amount, so known cost excludes DeepSeek Desktop."
+    : "";
 
   return `<!--
 Generated from Tokscale public profile data.
 The visible Tokscale graphs are official live Tokscale embeds.
 Click targets open the Tokscale public profile, not image files.
+DeepSeek Desktop tables use provider-reported local DSH session logs when present.
 -->
 
 <div align="center">
@@ -104,17 +113,18 @@ Click targets open the Tokscale public profile, not image files.
 <p><a href="${profileUrl}">Open live daily token hover details on Tokscale</a></p>
 
 </div>
+${deepseekDisclosure}
 
 ## AI Usage
 
-| Window | Tokens | Cost |
+| Window | Tokens | ${costHeader} |
 | --- | ---: | ---: |
-| Today | ${formatInteger(summary.periods.today.totalTokens)} | ${formatMoney(summary.periods.today.totalCost)} |
-| This week | ${formatInteger(summary.periods.thisWeek.totalTokens)} | ${formatMoney(summary.periods.thisWeek.totalCost)} |
-| This month | ${formatInteger(summary.periods.thisMonth.totalTokens)} | ${formatMoney(summary.periods.thisMonth.totalCost)} |
-| Last 7 days | ${formatInteger(summary.periods.last7Days.totalTokens)} | ${formatMoney(summary.periods.last7Days.totalCost)} |
-| Last 30 days | ${formatInteger(summary.periods.last30Days.totalTokens)} | ${formatMoney(summary.periods.last30Days.totalCost)} |
-| All time | ${formatInteger(summary.totals.totalTokens)} | ${formatMoney(summary.totals.totalCost)} |
+| Today | ${formatInteger(combined.periods.today.totalTokens)} | ${formatMoney(combined.periods.today.totalCost)} |
+| This week | ${formatInteger(combined.periods.thisWeek.totalTokens)} | ${formatMoney(combined.periods.thisWeek.totalCost)} |
+| This month | ${formatInteger(combined.periods.thisMonth.totalTokens)} | ${formatMoney(combined.periods.thisMonth.totalCost)} |
+| Last 7 days | ${formatInteger(combined.periods.last7Days.totalTokens)} | ${formatMoney(combined.periods.last7Days.totalCost)} |
+| Last 30 days | ${formatInteger(combined.periods.last30Days.totalTokens)} | ${formatMoney(combined.periods.last30Days.totalCost)} |
+| All time | ${formatInteger(combined.totals.totalTokens)} | ${formatMoney(combined.totals.totalCost)} |
 
 ## Sources
 
@@ -128,8 +138,44 @@ ${providerRows || "| No usage found | 0 | $0.00 | 0 |"}
 | --- | ---: | ---: | ---: |
 ${modelRows || "| No usage found | 0 | $0.00 | 0 |"}
 
-<sub>Updated ${summary.asOfDate}. Public aggregate data from Tokscale ${summary.tokscaleVersion ?? ""}; live graphs served by Tokscale.</sub>
+<sub>Updated ${combined.asOfDate}. Codex and Claude Code aggregate data from Tokscale ${summary.tokscaleVersion ?? ""}; live graphs served by Tokscale.${costDisclosure}</sub>
 `;
+}
+
+export function combineUsageSummaries(summary, deepseekSummary = null) {
+  const asOfDate = [summary.asOfDate, deepseekSummary?.asOfDate].filter(Boolean).sort().at(-1);
+  let periods = Object.fromEntries(
+    ["today", "thisWeek", "thisMonth", "last7Days", "last30Days"].map((period) => [
+      period,
+      combinePeriod(summary.periods[period], deepseekSummary?.periods?.[period])
+    ])
+  );
+  const providers = Object.fromEntries(
+    Object.entries(summary.providers).map(([key, value]) => [key, { ...value }])
+  );
+  const models = Object.fromEntries(
+    Object.entries(summary.models).map(([key, value]) => [key, { ...value }])
+  );
+  const includesDeepSeek = Boolean(deepseekSummary);
+
+  if (includesDeepSeek) {
+    providers["DeepSeek Desktop"] = deepSeekBucketForReadme(deepseekSummary.totals);
+    for (const [model, stats] of Object.entries(deepseekSummary.models ?? {})) {
+      models[model] = deepSeekBucketForReadme(stats);
+    }
+    if (Array.isArray(summary.daily) && Array.isArray(deepseekSummary.daily)) {
+      periods = buildCombinedPeriods(summary.daily, deepseekSummary.daily, asOfDate);
+    }
+  }
+
+  return {
+    includesDeepSeek,
+    asOfDate,
+    totals: combinePeriod(summary.totals, deepseekSummary?.totals),
+    periods,
+    providers,
+    models
+  };
 }
 
 export function renderTokscaleCard({ summary, profileName, handle, rankText = "Submit for rank" }) {
@@ -313,6 +359,75 @@ function sumTokenObject(tokens) {
   return (tokens.input ?? 0) + (tokens.output ?? 0) + (tokens.cacheRead ?? 0) + (tokens.cacheWrite ?? 0);
 }
 
+function combinePeriod(tokscale = {}, deepseek = {}) {
+  return {
+    totalTokens: (tokscale.totalTokens ?? 0) + (deepseek.totalTokens ?? 0),
+    totalCost: tokscale.totalCost ?? 0,
+    messages: (tokscale.messages ?? 0) + (deepseek.requests ?? deepseek.messages ?? 0),
+    inputTokens: (tokscale.inputTokens ?? 0) + (deepseek.inputTokens ?? 0),
+    outputTokens: (tokscale.outputTokens ?? 0) + (deepseek.outputTokens ?? 0),
+    cacheReadTokens: (tokscale.cacheReadTokens ?? 0) + (deepseek.cacheReadTokens ?? 0),
+    cacheWriteTokens: (tokscale.cacheWriteTokens ?? 0) + (deepseek.cacheWriteTokens ?? 0),
+    reasoningTokens: (tokscale.reasoningTokens ?? 0) + (deepseek.reasoningTokens ?? 0)
+  };
+}
+
+function deepSeekBucketForReadme(stats = {}) {
+  return {
+    totalTokens: stats.totalTokens ?? 0,
+    totalCost: null,
+    messages: stats.requests ?? 0,
+    inputTokens: stats.inputTokens ?? 0,
+    outputTokens: stats.outputTokens ?? 0,
+    cacheReadTokens: stats.cacheReadTokens ?? 0,
+    cacheWriteTokens: stats.cacheWriteTokens ?? 0,
+    reasoningTokens: stats.reasoningTokens ?? 0
+  };
+}
+
+function buildCombinedPeriods(tokscaleDaily, deepseekDaily, asOfDate) {
+  const daily = new Map();
+  for (const day of tokscaleDaily) {
+    daily.set(day.date, combinePeriod(day));
+  }
+  for (const day of deepseekDaily) {
+    daily.set(day.date, combinePeriod(daily.get(day.date), day));
+  }
+
+  const sumRange = (startDate) => {
+    const bucket = combinePeriod();
+    for (const [date, day] of daily) {
+      if (date >= startDate && date <= asOfDate) {
+        mergeCombinedBucket(bucket, day);
+      }
+    }
+    return bucket;
+  };
+
+  return {
+    today: sumRange(asOfDate),
+    thisWeek: sumRange(weekStartMonday(asOfDate)),
+    thisMonth: sumRange(`${asOfDate.slice(0, 7)}-01`),
+    last7Days: sumRange(addDays(asOfDate, -6)),
+    last30Days: sumRange(addDays(asOfDate, -29))
+  };
+}
+
+function mergeCombinedBucket(target, source) {
+  for (const key of [
+    "totalTokens",
+    "totalCost",
+    "messages",
+    "inputTokens",
+    "outputTokens",
+    "cacheReadTokens",
+    "cacheWriteTokens",
+    "reasoningTokens"
+  ]) {
+    target[key] += source[key] ?? 0;
+  }
+}
+
 function labelClient(client) {
   if (client === "codex") {
     return "Codex";
@@ -359,6 +474,10 @@ function formatMoney(value) {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2
   })}`;
+}
+
+function formatOptionalMoney(value) {
+  return value === null || value === undefined ? "—" : formatMoney(value);
 }
 
 function formatMoneyCompact(value) {
