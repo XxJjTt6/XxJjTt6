@@ -33,18 +33,18 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
 
 | Window | Tokens | Known cost |
 | --- | ---: | ---: |
-| Today | 0 | $0.00 |
-| This week | 916,004,721 | $624.16 |
-| This month | 1,579,421,153 | $1,297.14 |
-| Last 7 days | 931,890,632 | $637.90 |
-| Last 30 days | 6,040,983,333 | $4,984.75 |
-| All time | 22,028,555,314 | $20,167.10 |
+| Today | 33,091,257 | $22.47 |
+| This week | 949,095,978 | $646.63 |
+| This month | 1,612,512,410 | $1,319.62 |
+| Last 7 days | 964,981,889 | $660.37 |
+| Last 30 days | 6,074,074,590 | $5,007.23 |
+| All time | 22,061,646,571 | $20,189.57 |
 
 ## Sources
 
 | Source | Tokens | Cost | Messages |
 | --- | ---: | ---: | ---: |
-| Codex | 17,959,186,187 | $15,834.75 | 125,434 |
+| Codex | 17,992,258,474 | $15,857.22 | 125,596 |
 | Claude Code | 3,961,270,270 | $4,332.35 | 22,978 |
 | DeepSeek Desktop | 89,206,539 | — | 597 |
 
@@ -53,7 +53,7 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
 | Model | Tokens | Cost | Messages |
 | --- | ---: | ---: | ---: |
 | gpt-5.5 | 8,813,080,292 | $8,375.99 | 67,930 |
-| gpt-5.6-sol | 8,638,388,780 | $7,146.47 | 52,890 |
+| gpt-5.6-sol | 8,671,480,037 | $7,168.94 | 53,052 |
 | claude-opus-4-8 | 3,074,580,747 | $2,848.57 | 19,369 |
 | claude-fable-5 | 858,469,301 | $1,475.99 | 2,788 |
 | gpt-5.4 | 495,644,618 | $295.88 | 4,165 |
