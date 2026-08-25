@@ -1,11 +1,12 @@
 # XxJjTt6 GitHub Profile Setup
 
-这是一套可直接放进 `XxJjTt6/XxJjTt6` 个人主页仓库的 Tokscale 风格 README 方案。
-主页顶部使用 Tokscale 官方动态 2D / 3D Embed，而不是仓库里的本地静态 SVG。
+这是一套可直接放进 `XxJjTt6/XxJjTt6` 个人主页仓库的求职向、证据优先 README 方案。
+主页先展示岗位定位、代表项目、可验证结果和能力映射；Tokscale 官方动态 2D / 3D Embed 收纳在折叠区，不再遮住核心项目。
 
 ## 文件用途
 
-- `README.md`：GitHub 个人主页正文，顶部引用 Tokscale 官方动态 2D / 3D 热力图 Embed；2D 卡片使用 compact 数字格式，并且所有点击链接都跳到 `https://tokscale.ai/u/XxJjTt6`。
+- `README.md`：GitHub 个人主页正文，由项目叙事、公开证据和动态 AI 工程活动组成。
+- `PROFILE_EVIDENCE.md`：主页强主张对应的公开证据、口径和边界。
 - `assets/tokscale-ai-usage-card.svg`：旧版本地预览卡片，README 不再引用。
 - `assets/tokscale-ai-token-heatmap.svg`：旧版本地热力图，README 不再引用；真实交互热力图请打开 Tokscale 公开页。
 - `data/tokscale-graph.json`：Tokscale 原始聚合图数据，只包含日期、client、model、token、cost、messages 等聚合信息。
@@ -26,6 +27,7 @@ git clone git@github.com:XxJjTt6/XxJjTt6.git
 
 ```bash
 cp README.md /path/to/XxJjTt6/
+cp PROFILE_EVIDENCE.md /path/to/XxJjTt6/
 cp package.json /path/to/XxJjTt6/
 cp -R assets data scripts tests /path/to/XxJjTt6/
 ```
@@ -40,7 +42,7 @@ npm run generate -- --graph data/tokscale-graph.json --rank "#453"
 4. 提交并推送：
 
 ```bash
-git add README.md package.json assets data scripts tests
+git add README.md PROFILE_EVIDENCE.md package.json assets data scripts tests
 git commit -m "feat: add AI usage profile"
 git push
 ```
@@ -61,9 +63,9 @@ npm run refresh:public
 
 ## 真实动态机制
 
-- README 顶部 2D / 3D 热力图使用 Tokscale 官方动态接口 `tokscale.ai/api/embed/...`，读取 Tokscale 公开页数据，呈现形式与 Tokscale 官方页面一致；2D 卡片通过 `tokens=compact&cost=compact` 显示 `13B` / `$12.2K` 这类短数字。
-- GitHub README 不能运行 Tokscale 页面里的交互式 JavaScript，也不能把 SVG 内部格点变成 README 里的逐格悬浮层，因此 README 内展示的是 Tokscale 官方动态图片；需要逐日 token 悬浮明细时，点击顶部热力图进入 Tokscale 公开页。
-- GitHub Actions 每小时从 Tokscale 公开页拉取一次真实聚合数据，用于刷新 README 下方的每日/每周/每月表格。
+- README 折叠区的 2D / 3D 热力图使用 Tokscale 官方动态接口 `tokscale.ai/api/embed/...`；2D 卡片通过 `tokens=compact&cost=compact` 显示短数字。
+- GitHub README 不能运行 Tokscale 页面的交互式 JavaScript，因此逐日 token 悬浮明细通过图表链接跳转到 Tokscale 公开页查看。
+- GitHub Actions 每小时从 Tokscale 公开页拉取聚合数据，只刷新 README 的 AI 工程活动区；岗位定位和项目证据由生成器中的固定模板保留。
 - 本机 Codex / Claude Code 的最新用量需要先提交到 Tokscale，GitHub Actions 才能拿到公开数据。
 
 ## Tokscale 公开排名
