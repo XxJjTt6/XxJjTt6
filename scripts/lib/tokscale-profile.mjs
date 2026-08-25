@@ -109,12 +109,13 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
 
 <p>
 <strong>Beijing Jiaotong University</strong> · <code>Artificial Intelligence, M.S.</code> · <code>2025 - 2028</code><br/>
-<strong>Jinling Institute of Technology</strong> · <code>Computer Science, B.S.</code> · <code>2020 - 2024</code>
+<strong>Admission Rank 1</strong> · Admitted with the highest overall score in the program
 </p>
 
 #### Internship Experience
 
 <p>
+<strong>Bilibili</strong> · <code>Test Development Intern · Agent Evaluation</code> · <code>2026.08 - Present</code><br/>
 <strong>StarVC</strong> · <code>Agent Developer Intern</code> · <code>2026.03 - 2026.06</code>
 </p>
 
@@ -125,7 +126,8 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
 
 - **PAT Advanced Level** · Full score · **Rank 1 / 591**
 - **National Algorithm Design and Programming Challenge** · Gold Award
-- **Lanqiao Cup C / C++** · Jiangsu First Prize · National Finals Third Prize
+- **Meituan AI Hackathon 2026** · Finalist · **Top 12 / 500+ teams**
+- **21st China Graduate Electronics Design Contest** · Enterprise Challenge · **Final Leaderboard 3rd**
 - **ICPC Jinan & Xi'an Regional** · Honorable Mention
 
 #### Technical Focus

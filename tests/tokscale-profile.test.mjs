@@ -195,8 +195,15 @@ test("renderTokscaleReadme combines a compact personal introduction with fully v
   assert.match(readme, /https:\/\/tokscale\.ai\/api\/embed\/XxJjTt6\/svg\?theme=light&view=3d&compact=1&color=blue/);
   assert.match(readme, /Hi%2C\+I'm\+Saber\.\+AI\+Agent\+Engineer/);
   assert.match(readme, /Beijing Jiaotong University/);
+  assert.match(readme, /Admission Rank 1/);
+  assert.match(readme, /Bilibili/);
   assert.match(readme, /StarVC/);
   assert.match(readme, /Rank 1 \/ 591/);
+  assert.match(readme, /Meituan AI Hackathon 2026/);
+  assert.match(readme, /Top 12 \/ 500\+ teams/);
+  assert.match(readme, /21st China Graduate Electronics Design Contest/);
+  assert.match(readme, /Final Leaderboard 3rd/);
+  assert.doesNotMatch(readme, /Jinling Institute of Technology|Lanqiao Cup/);
   assert.match(readme, /Open live daily token hover details on Tokscale/);
   assert.match(readme, /## AI Usage/);
   assert.match(readme, /## Sources/);
