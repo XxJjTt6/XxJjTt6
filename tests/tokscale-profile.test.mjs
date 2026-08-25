@@ -170,7 +170,7 @@ test("renderTokscaleCard keeps metric values inside the inner card border", () =
   assert.ok(separatorBottoms.every((y) => y <= cardBottom), "metric dividers should not cross the inner card border");
 });
 
-test("renderTokscaleReadme keeps the evidence-first profile narrative ahead of live Tokscale telemetry", () => {
+test("renderTokscaleReadme combines a compact personal introduction with fully visible Tokscale telemetry", () => {
   const bucket = { totalTokens: 0, totalCost: 0 };
   const readme = renderTokscaleReadme({
     profileName: "XxJjTt6",
@@ -193,11 +193,16 @@ test("renderTokscaleReadme keeps the evidence-first profile narrative ahead of l
 
   assert.match(readme, /https:\/\/tokscale\.ai\/api\/embed\/XxJjTt6\/svg\?theme=light&graph=1&color=blue&tokens=compact&cost=compact/);
   assert.match(readme, /https:\/\/tokscale\.ai\/api\/embed\/XxJjTt6\/svg\?theme=light&view=3d&compact=1&color=blue/);
-  assert.match(readme, /AutoSolver · 10\/10 合法提交/);
-  assert.match(readme, /官方记录：平均分 706\.197/);
-  assert.match(readme, /13 份发布知识文档、48 条公开来源、25 项后端测试通过/);
-  assert.match(readme, /这是工具使用强度，不等同于代码质量或项目成果/);
-  assert.match(readme, /在 Tokscale 查看逐日明细/);
+  assert.match(readme, /Hi%2C\+I'm\+Saber\.\+AI\+Agent\+Engineer/);
+  assert.match(readme, /Beijing Jiaotong University/);
+  assert.match(readme, /StarVC/);
+  assert.match(readme, /Rank 1 \/ 591/);
+  assert.match(readme, /Open live daily token hover details on Tokscale/);
+  assert.match(readme, /## AI Usage/);
+  assert.match(readme, /## Sources/);
+  assert.match(readme, /## Models/);
+  assert.doesNotMatch(readme, /<details>/);
+  assert.doesNotMatch(readme, /代表项目|AutoSolver · 受控代码生成/);
   assert.doesNotMatch(readme, /href="[^"]*\/svg/);
   assert.doesNotMatch(readme, /graph=1&color=blue"/);
   assert.doesNotMatch(readme, /https:\/\/shieldcn\.dev\/tokscale\//);
