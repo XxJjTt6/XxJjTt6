@@ -197,12 +197,15 @@ test("renderTokscaleReadme combines a compact personal introduction with fully v
   assert.match(readme, /Beijing Jiaotong University/);
   assert.match(readme, /Admission Rank 1/);
   assert.match(readme, /Bilibili/);
+  assert.match(readme, /2026\.05 - 2026\.08/);
   assert.match(readme, /StarVC/);
+  assert.match(readme, /2026\.02 - 2026\.04/);
   assert.match(readme, /Rank 1 \/ 591/);
   assert.match(readme, /Meituan AI Hackathon 2026/);
   assert.match(readme, /Top 12 \/ 500\+ teams/);
   assert.match(readme, /21st China Graduate Electronics Design Contest/);
   assert.match(readme, /Final Leaderboard 3rd/);
+  assert.match(readme, /National Second Prize/);
   assert.doesNotMatch(readme, /Jinling Institute of Technology|Lanqiao Cup/);
   assert.match(readme, /Open live daily token hover details on Tokscale/);
   assert.match(readme, /## AI Usage/);

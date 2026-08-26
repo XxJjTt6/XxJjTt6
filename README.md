@@ -28,8 +28,8 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
 #### Internship Experience
 
 <p>
-<strong>Bilibili</strong> · <code>Test Development Intern · Agent Evaluation</code> · <code>2026.08 - Present</code><br/>
-<strong>StarVC</strong> · <code>Agent Developer Intern</code> · <code>2026.03 - 2026.06</code>
+<strong>Bilibili</strong> · <code>Test Development Intern · Agent Evaluation</code> · <code>2026.05 - 2026.08</code><br/>
+<strong>StarVC</strong> · <code>Agent Developer Intern</code> · <code>2026.02 - 2026.04</code>
 </p>
 
 </td>
@@ -40,7 +40,7 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
 - **PAT Advanced Level** · Full score · **Rank 1 / 591**
 - **National Algorithm Design and Programming Challenge** · Gold Award
 - **Meituan AI Hackathon 2026** · Finalist · **Top 12 / 500+ teams**
-- **21st China Graduate Electronics Design Contest** · Enterprise Challenge · **Final Leaderboard 3rd**
+- **21st China Graduate Electronics Design Contest** · Enterprise Challenge · **Final Leaderboard 3rd · National Second Prize**
 - **ICPC Jinan & Xi'an Regional** · Honorable Mention
 
 #### Technical Focus
