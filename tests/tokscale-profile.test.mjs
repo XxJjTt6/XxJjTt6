@@ -194,6 +194,8 @@ test("renderTokscaleReadme combines a compact personal introduction with fully v
   assert.match(readme, /https:\/\/tokscale\.ai\/api\/embed\/XxJjTt6\/svg\?theme=light&graph=1&color=blue&tokens=compact&cost=compact/);
   assert.doesNotMatch(readme, /view=3d|3D usage graph|2D\/3D/);
   assert.match(readme, /Hi%2C\+I'm\+Saber\.\+AI\+Agent\+Engineer/);
+  assert.match(readme, /LLM-powered Agent Development and Agentic Application Engineering/);
+  assert.match(readme, /transition into AI Infrastructure/);
   assert.match(readme, /Beijing Jiaotong University/);
   assert.match(readme, /Admission Rank 1/);
   assert.match(readme, /Bilibili/);
@@ -206,6 +208,7 @@ test("renderTokscaleReadme combines a compact personal introduction with fully v
   assert.match(readme, /21st China Graduate Electronics Design Contest/);
   assert.match(readme, /Final Leaderboard 3rd/);
   assert.match(readme, /National Second Prize/);
+  assert.match(readme, /Exploring AI Infrastructure & Agent Runtime Engineering/);
   assert.doesNotMatch(readme, /Jinling Institute of Technology|Lanqiao Cup/);
   assert.match(readme, /Open live daily token hover details on Tokscale/);
   assert.match(readme, /## AI Usage/);

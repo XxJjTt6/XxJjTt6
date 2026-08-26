@@ -7,7 +7,7 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Cascadia+Code&weight=700&size=18&color=1769E0&center=true&vCenter=true&pause=100000&lines=Hi%2C+I'm+Saber.+AI+Agent+Engineer" alt="Hi, I'm Saber. AI Agent Engineer">
-  <p><strong>I'm currently focused on Agentic Infra, Agent Evaluation and Multimodal RAG.</strong></p>
+  <p><strong>I'm currently focused on LLM-powered Agent Development and Agentic Application Engineering, while exploring a transition into AI Infrastructure.</strong></p>
   <p>
     <code>M.S. in Artificial Intelligence · Beijing Jiaotong University</code>
     <code>Based in Beijing, China</code>
@@ -45,8 +45,9 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
 
 #### Technical Focus
 
-- Agentic Infra and Agent Evaluation
-- Multimodal RAG and Hybrid Retrieval
+- LLM-powered Agent Development & Agentic Application Engineering
+- Exploring AI Infrastructure & Agent Runtime Engineering
+- Multimodal RAG & Hybrid Retrieval
 - Python · FastAPI · Java · Spring Boot
 
 </td>
