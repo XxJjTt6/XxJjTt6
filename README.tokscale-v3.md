@@ -63,17 +63,11 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
   </a>
 </p>
 
-<p>
-  <a href="https://tokscale.ai/u/XxJjTt6">
-    <img src="https://tokscale.ai/api/embed/XxJjTt6/svg?theme=light&view=3d&compact=1&color=blue" alt="XxJjTt6 live Tokscale 3D usage graph" width="680">
-  </a>
-</p>
-
 <p><a href="https://tokscale.ai/u/XxJjTt6">Open live daily token hover details on Tokscale</a></p>
 
 </div>
 
-> The live 2D/3D graphs above are official Tokscale embeds and currently cover Codex and Claude Code. The tables below also include provider-reported DeepSeek Desktop usage from the [auditable snapshot](./data/deepseek-desktop-usage.json).
+> The live 2D graph above is an official Tokscale embed and currently covers Codex and Claude Code. The tables below also include provider-reported DeepSeek Desktop usage from the [auditable snapshot](./data/deepseek-desktop-usage.json).
 
 | Window | Tokens | Known cost |
 | --- | ---: | ---: |

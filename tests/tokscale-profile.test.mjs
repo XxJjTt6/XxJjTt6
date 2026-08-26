@@ -192,7 +192,7 @@ test("renderTokscaleReadme combines a compact personal introduction with fully v
   });
 
   assert.match(readme, /https:\/\/tokscale\.ai\/api\/embed\/XxJjTt6\/svg\?theme=light&graph=1&color=blue&tokens=compact&cost=compact/);
-  assert.match(readme, /https:\/\/tokscale\.ai\/api\/embed\/XxJjTt6\/svg\?theme=light&view=3d&compact=1&color=blue/);
+  assert.doesNotMatch(readme, /view=3d|3D usage graph|2D\/3D/);
   assert.match(readme, /Hi%2C\+I'm\+Saber\.\+AI\+Agent\+Engineer/);
   assert.match(readme, /Beijing Jiaotong University/);
   assert.match(readme, /Admission Rank 1/);
@@ -261,7 +261,7 @@ test("renderTokscaleReadme transparently combines provider-reported DeepSeek Des
   assert.match(readme, /\| DeepSeek Desktop \| 425 \| — \| 2 \|/);
   assert.match(readme, /\| deepseek-v4-pro \| 425 \| — \| 2 \|/);
   assert.match(readme, /\[auditable snapshot\]\(\.\/data\/deepseek-desktop-usage\.json\)/);
-  assert.match(readme, /currently cover Codex and Claude Code/);
+  assert.match(readme, /live 2D graph above is an official Tokscale embed and currently covers Codex and Claude Code/);
   assert.match(readme, /known cost excludes DeepSeek Desktop/);
   assert.doesNotMatch(readme, /DeepSeek Desktop.*Tokscale embed/);
 });

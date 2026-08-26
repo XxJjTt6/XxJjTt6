@@ -1,7 +1,7 @@
 # XxJjTt6 GitHub Profile Setup
 
 这是一套可直接放进 `XxJjTt6/XxJjTt6` 个人主页仓库的个人介绍 README 方案。
-主页采用 LofiSu 风格的紧凑个人信息、教育/实习、获奖与技术方向双栏结构，并完整保留可见的 Tokscale 动态 2D / 3D Embed 和统计表格。
+主页采用 LofiSu 风格的紧凑个人信息、教育/实习、获奖与技术方向双栏结构，并保留可见的 Tokscale 2D Embed 和统计表格。
 
 ## 文件用途
 
@@ -61,7 +61,7 @@ npm run refresh:public
 
 ## 真实动态机制
 
-- README 中直接可见的 2D / 3D 热力图使用 Tokscale 官方动态接口 `tokscale.ai/api/embed/...`；2D 卡片通过 `tokens=compact&cost=compact` 显示短数字。
+- README 中直接可见的 2D 热力图使用 Tokscale 官方动态接口 `tokscale.ai/api/embed/...`；通过 `tokens=compact&cost=compact` 显示短数字。
 - GitHub README 不能运行 Tokscale 页面的交互式 JavaScript，因此逐日 token 悬浮明细通过图表链接跳转到 Tokscale 公开页查看。
 - GitHub Actions 每小时从 Tokscale 公开页拉取聚合数据并重新生成 README；个人介绍由生成器中的固定模板保留。
 - 本机 Codex / Claude Code 的最新用量需要先提交到 Tokscale，GitHub Actions 才能拿到公开数据。

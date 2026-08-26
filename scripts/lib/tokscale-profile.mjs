@@ -66,7 +66,6 @@ export function renderTokscaleReadme({ summary, profileName, handle, deepseekSum
   const username = handle.replace(/^@/, "");
   const profileUrl = `https://tokscale.ai/u/${encodeURIComponent(username)}`;
   const heatmap2dUrl = `https://tokscale.ai/api/embed/${encodeURIComponent(username)}/svg?theme=light&graph=1&color=blue&tokens=compact&cost=compact`;
-  const heatmap3dUrl = `https://tokscale.ai/api/embed/${encodeURIComponent(username)}/svg?theme=light&view=3d&compact=1&color=blue`;
   const combined = combineUsageSummaries(summary, deepseekSummary);
   const providerRows = Object.entries(combined.providers)
     .sort((a, b) => b[1].totalTokens - a[1].totalTokens)
@@ -78,7 +77,7 @@ export function renderTokscaleReadme({ summary, profileName, handle, deepseekSum
     .map(([model, stats]) => `| ${model} | ${formatInteger(stats.totalTokens)} | ${formatOptionalMoney(stats.totalCost)} | ${formatInteger(stats.messages)} |`)
     .join("\n");
   const deepseekDisclosure = combined.includesDeepSeek
-    ? `\n> The live 2D/3D graphs above are official Tokscale embeds and currently cover Codex and Claude Code. The tables below also include provider-reported DeepSeek Desktop usage from the [auditable snapshot](./data/deepseek-desktop-usage.json).`
+    ? `\n> The live 2D graph above is an official Tokscale embed and currently covers Codex and Claude Code. The tables below also include provider-reported DeepSeek Desktop usage from the [auditable snapshot](./data/deepseek-desktop-usage.json).`
     : "";
   const costHeader = combined.includesDeepSeek ? "Known cost" : "Cost";
   const costDisclosure = combined.includesDeepSeek
@@ -147,12 +146,6 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
 <p>
   <a href="${profileUrl}">
     <img src="${heatmap2dUrl}" alt="${profileName} live Tokscale 2D usage graph" width="680">
-  </a>
-</p>
-
-<p>
-  <a href="${profileUrl}">
-    <img src="${heatmap3dUrl}" alt="${profileName} live Tokscale 3D usage graph" width="680">
   </a>
 </p>
 
