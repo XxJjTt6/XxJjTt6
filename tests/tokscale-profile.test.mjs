@@ -209,8 +209,8 @@ test("renderTokscaleReadme combines a compact personal introduction with fully v
   assert.doesNotMatch(readme, /Jinling Institute of Technology|Lanqiao Cup/);
   assert.match(readme, /Open live daily token hover details on Tokscale/);
   assert.match(readme, /## AI Usage/);
-  assert.match(readme, /## Sources/);
-  assert.match(readme, /## Models/);
+  assert.doesNotMatch(readme, /## Sources/);
+  assert.doesNotMatch(readme, /## Models/);
   assert.doesNotMatch(readme, /<details>/);
   assert.doesNotMatch(readme, /代表项目|AutoSolver · 受控代码生成/);
   assert.doesNotMatch(readme, /href="[^"]*\/svg/);
@@ -261,10 +261,11 @@ test("renderTokscaleReadme transparently combines provider-reported DeepSeek Des
 
   assert.match(readme, /\| Today \| 125 \| \$1\.00 \|/);
   assert.match(readme, /\| All time \| 1,425 \| \$10\.00 \|/);
-  assert.match(readme, /\| DeepSeek Desktop \| 425 \| — \| 2 \|/);
-  assert.match(readme, /\| deepseek-v4-pro \| 425 \| — \| 2 \|/);
+  assert.doesNotMatch(readme, /\| DeepSeek Desktop \| 425 \| — \| 2 \|/);
+  assert.doesNotMatch(readme, /\| deepseek-v4-pro \| 425 \| — \| 2 \|/);
   assert.match(readme, /\[auditable snapshot\]\(\.\/data\/deepseek-desktop-usage\.json\)/);
   assert.match(readme, /live 2D graph above is an official Tokscale embed and currently covers Codex and Claude Code/);
+  assert.match(readme, /usage totals below also include provider-reported DeepSeek Desktop data/);
   assert.match(readme, /known cost excludes DeepSeek Desktop/);
   assert.doesNotMatch(readme, /DeepSeek Desktop.*Tokscale embed/);
 });

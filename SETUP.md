@@ -1,7 +1,7 @@
 # XxJjTt6 GitHub Profile Setup
 
 这是一套可直接放进 `XxJjTt6/XxJjTt6` 个人主页仓库的个人介绍 README 方案。
-主页采用 LofiSu 风格的紧凑个人信息、教育/实习、获奖与技术方向双栏结构，并保留可见的 Tokscale 2D Embed 和统计表格。
+主页采用 LofiSu 风格的紧凑个人信息、教育/实习、获奖与技术方向双栏结构，并保留可见的 Tokscale 2D Embed 和用量汇总表。
 
 ## 文件用途
 

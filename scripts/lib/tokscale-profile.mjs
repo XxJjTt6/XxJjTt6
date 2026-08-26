@@ -67,17 +67,8 @@ export function renderTokscaleReadme({ summary, profileName, handle, deepseekSum
   const profileUrl = `https://tokscale.ai/u/${encodeURIComponent(username)}`;
   const heatmap2dUrl = `https://tokscale.ai/api/embed/${encodeURIComponent(username)}/svg?theme=light&graph=1&color=blue&tokens=compact&cost=compact`;
   const combined = combineUsageSummaries(summary, deepseekSummary);
-  const providerRows = Object.entries(combined.providers)
-    .sort((a, b) => b[1].totalTokens - a[1].totalTokens)
-    .map(([provider, stats]) => `| ${provider} | ${formatInteger(stats.totalTokens)} | ${formatOptionalMoney(stats.totalCost)} | ${formatInteger(stats.messages)} |`)
-    .join("\n");
-  const modelRows = Object.entries(combined.models)
-    .sort((a, b) => b[1].totalTokens - a[1].totalTokens)
-    .slice(0, 12)
-    .map(([model, stats]) => `| ${model} | ${formatInteger(stats.totalTokens)} | ${formatOptionalMoney(stats.totalCost)} | ${formatInteger(stats.messages)} |`)
-    .join("\n");
   const deepseekDisclosure = combined.includesDeepSeek
-    ? `\n> The live 2D graph above is an official Tokscale embed and currently covers Codex and Claude Code. The tables below also include provider-reported DeepSeek Desktop usage from the [auditable snapshot](./data/deepseek-desktop-usage.json).`
+    ? `\n> The live 2D graph above is an official Tokscale embed and currently covers Codex and Claude Code. The usage totals below also include provider-reported DeepSeek Desktop data from the [auditable snapshot](./data/deepseek-desktop-usage.json).`
     : "";
   const costHeader = combined.includesDeepSeek ? "Known cost" : "Cost";
   const costDisclosure = combined.includesDeepSeek
@@ -162,18 +153,6 @@ ${deepseekDisclosure}
 | Last 7 days | ${formatInteger(combined.periods.last7Days.totalTokens)} | ${formatMoney(combined.periods.last7Days.totalCost)} |
 | Last 30 days | ${formatInteger(combined.periods.last30Days.totalTokens)} | ${formatMoney(combined.periods.last30Days.totalCost)} |
 | All time | ${formatInteger(combined.totals.totalTokens)} | ${formatMoney(combined.totals.totalCost)} |
-
-## Sources
-
-| Source | Tokens | Cost | Messages |
-| --- | ---: | ---: | ---: |
-${providerRows || "| No usage found | 0 | $0.00 | 0 |"}
-
-## Models
-
-| Model | Tokens | Cost | Messages |
-| --- | ---: | ---: | ---: |
-${modelRows || "| No usage found | 0 | $0.00 | 0 |"}
 
 <sub>Updated ${combined.asOfDate}. Codex and Claude Code aggregate data from Tokscale ${summary.tokscaleVersion ?? ""}; live graphs served by Tokscale.${costDisclosure}</sub>
 `;
