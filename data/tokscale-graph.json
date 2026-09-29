@@ -1,26 +1,26 @@
 {
   "meta": {
-    "generatedAt": "2026-08-22T08:00:58.639Z",
-    "version": "4.13.0",
+    "generatedAt": "2026-09-29T12:38:42.748Z",
+    "version": "4.15.1",
     "source": "https://tokscale.ai/u/XxJjTt6",
     "dateRange": {
       "start": "2026-01-07",
-      "end": "2026-08-22"
+      "end": "2026-09-29"
     }
   },
   "profile": {
     "username": "XxJjTt6",
     "displayName": "Saber",
-    "rank": 702,
-    "rankText": "#702",
-    "updatedAt": "2026-08-22T08:00:58.639Z",
-    "submissionCount": 2872
+    "rank": 666,
+    "rankText": "#666",
+    "updatedAt": "2026-09-29T12:38:42.748Z",
+    "submissionCount": 2873
   },
   "summary": {
-    "totalTokens": 22002456407,
-    "totalCost": 20217.7111,
-    "totalDays": 162,
-    "activeDays": 162
+    "totalTokens": 24289357902,
+    "totalCost": 21879.8239,
+    "totalDays": 197,
+    "activeDays": 197
   },
   "contributions": [
     {
@@ -1359,17 +1359,17 @@
       "date": "2026-04-08",
       "timestampMs": null,
       "totals": {
-        "tokens": 4173328,
-        "cost": 4.391,
+        "tokens": 4449362,
+        "cost": 4.384,
         "messages": 0
       },
       "intensity": 1,
       "tokenBreakdown": {
-        "input": 885543,
-        "output": 63992,
-        "cacheRead": 3195904,
+        "input": 986104,
+        "output": 42504,
+        "cacheRead": 3391872,
         "cacheWrite": 0,
-        "reasoning": 27889
+        "reasoning": 28882
       },
       "clients": [
         {
@@ -1377,25 +1377,25 @@
           "modelId": "",
           "models": {
             "gpt-5.4": {
-              "cost": 4.391048499999998,
-              "input": 885543,
-              "output": 63992,
-              "tokens": 4173328,
-              "messages": 82,
-              "cacheRead": 3195904,
-              "reasoning": 27889,
+              "cost": 4.384018000000002,
+              "input": 986104,
+              "output": 42504,
+              "tokens": 4449362,
+              "messages": 91,
+              "cacheRead": 3391872,
+              "reasoning": 28882,
               "cacheWrite": 0
             }
           },
           "tokens": {
-            "input": 885543,
-            "output": 63992,
-            "cacheRead": 3195904,
+            "input": 986104,
+            "output": 42504,
+            "cacheRead": 3391872,
             "cacheWrite": 0,
-            "reasoning": 27889
+            "reasoning": 28882
           },
-          "cost": 4.391048499999998,
-          "messages": 82
+          "cost": 4.384018000000002,
+          "messages": 91
         }
       ]
     },
@@ -2367,53 +2367,43 @@
       "date": "2026-04-30",
       "timestampMs": null,
       "totals": {
-        "tokens": 165245829,
-        "cost": 155.6799,
+        "tokens": 512405123,
+        "cost": 449.9727,
         "messages": 0
       },
-      "intensity": 1,
+      "intensity": 2,
       "tokenBreakdown": {
-        "input": 9784094,
-        "output": 701993,
-        "cacheRead": 154475904,
+        "input": 28814321,
+        "output": 1151520,
+        "cacheRead": 481417728,
         "cacheWrite": 0,
-        "reasoning": 283838
+        "reasoning": 1021554
       },
       "clients": [
         {
           "client": "codex",
           "modelId": "",
           "models": {
-            "gpt-5.4": {
-              "cost": 0.0534405,
-              "input": 18403,
-              "output": 303,
-              "tokens": 21290,
-              "messages": 1,
-              "cacheRead": 2432,
-              "reasoning": 152,
-              "cacheWrite": 0
-            },
             "gpt-5.5": {
-              "cost": 155.62647100000004,
-              "input": 9765691,
-              "output": 701690,
-              "tokens": 165224539,
-              "messages": 1298,
-              "cacheRead": 154473472,
-              "reasoning": 283686,
+              "cost": 449.97268900000086,
+              "input": 28814321,
+              "output": 1151520,
+              "tokens": 512405123,
+              "messages": 3767,
+              "cacheRead": 481417728,
+              "reasoning": 1021554,
               "cacheWrite": 0
             }
           },
           "tokens": {
-            "input": 9784094,
-            "output": 701993,
-            "cacheRead": 154475904,
+            "input": 28814321,
+            "output": 1151520,
+            "cacheRead": 481417728,
             "cacheWrite": 0,
-            "reasoning": 283838
+            "reasoning": 1021554
           },
-          "cost": 155.67991150000003,
-          "messages": 1299
+          "cost": 449.97268900000086,
+          "messages": 3767
         }
       ]
     },
@@ -2837,17 +2827,17 @@
       "date": "2026-05-10",
       "timestampMs": null,
       "totals": {
-        "tokens": 65713451,
-        "cost": 75.4072,
+        "tokens": 99296121,
+        "cost": 98.7573,
         "messages": 0
       },
       "intensity": 1,
       "tokenBreakdown": {
-        "input": 7032522,
-        "output": 296788,
-        "cacheRead": 58311296,
+        "input": 8488195,
+        "output": 287976,
+        "cacheRead": 90438016,
         "cacheWrite": 0,
-        "reasoning": 72845
+        "reasoning": 81934
       },
       "clients": [
         {
@@ -2855,25 +2845,25 @@
           "modelId": "",
           "models": {
             "gpt-5.5": {
-              "cost": 75.40724800000001,
-              "input": 7032522,
-              "output": 296788,
-              "tokens": 65713451,
-              "messages": 554,
-              "cacheRead": 58311296,
-              "reasoning": 72845,
+              "cost": 98.75728300000004,
+              "input": 8488195,
+              "output": 287976,
+              "tokens": 99296121,
+              "messages": 773,
+              "cacheRead": 90438016,
+              "reasoning": 81934,
               "cacheWrite": 0
             }
           },
           "tokens": {
-            "input": 7032522,
-            "output": 296788,
-            "cacheRead": 58311296,
+            "input": 8488195,
+            "output": 287976,
+            "cacheRead": 90438016,
             "cacheWrite": 0,
-            "reasoning": 72845
+            "reasoning": 81934
           },
-          "cost": 75.40724800000001,
-          "messages": 554
+          "cost": 98.75728300000004,
+          "messages": 773
         }
       ]
     },
@@ -7494,17 +7484,17 @@
       "date": "2026-07-27",
       "timestampMs": null,
       "totals": {
-        "tokens": 197224756,
-        "cost": 168.3064,
+        "tokens": 199015097,
+        "cost": 160.0204,
         "messages": 0
       },
       "intensity": 1,
       "tokenBreakdown": {
-        "input": 9585420,
-        "output": 637857,
-        "cacheRead": 186832896,
+        "input": 9862681,
+        "output": 472343,
+        "cacheRead": 188499712,
         "cacheWrite": 0,
-        "reasoning": 168583
+        "reasoning": 180361
       },
       "clients": [
         {
@@ -7512,25 +7502,25 @@
           "modelId": "",
           "models": {
             "gpt-5.6-sol": {
-              "cost": 168.30637,
-              "input": 9585420,
-              "output": 637857,
-              "tokens": 197224756,
-              "messages": 1237,
-              "cacheRead": 186832896,
-              "reasoning": 168583,
+              "cost": 160.02040000000025,
+              "input": 9862681,
+              "output": 472343,
+              "tokens": 199015097,
+              "messages": 1126,
+              "cacheRead": 188499712,
+              "reasoning": 180361,
               "cacheWrite": 0
             }
           },
           "tokens": {
-            "input": 9585420,
-            "output": 637857,
-            "cacheRead": 186832896,
+            "input": 9862681,
+            "output": 472343,
+            "cacheRead": 188499712,
             "cacheWrite": 0,
-            "reasoning": 168583
+            "reasoning": 180361
           },
-          "cost": 168.30637,
-          "messages": 1237
+          "cost": 160.02040000000025,
+          "messages": 1126
         }
       ]
     },
@@ -8103,6 +8093,16 @@
           "client": "codex",
           "modelId": "",
           "models": {
+            "gpt-5.5": {
+              "cost": 3.6873050000000003,
+              "input": 453181,
+              "output": 17636,
+              "tokens": 2095921,
+              "messages": 24,
+              "cacheRead": 1622400,
+              "reasoning": 2704,
+              "cacheWrite": 0
+            },
             "gpt-5.6-sol": {
               "cost": 37.058197,
               "input": 2712369,
@@ -8112,16 +8112,6 @@
               "cacheRead": 29704064,
               "reasoning": 28945,
               "cacheWrite": 0
-            },
-            "gpt-5.5": {
-              "tokens": 2095921,
-              "cost": 3.6873050000000003,
-              "input": 453181,
-              "output": 17636,
-              "cacheRead": 1622400,
-              "cacheWrite": 0,
-              "reasoning": 2704,
-              "messages": 24
             }
           },
           "tokens": {
@@ -8140,17 +8130,17 @@
       "date": "2026-08-11",
       "timestampMs": null,
       "totals": {
-        "tokens": 5206068,
-        "cost": 7.4874,
+        "tokens": 28691156,
+        "cost": 22.8283,
         "messages": 0
       },
       "intensity": 1,
       "tokenBreakdown": {
-        "input": 633141,
-        "output": 49853,
-        "cacheRead": 4503936,
+        "input": 1086246,
+        "output": 73487,
+        "cacheRead": 27490048,
         "cacheWrite": 0,
-        "reasoning": 19138
+        "reasoning": 41375
       },
       "clients": [
         {
@@ -8158,25 +8148,25 @@
           "modelId": "",
           "models": {
             "gpt-5.6-sol": {
-              "cost": 7.4874030000000005,
-              "input": 633141,
-              "output": 49853,
-              "tokens": 5206068,
-              "messages": 83,
-              "cacheRead": 4503936,
-              "reasoning": 19138,
+              "cost": 22.828257400000002,
+              "input": 1086246,
+              "output": 73487,
+              "tokens": 28691156,
+              "messages": 210,
+              "cacheRead": 27490048,
+              "reasoning": 41375,
               "cacheWrite": 0
             }
           },
           "tokens": {
-            "input": 633141,
-            "output": 49853,
-            "cacheRead": 4503936,
+            "input": 1086246,
+            "output": 73487,
+            "cacheRead": 27490048,
             "cacheWrite": 0,
-            "reasoning": 19138
+            "reasoning": 41375
           },
-          "cost": 7.4874030000000005,
-          "messages": 83
+          "cost": 22.828257400000002,
+          "messages": 210
         }
       ]
     },
@@ -8448,17 +8438,17 @@
       "date": "2026-08-20",
       "timestampMs": null,
       "totals": {
-        "tokens": 125481429,
-        "cost": 94.5938,
+        "tokens": 579573417,
+        "cost": 329.3632,
         "messages": 0
       },
-      "intensity": 1,
+      "intensity": 2,
       "tokenBreakdown": {
-        "input": 3972484,
-        "output": 365076,
-        "cacheRead": 121040896,
+        "input": 15742169,
+        "output": 1519481,
+        "cacheRead": 561835392,
         "cacheWrite": 0,
-        "reasoning": 102973
+        "reasoning": 476375
       },
       "clients": [
         {
@@ -8466,25 +8456,25 @@
           "modelId": "",
           "models": {
             "gpt-5.6-sol": {
-              "cost": 94.59380999999998,
-              "input": 3972484,
-              "output": 365076,
-              "tokens": 125481429,
-              "messages": 970,
-              "cacheRead": 121040896,
-              "reasoning": 102973,
+              "cost": 329.36317240000074,
+              "input": 15742169,
+              "output": 1519481,
+              "tokens": 579573417,
+              "messages": 4134,
+              "cacheRead": 561835392,
+              "reasoning": 476375,
               "cacheWrite": 0
             }
           },
           "tokens": {
-            "input": 3972484,
-            "output": 365076,
-            "cacheRead": 121040896,
+            "input": 15742169,
+            "output": 1519481,
+            "cacheRead": 561835392,
             "cacheWrite": 0,
-            "reasoning": 102973
+            "reasoning": 476375
           },
-          "cost": 94.59380999999998,
-          "messages": 970
+          "cost": 329.36317240000074,
+          "messages": 4134
         }
       ]
     },
@@ -8536,17 +8526,17 @@
       "date": "2026-08-22",
       "timestampMs": null,
       "totals": {
-        "tokens": 63107632,
-        "cost": 50.6117,
+        "tokens": 87951101,
+        "cost": 62.2488,
         "messages": 0
       },
       "intensity": 1,
       "tokenBreakdown": {
-        "input": 2405667,
-        "output": 189694,
-        "cacheRead": 60458624,
+        "input": 3733844,
+        "output": 192183,
+        "cacheRead": 83939200,
         "cacheWrite": 0,
-        "reasoning": 53647
+        "reasoning": 85874
       },
       "clients": [
         {
@@ -8554,25 +8544,1780 @@
           "modelId": "",
           "models": {
             "gpt-5.6-sol": {
-              "cost": 50.611681999999995,
-              "input": 2405667,
-              "output": 189694,
-              "tokens": 63107632,
-              "messages": 351,
-              "cacheRead": 60458624,
-              "reasoning": 53647,
+              "cost": 62.24879720000001,
+              "input": 3733844,
+              "output": 192183,
+              "tokens": 87951101,
+              "messages": 573,
+              "cacheRead": 83939200,
+              "reasoning": 85874,
               "cacheWrite": 0
             }
           },
           "tokens": {
-            "input": 2405667,
-            "output": 189694,
-            "cacheRead": 60458624,
+            "input": 3733844,
+            "output": 192183,
+            "cacheRead": 83939200,
             "cacheWrite": 0,
-            "reasoning": 53647
+            "reasoning": 85874
           },
-          "cost": 50.611681999999995,
-          "messages": 351
+          "cost": 62.24879720000001,
+          "messages": 573
+        }
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 85040940,
+        "cost": 62.3431,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 3883754,
+        "output": 118175,
+        "cacheRead": 80971520,
+        "cacheWrite": 0,
+        "reasoning": 67491
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.6-sol": {
+              "cost": 62.343092800000036,
+              "input": 3883754,
+              "output": 118175,
+              "tokens": 85040940,
+              "messages": 510,
+              "cacheRead": 80971520,
+              "reasoning": 67491,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 3883754,
+            "output": 118175,
+            "cacheRead": 80971520,
+            "cacheWrite": 0,
+            "reasoning": 67491
+          },
+          "cost": 62.343092800000036,
+          "messages": 510
+        }
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 112082102,
+        "cost": 85.2203,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 4379770,
+        "output": 297312,
+        "cacheRead": 107316480,
+        "cacheWrite": 0,
+        "reasoning": 88540
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.6-sol": {
+              "cost": 85.220298,
+              "input": 4379770,
+              "output": 297312,
+              "tokens": 112082102,
+              "messages": 677,
+              "cacheRead": 107316480,
+              "reasoning": 88540,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 4379770,
+            "output": 297312,
+            "cacheRead": 107316480,
+            "cacheWrite": 0,
+            "reasoning": 88540
+          },
+          "cost": 85.220298,
+          "messages": 677
+        }
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 135291768,
+        "cost": 95.2436,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 6041691,
+        "output": 260995,
+        "cacheRead": 128865408,
+        "cacheWrite": 0,
+        "reasoning": 123674
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.6-sol": {
+              "cost": 95.24359359999984,
+              "input": 6041691,
+              "output": 260995,
+              "tokens": 135291768,
+              "messages": 850,
+              "cacheRead": 128865408,
+              "reasoning": 123674,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 6041691,
+            "output": 260995,
+            "cacheRead": 128865408,
+            "cacheWrite": 0,
+            "reasoning": 123674
+          },
+          "cost": 95.24359359999984,
+          "messages": 850
+        }
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 69766213,
+        "cost": 5.9836,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 5500745,
+        "output": 246591,
+        "cacheRead": 63982991,
+        "cacheWrite": 0,
+        "reasoning": 35886
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.6-sol": {
+              "cost": 2.5999136,
+              "input": 405861,
+              "output": 18998,
+              "tokens": 1622378,
+              "messages": 19,
+              "cacheRead": 1191524,
+              "reasoning": 5995,
+              "cacheWrite": 0
+            },
+            "gpt-5.6-luna": {
+              "cost": 2.0916304999999986,
+              "input": 4377199,
+              "output": 102163,
+              "tokens": 51094896,
+              "messages": 283,
+              "cacheRead": 46585643,
+              "reasoning": 29891,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 4783060,
+            "output": 121161,
+            "cacheRead": 47777167,
+            "cacheWrite": 0,
+            "reasoning": 35886
+          },
+          "cost": 4.691544099999998,
+          "messages": 302
+        },
+        {
+          "client": "claude",
+          "modelId": "",
+          "models": {
+            "deepseek-v4-pro": {
+              "cost": 1.067022968,
+              "input": 343230,
+              "output": 77815,
+              "tokens": 7371317,
+              "messages": 78,
+              "cacheRead": 6950272,
+              "reasoning": 0,
+              "cacheWrite": 0
+            },
+            "deepseek-v4-flash-vision-exp": {
+              "cost": 0.22500781199999995,
+              "input": 374455,
+              "output": 47615,
+              "tokens": 9677622,
+              "messages": 53,
+              "cacheRead": 9255552,
+              "reasoning": 0,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 717685,
+            "output": 125430,
+            "cacheRead": 16205824,
+            "cacheWrite": 0,
+            "reasoning": 0
+          },
+          "cost": 1.29203078,
+          "messages": 131
+        }
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 27742336,
+        "cost": 1.5815,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 708770,
+        "output": 87723,
+        "cacheRead": 26929664,
+        "cacheWrite": 0,
+        "reasoning": 16179
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.6-luna": {
+              "cost": 0.39583287999999983,
+              "input": 488730,
+              "output": 18151,
+              "tokens": 13367604,
+              "messages": 86,
+              "cacheRead": 12844544,
+              "reasoning": 16179,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 488730,
+            "output": 18151,
+            "cacheRead": 12844544,
+            "cacheWrite": 0,
+            "reasoning": 16179
+          },
+          "cost": 0.39583287999999983,
+          "messages": 86
+        },
+        {
+          "client": "claude",
+          "modelId": "",
+          "models": {
+            "deepseek-v4-pro": {
+              "cost": 1.1857032,
+              "input": 220040,
+              "output": 69572,
+              "tokens": 14374732,
+              "messages": 65,
+              "cacheRead": 14085120,
+              "reasoning": 0,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 220040,
+            "output": 69572,
+            "cacheRead": 14085120,
+            "cacheWrite": 0,
+            "reasoning": 0
+          },
+          "cost": 1.1857032,
+          "messages": 65
+        }
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 31416319,
+        "cost": 16.8632,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 2294133,
+        "output": 139912,
+        "cacheRead": 28954880,
+        "cacheWrite": 0,
+        "reasoning": 27394
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.6-sol": {
+              "cost": 16.07715919999999,
+              "input": 1641360,
+              "output": 80001,
+              "tokens": 20379881,
+              "messages": 246,
+              "cacheRead": 18635648,
+              "reasoning": 22872,
+              "cacheWrite": 0
+            },
+            "gpt-5.6-luna": {
+              "cost": 0.22113791999999993,
+              "input": 490702,
+              "output": 5513,
+              "tokens": 6048513,
+              "messages": 25,
+              "cacheRead": 5547776,
+              "reasoning": 4522,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 2132062,
+            "output": 85514,
+            "cacheRead": 24183424,
+            "cacheWrite": 0,
+            "reasoning": 27394
+          },
+          "cost": 16.29829711999999,
+          "messages": 271
+        },
+        {
+          "client": "claude",
+          "modelId": "",
+          "models": {
+            "deepseek-v4-pro": {
+              "cost": 0.541347224,
+              "input": 115515,
+              "output": 47380,
+              "tokens": 4736591,
+              "messages": 50,
+              "cacheRead": 4573696,
+              "reasoning": 0,
+              "cacheWrite": 0
+            },
+            "deepseek-v4-flash-vision-exp": {
+              "cost": 0.023574959999999996,
+              "input": 46556,
+              "output": 7018,
+              "tokens": 251334,
+              "messages": 6,
+              "cacheRead": 197760,
+              "reasoning": 0,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 162071,
+            "output": 54398,
+            "cacheRead": 4771456,
+            "cacheWrite": 0,
+            "reasoning": 0
+          },
+          "cost": 0.564922184,
+          "messages": 56
+        }
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 3011291,
+        "cost": 2.2819,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 450249,
+        "output": 17306,
+        "cacheRead": 2538624,
+        "cacheWrite": 0,
+        "reasoning": 5112
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.6-sol": {
+              "cost": 2.02174,
+              "input": 322925,
+              "output": 10846,
+              "tokens": 1366083,
+              "messages": 23,
+              "cacheRead": 1027200,
+              "reasoning": 5112,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 322925,
+            "output": 10846,
+            "cacheRead": 1027200,
+            "cacheWrite": 0,
+            "reasoning": 5112
+          },
+          "cost": 2.02174,
+          "messages": 23
+        },
+        {
+          "client": "claude",
+          "modelId": "",
+          "models": {
+            "deepseek-v4-pro": {
+              "cost": 0.260151936,
+              "input": 127324,
+              "output": 6460,
+              "tokens": 1645208,
+              "messages": 11,
+              "cacheRead": 1511424,
+              "reasoning": 0,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 127324,
+            "output": 6460,
+            "cacheRead": 1511424,
+            "cacheWrite": 0,
+            "reasoning": 0
+          },
+          "cost": 0.260151936,
+          "messages": 11
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 15593217,
+        "cost": 8.7155,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 710764,
+        "output": 26569,
+        "cacheRead": 14842368,
+        "cacheWrite": 0,
+        "reasoning": 13516
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.6-sol": {
+              "cost": 8.5946832,
+              "input": 706578,
+              "output": 21716,
+              "tokens": 13401138,
+              "messages": 79,
+              "cacheRead": 12659328,
+              "reasoning": 13516,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 706578,
+            "output": 21716,
+            "cacheRead": 12659328,
+            "cacheWrite": 0,
+            "reasoning": 13516
+          },
+          "cost": 8.5946832,
+          "messages": 79
+        },
+        {
+          "client": "claude",
+          "modelId": "",
+          "models": {
+            "deepseek-v4-pro": {
+              "cost": 0.12079716,
+              "input": 4186,
+              "output": 4853,
+              "tokens": 2192079,
+              "messages": 14,
+              "cacheRead": 2183040,
+              "reasoning": 0,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 4186,
+            "output": 4853,
+            "cacheRead": 2183040,
+            "cacheWrite": 0,
+            "reasoning": 0
+          },
+          "cost": 0.12079716,
+          "messages": 14
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 22652561,
+        "cost": 15.9183,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 1771467,
+        "output": 91475,
+        "cacheRead": 20758400,
+        "cacheWrite": 0,
+        "reasoning": 31219
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.5": {
+              "cost": 0.265254,
+              "input": 46226,
+              "output": 1114,
+              "tokens": 48748,
+              "messages": 2,
+              "cacheRead": 1408,
+              "reasoning": 0,
+              "cacheWrite": 0
+            },
+            "gpt-5.6-sol": {
+              "cost": 15.5369368,
+              "input": 1592896,
+              "output": 73381,
+              "tokens": 19526537,
+              "messages": 155,
+              "cacheRead": 17838080,
+              "reasoning": 22180,
+              "cacheWrite": 0
+            },
+            "gpt-5.6-luna": {
+              "cost": 0.11607004000000001,
+              "input": 132345,
+              "output": 16980,
+              "tokens": 3077276,
+              "messages": 43,
+              "cacheRead": 2918912,
+              "reasoning": 9039,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 1771467,
+            "output": 91475,
+            "cacheRead": 20758400,
+            "cacheWrite": 0,
+            "reasoning": 31219
+          },
+          "cost": 15.918260839999999,
+          "messages": 200
+        }
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 14876184,
+        "cost": 16.3914,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 2430657,
+        "output": 70999,
+        "cacheRead": 12352640,
+        "cacheWrite": 0,
+        "reasoning": 21888
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.6-sol": {
+              "cost": 16.384424,
+              "input": 2404761,
+              "output": 70682,
+              "tokens": 14800950,
+              "messages": 138,
+              "cacheRead": 12304000,
+              "reasoning": 21507,
+              "cacheWrite": 0
+            },
+            "gpt-5.6-luna": {
+              "cost": 0.0069896,
+              "input": 25896,
+              "output": 317,
+              "tokens": 75234,
+              "messages": 3,
+              "cacheRead": 48640,
+              "reasoning": 381,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 2430657,
+            "output": 70999,
+            "cacheRead": 12352640,
+            "cacheWrite": 0,
+            "reasoning": 21888
+          },
+          "cost": 16.3914136,
+          "messages": 141
+        }
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 6959913,
+        "cost": 6.4721,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 672395,
+        "output": 41921,
+        "cacheRead": 6222848,
+        "cacheWrite": 0,
+        "reasoning": 22749
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.6-sol": {
+              "cost": 6.472119200000003,
+              "input": 672395,
+              "output": 41921,
+              "tokens": 6959913,
+              "messages": 94,
+              "cacheRead": 6222848,
+              "reasoning": 22749,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 672395,
+            "output": 41921,
+            "cacheRead": 6222848,
+            "cacheWrite": 0,
+            "reasoning": 22749
+          },
+          "cost": 6.472119200000003,
+          "messages": 94
+        }
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 6078942,
+        "cost": 5.3119,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 634985,
+        "output": 17056,
+        "cacheRead": 5413632,
+        "cacheWrite": 0,
+        "reasoning": 13269
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.6-sol": {
+              "cost": 5.311892799999998,
+              "input": 634985,
+              "output": 17056,
+              "tokens": 6078942,
+              "messages": 83,
+              "cacheRead": 5413632,
+              "reasoning": 13269,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 634985,
+            "output": 17056,
+            "cacheRead": 5413632,
+            "cacheWrite": 0,
+            "reasoning": 13269
+          },
+          "cost": 5.311892799999998,
+          "messages": 83
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 21044342,
+        "cost": 18.5931,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 2286780,
+        "output": 61714,
+        "cacheRead": 18658432,
+        "cacheWrite": 0,
+        "reasoning": 37416
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.6-sol": {
+              "cost": 18.593092800000004,
+              "input": 2286780,
+              "output": 61714,
+              "tokens": 21044342,
+              "messages": 156,
+              "cacheRead": 18658432,
+              "reasoning": 37416,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 2286780,
+            "output": 61714,
+            "cacheRead": 18658432,
+            "cacheWrite": 0,
+            "reasoning": 37416
+          },
+          "cost": 18.593092800000004,
+          "messages": 156
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 6054856,
+        "cost": 8.3874,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 709124,
+        "output": 28847,
+        "cacheRead": 5313920,
+        "cacheWrite": 0,
+        "reasoning": 2965
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 8.387436000000001,
+              "input": 709124,
+              "output": 28847,
+              "tokens": 6054856,
+              "messages": 81,
+              "cacheRead": 5313920,
+              "reasoning": 2965,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 709124,
+            "output": 28847,
+            "cacheRead": 5313920,
+            "cacheWrite": 0,
+            "reasoning": 2965
+          },
+          "cost": 8.387436000000001,
+          "messages": 81
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 50638034,
+        "cost": 99.5945,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 7167603,
+        "output": 196579,
+        "cacheRead": 43242752,
+        "cacheWrite": 0,
+        "reasoning": 31100
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 99.594478,
+              "input": 7167603,
+              "output": 196579,
+              "tokens": 50638034,
+              "messages": 288,
+              "cacheRead": 43242752,
+              "reasoning": 31100,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 7167603,
+            "output": 196579,
+            "cacheRead": 43242752,
+            "cacheWrite": 0,
+            "reasoning": 31100
+          },
+          "cost": 99.594478,
+          "messages": 288
+        }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 24163559,
+        "cost": 22.4521,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 1788677,
+        "output": 63982,
+        "cacheRead": 22289834,
+        "cacheWrite": 0,
+        "reasoning": 21066
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 22.452122,
+              "input": 1788677,
+              "output": 63982,
+              "tokens": 24163559,
+              "messages": 90,
+              "cacheRead": 22289834,
+              "reasoning": 21066,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 1788677,
+            "output": 63982,
+            "cacheRead": 22289834,
+            "cacheWrite": 0,
+            "reasoning": 21066
+          },
+          "cost": 22.452122,
+          "messages": 90
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 93696141,
+        "cost": 75.0114,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 4242607,
+        "output": 296997,
+        "cacheRead": 89083264,
+        "cacheWrite": 0,
+        "reasoning": 73273
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 75.01141700000007,
+              "input": 4242607,
+              "output": 296997,
+              "tokens": 93696141,
+              "messages": 489,
+              "cacheRead": 89083264,
+              "reasoning": 73273,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 4242607,
+            "output": 296997,
+            "cacheRead": 89083264,
+            "cacheWrite": 0,
+            "reasoning": 73273
+          },
+          "cost": 75.01141700000007,
+          "messages": 489
+        }
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 216529761,
+        "cost": 156.4759,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 9114526,
+        "output": 184907,
+        "cacheRead": 207121536,
+        "cacheWrite": 0,
+        "reasoning": 108792
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 156.47587299999998,
+              "input": 9114526,
+              "output": 184907,
+              "tokens": 216529761,
+              "messages": 1019,
+              "cacheRead": 207121536,
+              "reasoning": 108792,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 9114526,
+            "output": 184907,
+            "cacheRead": 207121536,
+            "cacheWrite": 0,
+            "reasoning": 108792
+          },
+          "cost": 156.47587299999998,
+          "messages": 1019
+        }
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 14362163,
+        "cost": 17.3524,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 1958274,
+        "output": 37715,
+        "cacheRead": 12348416,
+        "cacheWrite": 0,
+        "reasoning": 17758
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 17.352403000000006,
+              "input": 1958274,
+              "output": 37715,
+              "tokens": 14362163,
+              "messages": 123,
+              "cacheRead": 12348416,
+              "reasoning": 17758,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 1958274,
+            "output": 37715,
+            "cacheRead": 12348416,
+            "cacheWrite": 0,
+            "reasoning": 17758
+          },
+          "cost": 17.352403000000006,
+          "messages": 123
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 11523674,
+        "cost": 15.1949,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 1753606,
+        "output": 52088,
+        "cacheRead": 9707136,
+        "cacheWrite": 0,
+        "reasoning": 10844
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 15.194897999999995,
+              "input": 1753606,
+              "output": 52088,
+              "tokens": 11523674,
+              "messages": 102,
+              "cacheRead": 9707136,
+              "reasoning": 10844,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 1753606,
+            "output": 52088,
+            "cacheRead": 9707136,
+            "cacheWrite": 0,
+            "reasoning": 10844
+          },
+          "cost": 15.194897999999995,
+          "messages": 102
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 1625306,
+        "cost": 3.3898,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 532165,
+        "output": 4949,
+        "cacheRead": 1085696,
+        "cacheWrite": 0,
+        "reasoning": 2496
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 3.3897980000000008,
+              "input": 532165,
+              "output": 4949,
+              "tokens": 1625306,
+              "messages": 27,
+              "cacheRead": 1085696,
+              "reasoning": 2496,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 532165,
+            "output": 4949,
+            "cacheRead": 1085696,
+            "cacheWrite": 0,
+            "reasoning": 2496
+          },
+          "cost": 3.3897980000000008,
+          "messages": 27
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 199671127,
+        "cost": 121.7642,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 3756480,
+        "output": 165996,
+        "cacheRead": 195709568,
+        "cacheWrite": 0,
+        "reasoning": 39083
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 121.76415899999995,
+              "input": 3756480,
+              "output": 165996,
+              "tokens": 199671127,
+              "messages": 622,
+              "cacheRead": 195709568,
+              "reasoning": 39083,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 3756480,
+            "output": 165996,
+            "cacheRead": 195709568,
+            "cacheWrite": 0,
+            "reasoning": 39083
+          },
+          "cost": 121.76415899999995,
+          "messages": 622
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 64028148,
+        "cost": 51.8106,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 3574889,
+        "output": 91065,
+        "cacheRead": 60338688,
+        "cacheWrite": 0,
+        "reasoning": 23506
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 51.810575000000014,
+              "input": 3574889,
+              "output": 91065,
+              "tokens": 64028148,
+              "messages": 195,
+              "cacheRead": 60338688,
+              "reasoning": 23506,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 3574889,
+            "output": 91065,
+            "cacheRead": 60338688,
+            "cacheWrite": 0,
+            "reasoning": 23506
+          },
+          "cost": 51.810575000000014,
+          "messages": 195
+        }
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 35242854,
+        "cost": 41.1936,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 2603792,
+        "output": 66033,
+        "cacheRead": 32561152,
+        "cacheWrite": 0,
+        "reasoning": 11877
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.6-sol": {
+              "cost": 0.5358607999999999,
+              "input": 59395,
+              "output": 4809,
+              "tokens": 486254,
+              "messages": 10,
+              "cacheRead": 420352,
+              "reasoning": 1698,
+              "cacheWrite": 0
+            },
+            "gpt-6-astra": {
+              "cost": 40.65773499999997,
+              "input": 2544397,
+              "output": 61224,
+              "tokens": 34756600,
+              "messages": 252,
+              "cacheRead": 32140800,
+              "reasoning": 10179,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 2603792,
+            "output": 66033,
+            "cacheRead": 32561152,
+            "cacheWrite": 0,
+            "reasoning": 11877
+          },
+          "cost": 41.19359579999997,
+          "messages": 262
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 4539997,
+        "cost": 4.3464,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 361480,
+        "output": 12048,
+        "cacheRead": 4160161,
+        "cacheWrite": 0,
+        "reasoning": 6308
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 4.3463804999999995,
+              "input": 361480,
+              "output": 12048,
+              "tokens": 4539997,
+              "messages": 67,
+              "cacheRead": 4160161,
+              "reasoning": 6308,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 361480,
+            "output": 12048,
+            "cacheRead": 4160161,
+            "cacheWrite": 0,
+            "reasoning": 6308
+          },
+          "cost": 4.3463804999999995,
+          "messages": 67
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 942343,
+        "cost": 1.7358,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 259963,
+        "output": 3201,
+        "cacheRead": 678509,
+        "cacheWrite": 0,
+        "reasoning": 670
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 1.7358445,
+              "input": 259963,
+              "output": 3201,
+              "tokens": 942343,
+              "messages": 9,
+              "cacheRead": 678509,
+              "reasoning": 670,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 259963,
+            "output": 3201,
+            "cacheRead": 678509,
+            "cacheWrite": 0,
+            "reasoning": 670
+          },
+          "cost": 1.7358445,
+          "messages": 9
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 6937674,
+        "cost": 7.7408,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 661561,
+        "output": 41352,
+        "cacheRead": 6223258,
+        "cacheWrite": 0,
+        "reasoning": 11503
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 7.740809000000001,
+              "input": 661561,
+              "output": 41352,
+              "tokens": 6937674,
+              "messages": 73,
+              "cacheRead": 6223258,
+              "reasoning": 11503,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 661561,
+            "output": 41352,
+            "cacheRead": 6223258,
+            "cacheWrite": 0,
+            "reasoning": 11503
+          },
+          "cost": 7.740809000000001,
+          "messages": 73
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 192434,
+        "cost": 0.2951,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 47269,
+        "output": 1808,
+        "cacheRead": 142720,
+        "cacheWrite": 0,
+        "reasoning": 637
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.6-sol": {
+              "cost": 0.295064,
+              "input": 47269,
+              "output": 1808,
+              "tokens": 192434,
+              "messages": 5,
+              "cacheRead": 142720,
+              "reasoning": 637,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 47269,
+            "output": 1808,
+            "cacheRead": 142720,
+            "cacheWrite": 0,
+            "reasoning": 637
+          },
+          "cost": 0.295064,
+          "messages": 5
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 15880117,
+        "cost": 13.1889,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 1459170,
+        "output": 56083,
+        "cacheRead": 14343552,
+        "cacheWrite": 0,
+        "reasoning": 21312
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-5.6-sol": {
+              "cost": 12.854444799999996,
+              "input": 1422224,
+              "output": 54840,
+              "tokens": 15650904,
+              "messages": 138,
+              "cacheRead": 14153472,
+              "reasoning": 20368,
+              "cacheWrite": 0
+            },
+            "gpt-6-astra": {
+              "cost": 0.33444500000000005,
+              "input": 36946,
+              "output": 1243,
+              "tokens": 229213,
+              "messages": 6,
+              "cacheRead": 190080,
+              "reasoning": 944,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 1459170,
+            "output": 56083,
+            "cacheRead": 14343552,
+            "cacheWrite": 0,
+            "reasoning": 21312
+          },
+          "cost": 13.188889799999997,
+          "messages": 144
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 35326340,
+        "cost": 33.8888,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 2419589,
+        "output": 158139,
+        "cacheRead": 32688896,
+        "cacheWrite": 0,
+        "reasoning": 59716
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 33.888768,
+              "input": 2419589,
+              "output": 158139,
+              "tokens": 35326340,
+              "messages": 287,
+              "cacheRead": 32688896,
+              "reasoning": 59716,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 2419589,
+            "output": 158139,
+            "cacheRead": 32688896,
+            "cacheWrite": 0,
+            "reasoning": 59716
+          },
+          "cost": 33.888768,
+          "messages": 287
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 20054215,
+        "cost": 18.1697,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 1257544,
+        "output": 82592,
+        "cacheRead": 18695296,
+        "cacheWrite": 0,
+        "reasoning": 18783
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 18.169743,
+              "input": 1257544,
+              "output": 82592,
+              "tokens": 20054215,
+              "messages": 191,
+              "cacheRead": 18695296,
+              "reasoning": 18783,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 1257544,
+            "output": 82592,
+            "cacheRead": 18695296,
+            "cacheWrite": 0,
+            "reasoning": 18783
+          },
+          "cost": 18.169743,
+          "messages": 191
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 15779135,
+        "cost": 18.0005,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 1527656,
+        "output": 94658,
+        "cacheRead": 14125440,
+        "cacheWrite": 0,
+        "reasoning": 31381
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 18.000454000000005,
+              "input": 1527656,
+              "output": 94658,
+              "tokens": 15779135,
+              "messages": 173,
+              "cacheRead": 14125440,
+              "reasoning": 31381,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 1527656,
+            "output": 94658,
+            "cacheRead": 14125440,
+            "cacheWrite": 0,
+            "reasoning": 31381
+          },
+          "cost": 18.000454000000005,
+          "messages": 173
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 3690483,
+        "cost": 4.6161,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 427351,
+        "output": 23677,
+        "cacheRead": 3228528,
+        "cacheWrite": 0,
+        "reasoning": 10927
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 4.616119000000002,
+              "input": 427351,
+              "output": 23677,
+              "tokens": 3690483,
+              "messages": 59,
+              "cacheRead": 3228528,
+              "reasoning": 10927,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 427351,
+            "output": 23677,
+            "cacheRead": 3228528,
+            "cacheWrite": 0,
+            "reasoning": 10927
+          },
+          "cost": 4.616119000000002,
+          "messages": 59
+        }
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 8554548,
+        "cost": 12.1145,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 1445106,
+        "output": 40208,
+        "cacheRead": 7054981,
+        "cacheWrite": 0,
+        "reasoning": 14253
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 12.114545500000004,
+              "input": 1445106,
+              "output": 40208,
+              "tokens": 8554548,
+              "messages": 66,
+              "cacheRead": 7054981,
+              "reasoning": 14253,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 1445106,
+            "output": 40208,
+            "cacheRead": 7054981,
+            "cacheWrite": 0,
+            "reasoning": 14253
+          },
+          "cost": 12.114545500000004,
+          "messages": 66
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "timestampMs": null,
+      "totals": {
+        "tokens": 20683574,
+        "cost": 23.3726,
+        "messages": 0
+      },
+      "intensity": 1,
+      "tokenBreakdown": {
+        "input": 1902640,
+        "output": 136280,
+        "cacheRead": 18598528,
+        "cacheWrite": 0,
+        "reasoning": 46126
+      },
+      "clients": [
+        {
+          "client": "codex",
+          "modelId": "",
+          "models": {
+            "gpt-6-astra": {
+              "cost": 23.372614000000013,
+              "input": 1902640,
+              "output": 136280,
+              "tokens": 20683574,
+              "messages": 200,
+              "cacheRead": 18598528,
+              "reasoning": 46126,
+              "cacheWrite": 0
+            }
+          },
+          "tokens": {
+            "input": 1902640,
+            "output": 136280,
+            "cacheRead": 18598528,
+            "cacheWrite": 0,
+            "reasoning": 46126
+          },
+          "cost": 23.372614000000013,
+          "messages": 200
         }
       ]
     }

@@ -72,14 +72,14 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
 
 | Window | Tokens | Known cost |
 | --- | ---: | ---: |
-| Today | 0 | $0.00 |
-| This week | 0 | $0.00 |
-| This month | 4,550,251 | $0.00 |
-| Last 7 days | 0 | $0.00 |
-| Last 30 days | 4,550,251 | $0.00 |
-| All time | 22,128,089,342 | $20,217.71 |
+| Today | 20,683,574 | $23.37 |
+| This week | 29,238,122 | $35.49 |
+| This month | 903,626,115 | $796.86 |
+| Last 7 days | 48,707,740 | $58.10 |
+| Last 30 days | 926,278,676 | $812.78 |
+| All time | 24,414,990,837 | $21,879.82 |
 
-<sub>Updated 2026-09-29. Codex and Claude Code aggregate data from Tokscale 4.13.0; live graphs served by Tokscale. DeepSeek Desktop logs contain token usage but no billing amount, so known cost excludes DeepSeek Desktop.</sub>
+<sub>Updated 2026-09-29. Codex and Claude Code aggregate data from Tokscale 4.15.1; live graphs served by Tokscale. DeepSeek Desktop logs contain token usage but no billing amount, so known cost excludes DeepSeek Desktop.</sub>
 
 ## Claude 多入口用量
 
