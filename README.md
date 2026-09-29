@@ -83,7 +83,7 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
 
 ## Claude 多入口用量
 
-以下为本机保留日志的去重明细，采集时间：2026-09-29T12:34:19.059Z（按 Asia/Shanghai 分日）。
+以下为本机保留日志的去重明细，采集时间：2026-09-29T12:36:55.004Z（按 Asia/Shanghai 分日）。
 本节为已采集并保存在本地台账中的 Claude 模型用量，CLI、VS Code、Desktop 按消息 ID 去重。与上方 Tokscale 历史图可能重叠，不再次叠加到上方总量；Desktop 新增缓存记录尚不写入 Tokscale 排名。缓存读取也计入 tokens，不等于新生成文字。第三方模型不计入本节 Claude 总量。
 
 **覆盖不是完整账户账单。** 当前状态：部分覆盖；提示：Desktop 历史缓存不完整；普通 Chat 等待导出；CLI 尚未验证到记录；VS Code 尚未验证到记录；Desktop Code 尚未验证到记录。
