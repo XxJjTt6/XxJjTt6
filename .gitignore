@@ -2,3 +2,11 @@ node_modules/
 .DS_Store
 assets/*.preview.png
 npm-debug.log*
+.private/
+*.local.json
+*.tmp
+
+# Machine-specific service definition and Python bytecode
+*.plist
+__pycache__/
+*.pyc

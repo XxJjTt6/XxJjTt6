@@ -10,8 +10,13 @@
     "refresh:public": "node scripts/fetch-tokscale-public.mjs --username XxJjTt6 --out data/tokscale-graph.json && node scripts/generate-tokscale-profile.mjs --graph data/tokscale-graph.json",
     "sync:hourly": "node scripts/write-hourly-sync-v2.mjs --graph data/tokscale-graph.json --out data/tokscale-hourly-sync.json",
     "scan:deepseek": "node scripts/scan-deepseek-desktop-usage-v1.mjs --out data/deepseek-desktop-usage.json",
-    "sync:tokens": "node scripts/sync-token-now-v4.mjs",
-    "tokscale:graph": "npx -y tokscale@latest graph --client codex,claude --no-spinner --output data/tokscale-graph.json"
+    "sync:tokens": "node scripts/sync-token-now-v5.mjs",
+    "scan:claude": "node scripts/scan-claude-usage-v1.mjs && node scripts/generate-tokscale-profile.mjs",
+    "import:claude-chat": "node scripts/import-claude-chat-v1.mjs",
+    "tokscale:graph": "npx -y tokscale@latest graph --client codex,claude --no-spinner --output data/tokscale-graph.json",
+    "collect:claude": "node scripts/sync-claude-v6.mjs",
+    "sync:claude": "node scripts/sync-claude-v6.mjs --publish",
+    "doctor:claude": "node scripts/doctor-claude-v6.mjs"
   },
   "engines": {
     "node": ">=18"

@@ -1,0 +1,385 @@
+{
+  "schemaVersion": "claude-surfaces-v6",
+  "generatedAt": "2026-09-29T12:34:19.059Z",
+  "timeZone": "Asia/Shanghai",
+  "code": {
+    "measurement": "provider-reported-local-transcripts",
+    "scope": "Local Claude Code client usage, including non-Anthropic models if configured. A subset of Tokscale, never added again.",
+    "totals": {
+      "messages": 277,
+      "inputTokens": 1231306,
+      "outputTokens": 260713,
+      "cacheReadTokens": 38756864,
+      "cacheWriteTokens": 0,
+      "totalTokens": 40248883
+    },
+    "surfaces": {
+      "desktop-code": {
+        "status": "observed",
+        "messages": 277,
+        "inputTokens": 1231306,
+        "outputTokens": 260713,
+        "cacheReadTokens": 38756864,
+        "cacheWriteTokens": 0,
+        "totalTokens": 40248883
+      },
+      "desktop-cowork": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      },
+      "desktop-chat": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      },
+      "desktop-unclassified": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      },
+      "desktop-thirdparty": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      },
+      "vscode": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      },
+      "cli": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      },
+      "shared": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      },
+      "unknown": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      }
+    },
+    "daily": [
+      {
+        "date": "2026-08-26",
+        "messages": 131,
+        "inputTokens": 717685,
+        "outputTokens": 125430,
+        "cacheReadTokens": 16205824,
+        "cacheWriteTokens": 0,
+        "totalTokens": 17048939
+      },
+      {
+        "date": "2026-08-27",
+        "messages": 65,
+        "inputTokens": 220040,
+        "outputTokens": 69572,
+        "cacheReadTokens": 14085120,
+        "cacheWriteTokens": 0,
+        "totalTokens": 14374732
+      },
+      {
+        "date": "2026-08-28",
+        "messages": 56,
+        "inputTokens": 162071,
+        "outputTokens": 54398,
+        "cacheReadTokens": 4771456,
+        "cacheWriteTokens": 0,
+        "totalTokens": 4987925
+      },
+      {
+        "date": "2026-08-29",
+        "messages": 11,
+        "inputTokens": 127324,
+        "outputTokens": 6460,
+        "cacheReadTokens": 1511424,
+        "cacheWriteTokens": 0,
+        "totalTokens": 1645208
+      },
+      {
+        "date": "2026-08-30",
+        "messages": 14,
+        "inputTokens": 4186,
+        "outputTokens": 4853,
+        "cacheReadTokens": 2183040,
+        "cacheWriteTokens": 0,
+        "totalTokens": 2192079
+      }
+    ],
+    "diagnostics": {
+      "missingRoots": 3,
+      "unreadableEntries": 0,
+      "invalidLines": 0,
+      "ignoredUsageRecords": 2,
+      "filesScanned": 6
+    }
+  },
+  "inbox": {
+    "imports": 0,
+    "unchanged": 0,
+    "errors": 0
+  },
+  "observedClaude": {
+    "measurement": "provider-reported-observed-usage",
+    "scope": "Deduplicated retained Claude-model usage only. Partial; not a full account bill. Do not add to Tokscale totals.",
+    "totals": {
+      "messages": 493,
+      "inputTokens": 966,
+      "outputTokens": 13803,
+      "cacheReadTokens": 184919568,
+      "cacheWriteTokens": 3387278,
+      "totalTokens": 188321615
+    },
+    "surfaces": {
+      "desktop-code": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      },
+      "desktop-cowork": {
+        "status": "observed",
+        "messages": 493,
+        "inputTokens": 966,
+        "outputTokens": 13803,
+        "cacheReadTokens": 184919568,
+        "cacheWriteTokens": 3387278,
+        "totalTokens": 188321615
+      },
+      "desktop-chat": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      },
+      "desktop-unclassified": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      },
+      "desktop-thirdparty": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      },
+      "vscode": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      },
+      "cli": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      },
+      "shared": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      },
+      "unknown": {
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "totalTokens": 0
+      }
+    },
+    "daily": [
+      {
+        "date": "2026-09-24",
+        "messages": 40,
+        "inputTokens": 80,
+        "outputTokens": 1174,
+        "cacheReadTokens": 16767861,
+        "cacheWriteTokens": 73311,
+        "totalTokens": 16842426
+      },
+      {
+        "date": "2026-09-25",
+        "messages": 161,
+        "inputTokens": 322,
+        "outputTokens": 7686,
+        "cacheReadTokens": 78811236,
+        "cacheWriteTokens": 1382877,
+        "totalTokens": 80202121
+      },
+      {
+        "date": "2026-09-26",
+        "messages": 165,
+        "inputTokens": 300,
+        "outputTokens": 2856,
+        "cacheReadTokens": 56764856,
+        "cacheWriteTokens": 743501,
+        "totalTokens": 57511513
+      },
+      {
+        "date": "2026-09-27",
+        "messages": 75,
+        "inputTokens": 160,
+        "outputTokens": 733,
+        "cacheReadTokens": 13405011,
+        "cacheWriteTokens": 942745,
+        "totalTokens": 14348649
+      },
+      {
+        "date": "2026-09-29",
+        "messages": 52,
+        "inputTokens": 104,
+        "outputTokens": 1354,
+        "cacheReadTokens": 19170604,
+        "cacheWriteTokens": 244844,
+        "totalTokens": 19416906
+      }
+    ],
+    "coverage": {
+      "desktop-code": {
+        "status": "not-observed",
+        "lastRecordDate": null
+      },
+      "desktop-cowork": {
+        "status": "observed-partial",
+        "lastRecordDate": "2026-09-29"
+      },
+      "desktop-chat": {
+        "status": "not-observed",
+        "lastRecordDate": null
+      },
+      "desktop-unclassified": {
+        "status": "not-observed",
+        "lastRecordDate": null
+      },
+      "desktop-thirdparty": {
+        "status": "not-observed",
+        "lastRecordDate": null
+      },
+      "vscode": {
+        "status": "not-observed",
+        "lastRecordDate": null
+      },
+      "cli": {
+        "status": "not-observed",
+        "lastRecordDate": null
+      },
+      "shared": {
+        "status": "not-observed",
+        "lastRecordDate": null
+      },
+      "unknown": {
+        "status": "not-observed",
+        "lastRecordDate": null
+      }
+    },
+    "otherModels": {
+      "messages": 277,
+      "inputTokens": 1231306,
+      "outputTokens": 260713,
+      "cacheReadTokens": 38756864,
+      "cacheWriteTokens": 0,
+      "totalTokens": 40248883
+    },
+    "complete": false
+  },
+  "desktop": {
+    "status": "partial-cache",
+    "diagnostics": {
+      "unreadableHistoricalVersions": 46,
+      "treeVersions": 84,
+      "conversations": 31,
+      "conversationsWithOlderUncachedMessages": 29
+    },
+    "products": {
+      "cowork": 31
+    }
+  },
+  "chat": {
+    "status": "awaiting-export",
+    "scope": "Claude account Chat export; desktop/web/mobile cannot be distinguished unless the export identifies them. Excludes Code.",
+    "lastImportedAt": null,
+    "messages": 0,
+    "messagesWithAttachments": 0,
+    "undatedMessages": 0,
+    "measuredReplies": 0,
+    "repliesWithoutUsage": 0,
+    "reportedTokens": null,
+    "textEstimate": null,
+    "daily": [],
+    "diagnostics": null
+  },
+  "health": {
+    "status": "partial",
+    "fullAccountCoverage": false,
+    "issues": [
+      "DESKTOP_HISTORY_PARTIAL",
+      "CHAT_EXPORT_REQUIRED",
+      "CLI_NOT_OBSERVED",
+      "VSCODE_NOT_OBSERVED",
+      "DESKTOP-CODE_NOT_OBSERVED"
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { renderClaudeUsage } from "./lib/claude-usage-readme-v1.mjs";
 import {
   renderTokscaleCard,
   renderTokscaleHeatmap,
@@ -20,6 +21,9 @@ const deepseekSummary = options.skipDeepseek || !fs.existsSync(deepseekPath)
   ? null
   : JSON.parse(fs.readFileSync(deepseekPath, "utf8"));
 const summary = summarizeTokscaleGraph(graph);
+const claudePath = path.join(outDir, "data", "claude-usage.json");
+const claudeSnapshot = fs.existsSync(claudePath) ? JSON.parse(fs.readFileSync(claudePath, "utf8")) : null;
+const readme = renderTokscaleReadme({ summary, profileName, handle, deepseekSummary }) + renderClaudeUsage(claudeSnapshot);
 const rankText = options.rankText ?? graph.profile?.rankText ?? "Submit for rank";
 
 fs.mkdirSync(path.join(outDir, "assets"), { recursive: true });
@@ -30,8 +34,8 @@ fs.writeFileSync(
   renderTokscaleCard({ summary, profileName, handle, rankText })
 );
 fs.writeFileSync(path.join(outDir, "assets", "tokscale-ai-token-heatmap.svg"), renderTokscaleHeatmap(summary));
-fs.writeFileSync(path.join(outDir, "README.md"), renderTokscaleReadme({ summary, profileName, handle, deepseekSummary }));
-fs.writeFileSync(path.join(outDir, "README.tokscale-v3.md"), renderTokscaleReadme({ summary, profileName, handle, deepseekSummary }));
+fs.writeFileSync(path.join(outDir, "README.md"), readme);
+fs.writeFileSync(path.join(outDir, "README.tokscale-v3.md"), readme);
 
 console.log(`Generated Tokscale profile files in ${outDir}`);
 console.log(`Tokens: ${summary.totals.totalTokens.toLocaleString("en-US")}`);
