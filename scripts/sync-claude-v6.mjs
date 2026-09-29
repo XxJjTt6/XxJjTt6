@@ -46,9 +46,19 @@ try {
       if (process.env.CLAUDE_USAGE_SKIP_TOKSCALE !== "1") {
         const command = process.env.TOKSCALE_BINARY || "npx";
         const prefix = process.env.TOKSCALE_BINARY ? [] : ["-y", "tokscale@latest"];
-        const submit = spawnSync(command, [...prefix, "submit", "--client", "codex,claude"], { cwd: root, env, encoding: "utf8", timeout: 180000 });
+        let submit;
+        for (let attempt = 0; attempt < 2; attempt += 1) {
+          submit = spawnSync(command, [...prefix, "submit", "--client", "codex,claude"], { cwd: root, env, encoding: "utf8", timeout: 180000 });
+          if (submit.status === 0) break;
+        }
         status.tokscaleSubmit = submit.status === 0 ? "ok" : "error";
-        if (submit.status === 0) status.lastTokscaleSubmitAt = new Date().toISOString();
+        if (submit.status === 0) {
+          status.lastTokscaleSubmitAt = new Date().toISOString();
+          delete status.tokscaleError;
+        } else {
+          status.tokscaleError = submit.error?.code === "ETIMEDOUT" ? "TIMED_OUT"
+            : /not logged|unauthorized|log in|401/i.test((submit.stdout ?? "") + (submit.stderr ?? "")) ? "AUTH_REQUIRED" : "SUBMIT_FAILED";
+        }
       }
       const outbox = path.join(root, ".private", "github-outbox");
       const url = git(root, ["remote", "get-url", "origin"]);
