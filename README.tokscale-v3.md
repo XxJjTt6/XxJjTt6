@@ -72,12 +72,12 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
 
 | Window | Tokens | Known cost |
 | --- | ---: | ---: |
-| Today | 20,683,574 | $23.37 |
-| This week | 29,238,122 | $35.49 |
-| This month | 903,626,115 | $796.86 |
-| Last 7 days | 48,707,740 | $58.10 |
-| Last 30 days | 926,278,676 | $812.78 |
-| All time | 24,414,990,837 | $21,879.82 |
+| Today | 21,505,905 | $23.88 |
+| This week | 30,060,453 | $35.99 |
+| This month | 904,448,446 | $797.37 |
+| Last 7 days | 49,530,071 | $58.61 |
+| Last 30 days | 927,101,007 | $813.29 |
+| All time | 24,415,813,168 | $21,880.33 |
 
 <sub>Updated 2026-09-29. Codex and Claude Code aggregate data from Tokscale 4.15.1; live graphs served by Tokscale. DeepSeek Desktop logs contain token usage but no billing amount, so known cost excludes DeepSeek Desktop.</sub>
 
