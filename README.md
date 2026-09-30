@@ -72,18 +72,18 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
 
 | Window | Tokens | Known cost |
 | --- | ---: | ---: |
-| Today | 977,639 | $0.50 |
-| This week | 47,959,739 | $86.94 |
-| This month | 922,347,732 | $2,027.71 |
-| Last 7 days | 51,650,222 | $96.17 |
-| Last 30 days | 922,347,732 | $2,027.71 |
-| All time | 24,438,943,972 | $23,109.49 |
+| Today | 5,400,685 | $1.66 |
+| This week | 52,382,785 | $88.09 |
+| This month | 926,770,778 | $2,028.87 |
+| Last 7 days | 56,073,268 | $97.33 |
+| Last 30 days | 926,770,778 | $2,028.87 |
+| All time | 24,443,367,018 | $23,110.65 |
 
 <sub>Updated 2026-09-30. Codex and Claude Code aggregate data from Tokscale 4.17.0; live graphs served by Tokscale. DeepSeek Desktop logs contain token usage but no billing amount, so known cost excludes DeepSeek Desktop.</sub>
 
 ## Claude 多入口用量
 
-以下为本机保留日志的去重明细，采集时间：2026-09-30T08:06:24.149Z（按 Asia/Shanghai 分日）。
+以下为本机保留日志的去重明细，采集时间：2026-09-30T09:08:21.893Z（按 Asia/Shanghai 分日）。
 本节为已采集并保存在本地台账中的 Claude 模型用量，CLI、VS Code、Desktop 按消息 ID 去重。与上方 Tokscale 历史图可能重叠，不再次叠加到上方总量；Desktop 新增缓存记录尚不写入 Tokscale 排名。缓存读取也计入 tokens，不等于新生成文字。第三方模型不计入本节 Claude 总量。
 
 **覆盖不是完整账户账单。** 当前状态：部分覆盖；提示：Desktop 历史缓存不完整；普通 Chat 等待导出；CLI 尚未验证到记录；VS Code 尚未验证到记录；Desktop Code 尚未验证到记录。
