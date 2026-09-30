@@ -170,7 +170,7 @@ test("renderTokscaleCard keeps metric values inside the inner card border", () =
   assert.ok(separatorBottoms.every((y) => y <= cardBottom), "metric dividers should not cross the inner card border");
 });
 
-test("renderTokscaleReadme combines a compact personal introduction with fully visible Tokscale telemetry", () => {
+test("renderTokscaleReadme keeps the introduction and AI Usage card without the detail block", () => {
   const bucket = { totalTokens: 0, totalCost: 0 };
   const readme = renderTokscaleReadme({
     profileName: "XxJjTt6",
@@ -210,8 +210,8 @@ test("renderTokscaleReadme combines a compact personal introduction with fully v
   assert.match(readme, /National Second Prize/);
   assert.match(readme, /Exploring AI Infrastructure & Agent Runtime Engineering/);
   assert.doesNotMatch(readme, /Jinling Institute of Technology|Lanqiao Cup/);
-  assert.match(readme, /Open live daily token hover details on Tokscale/);
   assert.match(readme, /## AI Usage/);
+  assert.doesNotMatch(readme, /Open live daily token hover details on Tokscale|\| Window \||Claude 多入口用量/);
   assert.doesNotMatch(readme, /## Sources/);
   assert.doesNotMatch(readme, /## Models/);
   assert.doesNotMatch(readme, /<details>/);
@@ -221,90 +221,4 @@ test("renderTokscaleReadme combines a compact personal introduction with fully v
   assert.doesNotMatch(readme, /https:\/\/shieldcn\.dev\/tokscale\//);
   assert.doesNotMatch(readme, /tokscale-ai-usage-card\.svg/);
   assert.doesNotMatch(readme, /tokscale-ai-token-heatmap\.svg/);
-});
-
-test("renderTokscaleReadme transparently combines provider-reported DeepSeek Desktop usage", () => {
-  const bucket = { totalTokens: 100, totalCost: 1, messages: 1 };
-  const readme = renderTokscaleReadme({
-    profileName: "XxJjTt6",
-    handle: "@XxJjTt6",
-    summary: {
-      asOfDate: "2026-08-20",
-      tokscaleVersion: "4.7.0",
-      totals: { totalTokens: 1_000, totalCost: 10, messages: 10 },
-      periods: {
-        today: bucket,
-        thisWeek: bucket,
-        thisMonth: bucket,
-        last7Days: bucket,
-        last30Days: bucket
-      },
-      providers: {
-        Codex: { totalTokens: 1_000, totalCost: 10, messages: 10 }
-      },
-      models: {
-        "gpt-test": { totalTokens: 1_000, totalCost: 10, messages: 10 }
-      }
-    },
-    deepseekSummary: {
-      asOfDate: "2026-08-21",
-      totals: { totalTokens: 425, requests: 2 },
-      periods: {
-        today: { totalTokens: 25, requests: 1 },
-        thisWeek: { totalTokens: 425, requests: 2 },
-        thisMonth: { totalTokens: 425, requests: 2 },
-        last7Days: { totalTokens: 425, requests: 2 },
-        last30Days: { totalTokens: 425, requests: 2 }
-      },
-      models: {
-        "deepseek-v4-pro": { totalTokens: 425, requests: 2 }
-      }
-    }
-  });
-
-  assert.match(readme, /\| Today \| 125 \| \$1\.00 \|/);
-  assert.match(readme, /\| All time \| 1,425 \| \$10\.00 \|/);
-  assert.doesNotMatch(readme, /\| DeepSeek Desktop \| 425 \| — \| 2 \|/);
-  assert.doesNotMatch(readme, /\| deepseek-v4-pro \| 425 \| — \| 2 \|/);
-  assert.match(readme, /\[auditable snapshot\]\(\.\/data\/deepseek-desktop-usage\.json\)/);
-  assert.match(readme, /live 2D graph above is an official Tokscale embed and currently covers Codex and Claude Code/);
-  assert.match(readme, /usage totals below also include provider-reported DeepSeek Desktop data/);
-  assert.match(readme, /known cost excludes DeepSeek Desktop/);
-  assert.doesNotMatch(readme, /DeepSeek Desktop.*Tokscale embed/);
-});
-
-test("renderTokscaleReadme does not mix a stale Tokscale day into the current DeepSeek day", () => {
-  const readme = renderTokscaleReadme({
-    profileName: "XxJjTt6",
-    handle: "@XxJjTt6",
-    summary: {
-      asOfDate: "2026-08-03",
-      tokscaleVersion: "4.7.0",
-      totals: { totalTokens: 1_000, totalCost: 10 },
-      periods: {
-        today: { totalTokens: 100, totalCost: 1 },
-        thisWeek: { totalTokens: 100, totalCost: 1 },
-        thisMonth: { totalTokens: 100, totalCost: 1 },
-        last7Days: { totalTokens: 100, totalCost: 1 },
-        last30Days: { totalTokens: 100, totalCost: 1 }
-      },
-      providers: {},
-      models: {},
-      daily: [
-        { date: "2026-08-03", totalTokens: 100, totalCost: 1, messages: 1 }
-      ]
-    },
-    deepseekSummary: {
-      asOfDate: "2026-08-21",
-      totals: { totalTokens: 25, requests: 1 },
-      periods: {},
-      models: {},
-      daily: [
-        { date: "2026-08-21", totalTokens: 25, requests: 1 }
-      ]
-    }
-  });
-
-  assert.match(readme, /\| Today \| 25 \| \$0\.00 \|/);
-  assert.doesNotMatch(readme, /\| Today \| 125 /);
 });

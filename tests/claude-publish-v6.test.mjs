@@ -34,7 +34,7 @@ test("local-first publisher survives a network failure and publishes only aggreg
   assert.doesNotMatch(files, /private|ledger|scripts|collector\.log/);
   const readme = git(temp, ["--git-dir", remote, "show", "main:README.md"]);
   assert.match(readme, /Existing introduction/);
-  assert.match(readme, /Claude 多入口用量/);
+  assert.doesNotMatch(readme, /Claude 多入口用量|Open live daily token hover details on Tokscale|\| Window \|/);
   git(root, ["remote", "set-url", "origin", path.join(temp, "unavailable.git")]);
   result = run(); assert.equal(result.status, 2);
   const status = JSON.parse(await fs.readFile(path.join(root, ".private", "sync-status-v6.json"), "utf8"));

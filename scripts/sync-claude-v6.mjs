@@ -5,7 +5,6 @@ import os from "node:os";
 import { fileURLToPath } from "node:url";
 import { spawnSync } from "node:child_process";
 import { scanClaudeUsage } from "./scan-claude-usage-v1.mjs";
-import { renderClaudeUsage } from "./lib/claude-usage-readme-v1.mjs";
 import { readJson, acquireLock } from "./lib/claude-collector-v6.mjs";
 import { readLocalConfig, tokscaleScanEnv, writeJsonAtomic } from "./lib/claude-usage-v1.mjs";
 
@@ -71,13 +70,6 @@ try {
       if (git(outbox, ["branch", "--show-current"]) !== "main") throw new Error("OUTBOX_BRANCH_MISMATCH");
       git(outbox, ["fetch", "origin", "main"]);
       git(outbox, ["rebase", "origin/main"]);
-      const section = renderClaudeUsage(snapshot);
-      for (const name of expected.slice(0, 2)) {
-        const file = path.join(outbox, name);
-        const text = await fs.readFile(file, "utf8");
-        const marker = "\n## Claude 多入口用量";
-        await fs.writeFile(file, (text.includes(marker) ? text.slice(0, text.indexOf(marker)) : text.trimEnd() + "\n") + section);
-      }
       await writeJsonAtomic(path.join(outbox, "data", "claude-usage.json"), snapshot);
       // A deployed outbox regenerates the original Codex/DeepSeek presentation using
       // the newest remote Tokscale graph, so replacing v4 does not drop its sources.

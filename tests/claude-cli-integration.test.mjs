@@ -37,7 +37,7 @@ test("Chat import CLI, ZIP, report generation and safe dry run work without a li
   assert.equal(snapshot.code.totals.messages, 0);
   assert.doesNotMatch(JSON.stringify(snapshot), /PRIVATE-|export\.json/);
   assert.doesNotMatch(await fs.readFile(path.join(root, ".private", "claude-chat-ledger.json"), "utf8"), /PRIVATE-/);
-  assert.match(await fs.readFile(path.join(root, "README.md"), "utf8"), /Claude 多入口用量/);
+  assert.doesNotMatch(await fs.readFile(path.join(root, "README.md"), "utf8"), /Claude 多入口用量|\| Window \|/);
   assert.equal((await read("data/tokscale-summary.json")).totals.totalTokens, 100);
   const before = await fs.readFile(path.join(root, "data", "claude-usage.json"), "utf8");
   result = run("sync-token-now-v5.mjs", ["--dry-run"]);

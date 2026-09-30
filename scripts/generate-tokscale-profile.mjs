@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
-import { renderClaudeUsage } from "./lib/claude-usage-readme-v1.mjs";
 import {
   renderTokscaleCard,
   renderTokscaleHeatmap,
@@ -21,9 +20,7 @@ const deepseekSummary = options.skipDeepseek || !fs.existsSync(deepseekPath)
   ? null
   : JSON.parse(fs.readFileSync(deepseekPath, "utf8"));
 const summary = summarizeTokscaleGraph(graph);
-const claudePath = path.join(outDir, "data", "claude-usage.json");
-const claudeSnapshot = fs.existsSync(claudePath) ? JSON.parse(fs.readFileSync(claudePath, "utf8")) : null;
-const readme = renderTokscaleReadme({ summary, profileName, handle, deepseekSummary }) + renderClaudeUsage(claudeSnapshot);
+const readme = renderTokscaleReadme({ profileName, handle });
 const rankText = options.rankText ?? graph.profile?.rankText ?? "Submit for rank";
 
 fs.mkdirSync(path.join(outDir, "assets"), { recursive: true });

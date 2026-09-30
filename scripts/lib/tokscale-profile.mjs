@@ -62,24 +62,15 @@ export function summarizeTokscaleGraph(graph) {
   };
 }
 
-export function renderTokscaleReadme({ summary, profileName, handle, deepseekSummary = null }) {
+export function renderTokscaleReadme({ profileName, handle }) {
   const username = handle.replace(/^@/, "");
   const profileUrl = `https://tokscale.ai/u/${encodeURIComponent(username)}`;
   const heatmap2dUrl = `https://tokscale.ai/api/embed/${encodeURIComponent(username)}/svg?theme=light&graph=1&color=blue&tokens=compact&cost=compact`;
-  const combined = combineUsageSummaries(summary, deepseekSummary);
-  const deepseekDisclosure = combined.includesDeepSeek
-    ? `\n> The live 2D graph above is an official Tokscale embed and currently covers Codex and Claude Code. The usage totals below also include provider-reported DeepSeek Desktop data from the [auditable snapshot](./data/deepseek-desktop-usage.json).`
-    : "";
-  const costHeader = combined.includesDeepSeek ? "Known cost" : "Cost";
-  const costDisclosure = combined.includesDeepSeek
-    ? " DeepSeek Desktop logs contain token usage but no billing amount, so known cost excludes DeepSeek Desktop."
-    : "";
 
   return `<!--
 The personal introduction is modeled after the compact structure of LofiSu's profile.
 The visible Tokscale graphs are official live Tokscale embeds.
 Click targets open the Tokscale public profile, not image files.
-DeepSeek Desktop tables use provider-reported local DSH session logs when present.
 -->
 
 <div align="center">
@@ -140,22 +131,7 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
     <img src="${heatmap2dUrl}" alt="${profileName} live Tokscale 2D usage graph" width="680">
   </a>
 </p>
-
-<p><a href="${profileUrl}">Open live daily token hover details on Tokscale</a></p>
-
 </div>
-${deepseekDisclosure}
-
-| Window | Tokens | ${costHeader} |
-| --- | ---: | ---: |
-| Today | ${formatInteger(combined.periods.today.totalTokens)} | ${formatMoney(combined.periods.today.totalCost)} |
-| This week | ${formatInteger(combined.periods.thisWeek.totalTokens)} | ${formatMoney(combined.periods.thisWeek.totalCost)} |
-| This month | ${formatInteger(combined.periods.thisMonth.totalTokens)} | ${formatMoney(combined.periods.thisMonth.totalCost)} |
-| Last 7 days | ${formatInteger(combined.periods.last7Days.totalTokens)} | ${formatMoney(combined.periods.last7Days.totalCost)} |
-| Last 30 days | ${formatInteger(combined.periods.last30Days.totalTokens)} | ${formatMoney(combined.periods.last30Days.totalCost)} |
-| All time | ${formatInteger(combined.totals.totalTokens)} | ${formatMoney(combined.totals.totalCost)} |
-
-<sub>Updated ${combined.asOfDate}. Codex and Claude Code aggregate data from Tokscale ${summary.tokscaleVersion ?? ""}; live graphs served by Tokscale.${costDisclosure}</sub>
 `;
 }
 
