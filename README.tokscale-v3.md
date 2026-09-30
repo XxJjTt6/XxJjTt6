@@ -72,18 +72,18 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
 
 | Window | Tokens | Known cost |
 | --- | ---: | ---: |
-| Today | 10,105,776 | $2.83 |
-| This week | 57,087,876 | $89.26 |
-| This month | 931,475,869 | $2,030.04 |
-| Last 7 days | 60,778,359 | $98.50 |
-| Last 30 days | 931,475,869 | $2,030.04 |
-| All time | 24,448,072,109 | $23,111.82 |
+| Today | 15,131,991 | $4.16 |
+| This week | 62,114,091 | $90.59 |
+| This month | 936,502,084 | $2,031.37 |
+| Last 7 days | 65,804,574 | $99.83 |
+| Last 30 days | 936,502,084 | $2,031.37 |
+| All time | 24,453,098,324 | $23,113.15 |
 
 <sub>Updated 2026-09-30. Codex and Claude Code aggregate data from Tokscale 4.17.0; live graphs served by Tokscale. DeepSeek Desktop logs contain token usage but no billing amount, so known cost excludes DeepSeek Desktop.</sub>
 
 ## Claude 多入口用量
 
-以下为本机保留日志的去重明细，采集时间：2026-09-30T10:10:43.983Z（按 Asia/Shanghai 分日）。
+以下为本机保留日志的去重明细，采集时间：2026-09-30T11:12:29.889Z（按 Asia/Shanghai 分日）。
 本节为已采集并保存在本地台账中的 Claude 模型用量，CLI、VS Code、Desktop 按消息 ID 去重。与上方 Tokscale 历史图可能重叠，不再次叠加到上方总量；Desktop 新增缓存记录尚不写入 Tokscale 排名。缓存读取也计入 tokens，不等于新生成文字。第三方模型不计入本节 Claude 总量。
 
 **覆盖不是完整账户账单。** 当前状态：部分覆盖；提示：Desktop 历史缓存不完整；普通 Chat 等待导出；CLI 尚未验证到记录；VS Code 尚未验证到记录；Desktop Code 尚未验证到记录。
@@ -92,7 +92,7 @@ Desktop 可读会话 30 个，其中 28 个有未缓存的更早消息；读取�
 | 使用入口 | 日志报告的 tokens | 唯一回复数 | 最近记录日期 | 覆盖状态 |
 | --- | ---: | ---: | --- | --- |
 | Claude Desktop · Code | — | — | — | 尚未发现可归属的记录 |
-| Claude Desktop · Cowork | 199,880,179 | 532 | 2026-09-30 | 已发现记录；非完整账单 |
+| Claude Desktop · Cowork | 203,454,417 | 539 | 2026-09-30 | 已发现记录；非完整账单 |
 | Claude Desktop · Chat 缓存 | — | — | — | 尚未发现可归属的记录 |
 | Desktop · 模式未标记 | — | — | — | 尚未发现可归属的记录 |
 | 第三方 Desktop 客户端 | — | — | — | 尚未发现可归属的记录 |
@@ -101,7 +101,7 @@ Desktop 可读会话 30 个，其中 28 个有未缓存的更早消息；读取�
 | 跨入口共享会话（只计一次） | — | — | — | 尚未发现可归属的记录 |
 | Claude Code（入口未标记） | — | — | — | 尚未发现可归属的记录 |
 
-已记录 Claude tokens 小计：**199,880,179**；这不是完整账户总量。其他模型另计 40,248,883 tokens。
+已记录 Claude tokens 小计：**203,454,417**；这不是完整账户总量。其他模型另计 40,248,883 tokens。
 
 
 ### Claude 普通 Chat
