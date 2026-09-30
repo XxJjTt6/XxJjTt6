@@ -1,6 +1,6 @@
 {
   "schemaVersion": "claude-surfaces-v6",
-  "generatedAt": "2026-09-30T14:23:38.768Z",
+  "generatedAt": "2026-09-30T15:25:53.057Z",
   "timeZone": "Asia/Shanghai",
   "code": {
     "measurement": "provider-reported-local-transcripts",
@@ -160,12 +160,12 @@
     "measurement": "provider-reported-observed-usage",
     "scope": "Deduplicated retained Claude-model usage only. Partial; not a full account bill. Do not add to Tokscale totals.",
     "totals": {
-      "messages": 557,
-      "inputTokens": 1094,
-      "outputTokens": 16079,
-      "cacheReadTokens": 201838092,
-      "cacheWriteTokens": 5139098,
-      "totalTokens": 206994363
+      "messages": 580,
+      "inputTokens": 1140,
+      "outputTokens": 16306,
+      "cacheReadTokens": 205520166,
+      "cacheWriteTokens": 5243596,
+      "totalTokens": 210781208
     },
     "surfaces": {
       "desktop-code": {
@@ -179,12 +179,12 @@
       },
       "desktop-cowork": {
         "status": "observed",
-        "messages": 557,
-        "inputTokens": 1094,
-        "outputTokens": 16079,
-        "cacheReadTokens": 201838092,
-        "cacheWriteTokens": 5139098,
-        "totalTokens": 206994363
+        "messages": 580,
+        "inputTokens": 1140,
+        "outputTokens": 16306,
+        "cacheReadTokens": 205520166,
+        "cacheWriteTokens": 5243596,
+        "totalTokens": 210781208
       },
       "desktop-chat": {
         "status": "no-attributed-records",
@@ -298,12 +298,12 @@
       },
       {
         "date": "2026-09-30",
-        "messages": 40,
-        "inputTokens": 80,
-        "outputTokens": 1245,
-        "cacheReadTokens": 12712929,
-        "cacheWriteTokens": 1295226,
-        "totalTokens": 14009480
+        "messages": 63,
+        "inputTokens": 126,
+        "outputTokens": 1472,
+        "cacheReadTokens": 16395003,
+        "cacheWriteTokens": 1399724,
+        "totalTokens": 17796325
       }
     ],
     "coverage": {
@@ -357,8 +357,8 @@
   "desktop": {
     "status": "partial-cache",
     "diagnostics": {
-      "unreadableHistoricalVersions": 55,
-      "treeVersions": 58,
+      "unreadableHistoricalVersions": 56,
+      "treeVersions": 70,
       "conversations": 30,
       "conversationsWithOlderUncachedMessages": 27
     },
