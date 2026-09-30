@@ -83,7 +83,7 @@ DeepSeek Desktop tables use provider-reported local DSH session logs when presen
 
 ## Claude 多入口用量
 
-以下为本机保留日志的去重明细，采集时间：2026-09-30T07:04:40.784Z（按 Asia/Shanghai 分日）。
+以下为本机保留日志的去重明细，采集时间：2026-09-30T08:06:24.149Z（按 Asia/Shanghai 分日）。
 本节为已采集并保存在本地台账中的 Claude 模型用量，CLI、VS Code、Desktop 按消息 ID 去重。与上方 Tokscale 历史图可能重叠，不再次叠加到上方总量；Desktop 新增缓存记录尚不写入 Tokscale 排名。缓存读取也计入 tokens，不等于新生成文字。第三方模型不计入本节 Claude 总量。
 
 **覆盖不是完整账户账单。** 当前状态：部分覆盖；提示：Desktop 历史缓存不完整；普通 Chat 等待导出；CLI 尚未验证到记录；VS Code 尚未验证到记录；Desktop Code 尚未验证到记录。
@@ -92,7 +92,7 @@ Desktop 可读会话 30 个，其中 28 个有未缓存的更早消息；读取�
 | 使用入口 | 日志报告的 tokens | 唯一回复数 | 最近记录日期 | 覆盖状态 |
 | --- | ---: | ---: | --- | --- |
 | Claude Desktop · Code | — | — | — | 尚未发现可归属的记录 |
-| Claude Desktop · Cowork | 192,984,883 | 517 | 2026-09-29 | 已发现记录；非完整账单 |
+| Claude Desktop · Cowork | 196,062,038 | 524 | 2026-09-30 | 已发现记录；非完整账单 |
 | Claude Desktop · Chat 缓存 | — | — | — | 尚未发现可归属的记录 |
 | Desktop · 模式未标记 | — | — | — | 尚未发现可归属的记录 |
 | 第三方 Desktop 客户端 | — | — | — | 尚未发现可归属的记录 |
@@ -101,7 +101,7 @@ Desktop 可读会话 30 个，其中 28 个有未缓存的更早消息；读取�
 | 跨入口共享会话（只计一次） | — | — | — | 尚未发现可归属的记录 |
 | Claude Code（入口未标记） | — | — | — | 尚未发现可归属的记录 |
 
-已记录 Claude tokens 小计：**192,984,883**；这不是完整账户总量。其他模型另计 40,248,883 tokens。
+已记录 Claude tokens 小计：**196,062,038**；这不是完整账户总量。其他模型另计 40,248,883 tokens。
 
 
 ### Claude 普通 Chat
