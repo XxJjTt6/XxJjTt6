@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-01T05:19:53.800Z",
+    "generatedAt": "2026-10-01T06:37:59.228Z",
     "version": "4.17.0",
     "source": "https://tokscale.ai/u/XxJjTt6",
     "dateRange": {
@@ -13,12 +13,12 @@
     "displayName": "Saber",
     "rank": 677,
     "rankText": "#677",
-    "updatedAt": "2026-10-01T05:19:53.800Z",
-    "submissionCount": 2915
+    "updatedAt": "2026-10-01T06:37:59.228Z",
+    "submissionCount": 2917
   },
   "summary": {
-    "totalTokens": 24368610732,
-    "totalCost": 23145.0193,
+    "totalTokens": 24368792620,
+    "totalCost": 23145.2302,
     "totalDays": 199,
     "activeDays": 199
   },
@@ -7995,16 +7995,6 @@
           "client": "codex",
           "modelId": "",
           "models": {
-            "gpt-5.5": {
-              "cost": 9.118398000000001,
-              "input": 720208,
-              "output": 39296,
-              "tokens": 9044169,
-              "messages": 82,
-              "cacheRead": 8278016,
-              "reasoning": 6649,
-              "cacheWrite": 0
-            },
             "gpt-5.6-sol": {
               "cost": 41.88819,
               "input": 2628052,
@@ -8014,6 +8004,16 @@
               "cacheRead": 37187584,
               "reasoning": 27772,
               "cacheWrite": 0
+            },
+            "gpt-5.5": {
+              "tokens": 9044169,
+              "cost": 9.118398000000001,
+              "input": 720208,
+              "output": 39296,
+              "cacheRead": 8278016,
+              "cacheWrite": 0,
+              "reasoning": 6649,
+              "messages": 82
             }
           },
           "tokens": {
@@ -9142,7 +9142,7 @@
             "cacheWrite": 0,
             "reasoning": 31219
           },
-          "cost": 15.91826084,
+          "cost": 15.918260839999999,
           "messages": 200
         }
       ]
@@ -10399,17 +10399,17 @@
       "date": "2026-10-01",
       "timestampMs": null,
       "totals": {
-        "tokens": 22393621,
-        "cost": 8.5057,
+        "tokens": 22575509,
+        "cost": 8.7166,
         "messages": 0
       },
       "intensity": 1,
       "tokenBreakdown": {
-        "input": 1889259,
-        "output": 73963,
-        "cacheRead": 20367872,
+        "input": 1986184,
+        "output": 74663,
+        "cacheRead": 20451968,
         "cacheWrite": 0,
-        "reasoning": 62527
+        "reasoning": 62694
       },
       "clients": [
         {
@@ -10437,25 +10437,25 @@
               "cacheWrite": 0
             },
             "gpt-6.1-sol": {
-              "cost": 6.9123595999999985,
-              "input": 1857211,
-              "output": 69687,
-              "tokens": 21076279,
-              "messages": 158,
-              "cacheRead": 19090176,
-              "reasoning": 59205,
+              "cost": 7.1232891999999985,
+              "input": 1954136,
+              "output": 70387,
+              "tokens": 21258167,
+              "messages": 162,
+              "cacheRead": 19174272,
+              "reasoning": 59372,
               "cacheWrite": 0
             }
           },
           "tokens": {
-            "input": 1889259,
-            "output": 73963,
-            "cacheRead": 20367872,
+            "input": 1986184,
+            "output": 74663,
+            "cacheRead": 20451968,
             "cacheWrite": 0,
-            "reasoning": 62527
+            "reasoning": 62694
           },
-          "cost": 8.5056772,
-          "messages": 166
+          "cost": 8.7166068,
+          "messages": 170
         }
       ]
     }
