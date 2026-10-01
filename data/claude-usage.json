@@ -1,6 +1,6 @@
 {
   "schemaVersion": "claude-surfaces-v6",
-  "generatedAt": "2026-10-01T12:51:13.281Z",
+  "generatedAt": "2026-10-01T13:53:15.690Z",
   "timeZone": "Asia/Shanghai",
   "code": {
     "measurement": "provider-reported-local-transcripts",
@@ -160,12 +160,12 @@
     "measurement": "provider-reported-observed-usage",
     "scope": "Deduplicated retained Claude-model usage only. Partial; not a full account bill. Do not add to Tokscale totals.",
     "totals": {
-      "messages": 669,
-      "inputTokens": 1318,
-      "outputTokens": 17534,
-      "cacheReadTokens": 225124420,
-      "cacheWriteTokens": 6035005,
-      "totalTokens": 231178277
+      "messages": 673,
+      "inputTokens": 1326,
+      "outputTokens": 17559,
+      "cacheReadTokens": 226322348,
+      "cacheWriteTokens": 6045345,
+      "totalTokens": 232386578
     },
     "surfaces": {
       "desktop-code": {
@@ -179,12 +179,12 @@
       },
       "desktop-cowork": {
         "status": "observed",
-        "messages": 669,
-        "inputTokens": 1318,
-        "outputTokens": 17534,
-        "cacheReadTokens": 225124420,
-        "cacheWriteTokens": 6035005,
-        "totalTokens": 231178277
+        "messages": 673,
+        "inputTokens": 1326,
+        "outputTokens": 17559,
+        "cacheReadTokens": 226322348,
+        "cacheWriteTokens": 6045345,
+        "totalTokens": 232386578
       },
       "desktop-chat": {
         "status": "no-attributed-records",
@@ -307,12 +307,12 @@
       },
       {
         "date": "2026-10-01",
-        "messages": 72,
-        "inputTokens": 144,
-        "outputTokens": 1060,
-        "cacheReadTokens": 15933158,
-        "cacheWriteTokens": 742875,
-        "totalTokens": 16677237
+        "messages": 76,
+        "inputTokens": 152,
+        "outputTokens": 1085,
+        "cacheReadTokens": 17131086,
+        "cacheWriteTokens": 753215,
+        "totalTokens": 17885538
       }
     ],
     "coverage": {
@@ -366,7 +366,7 @@
   "desktop": {
     "status": "partial-cache",
     "diagnostics": {
-      "treeVersions": 64,
+      "treeVersions": 68,
       "unreadableHistoricalVersions": 2,
       "conversations": 30,
       "conversationsWithOlderUncachedMessages": 27
