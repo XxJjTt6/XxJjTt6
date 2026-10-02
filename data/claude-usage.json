@@ -1,6 +1,6 @@
 {
   "schemaVersion": "claude-surfaces-v6",
-  "generatedAt": "2026-10-02T03:22:22.718Z",
+  "generatedAt": "2026-10-02T04:24:14.218Z",
   "timeZone": "Asia/Shanghai",
   "code": {
     "measurement": "provider-reported-local-transcripts",
@@ -160,12 +160,12 @@
     "measurement": "provider-reported-observed-usage",
     "scope": "Deduplicated retained Claude-model usage only. Partial; not a full account bill. Do not add to Tokscale totals.",
     "totals": {
-      "messages": 695,
-      "inputTokens": 1370,
-      "outputTokens": 17779,
-      "cacheReadTokens": 231550101,
-      "cacheWriteTokens": 6112326,
-      "totalTokens": 237681576
+      "messages": 706,
+      "inputTokens": 1392,
+      "outputTokens": 18674,
+      "cacheReadTokens": 236291162,
+      "cacheWriteTokens": 6512672,
+      "totalTokens": 242823900
     },
     "surfaces": {
       "desktop-code": {
@@ -179,12 +179,12 @@
       },
       "desktop-cowork": {
         "status": "observed",
-        "messages": 695,
-        "inputTokens": 1370,
-        "outputTokens": 17779,
-        "cacheReadTokens": 231550101,
-        "cacheWriteTokens": 6112326,
-        "totalTokens": 237681576
+        "messages": 706,
+        "inputTokens": 1392,
+        "outputTokens": 18674,
+        "cacheReadTokens": 236291162,
+        "cacheWriteTokens": 6512672,
+        "totalTokens": 242823900
       },
       "desktop-chat": {
         "status": "no-attributed-records",
@@ -313,6 +313,15 @@
         "cacheReadTokens": 22358839,
         "cacheWriteTokens": 820196,
         "totalTokens": 23180536
+      },
+      {
+        "date": "2026-10-02",
+        "messages": 11,
+        "inputTokens": 22,
+        "outputTokens": 895,
+        "cacheReadTokens": 4741061,
+        "cacheWriteTokens": 400346,
+        "totalTokens": 5142324
       }
     ],
     "coverage": {
@@ -322,7 +331,7 @@
       },
       "desktop-cowork": {
         "status": "observed-partial",
-        "lastRecordDate": "2026-10-01"
+        "lastRecordDate": "2026-10-02"
       },
       "desktop-chat": {
         "status": "not-observed",
@@ -366,7 +375,7 @@
   "desktop": {
     "status": "partial-cache",
     "diagnostics": {
-      "treeVersions": 70,
+      "treeVersions": 74,
       "unreadableHistoricalVersions": 2,
       "conversations": 30,
       "conversationsWithOlderUncachedMessages": 27
