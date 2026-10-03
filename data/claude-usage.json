@@ -1,6 +1,6 @@
 {
   "schemaVersion": "claude-surfaces-v6",
-  "generatedAt": "2026-10-03T08:30:02.886Z",
+  "generatedAt": "2026-10-03T09:32:55.687Z",
   "timeZone": "Asia/Shanghai",
   "code": {
     "measurement": "provider-reported-local-transcripts",
@@ -160,12 +160,12 @@
     "measurement": "provider-reported-observed-usage",
     "scope": "Deduplicated retained Claude-model usage only. Partial; not a full account bill. Do not add to Tokscale totals.",
     "totals": {
-      "messages": 843,
-      "inputTokens": 1666,
-      "outputTokens": 21616,
-      "cacheReadTokens": 291836743,
-      "cacheWriteTokens": 8277361,
-      "totalTokens": 300137386
+      "messages": 867,
+      "inputTokens": 1714,
+      "outputTokens": 21934,
+      "cacheReadTokens": 295321485,
+      "cacheWriteTokens": 8426511,
+      "totalTokens": 303771644
     },
     "surfaces": {
       "desktop-code": {
@@ -179,12 +179,12 @@
       },
       "desktop-cowork": {
         "status": "observed",
-        "messages": 843,
-        "inputTokens": 1666,
-        "outputTokens": 21616,
-        "cacheReadTokens": 291836743,
-        "cacheWriteTokens": 8277361,
-        "totalTokens": 300137386
+        "messages": 867,
+        "inputTokens": 1714,
+        "outputTokens": 21934,
+        "cacheReadTokens": 295321485,
+        "cacheWriteTokens": 8426511,
+        "totalTokens": 303771644
       },
       "desktop-chat": {
         "status": "no-attributed-records",
@@ -325,12 +325,12 @@
       },
       {
         "date": "2026-10-03",
-        "messages": 75,
-        "inputTokens": 150,
-        "outputTokens": 1447,
-        "cacheReadTokens": 35579982,
-        "cacheWriteTokens": 1502327,
-        "totalTokens": 37083906
+        "messages": 99,
+        "inputTokens": 198,
+        "outputTokens": 1765,
+        "cacheReadTokens": 39064724,
+        "cacheWriteTokens": 1651477,
+        "totalTokens": 40718164
       }
     ],
     "coverage": {
@@ -384,10 +384,10 @@
   "desktop": {
     "status": "partial-cache",
     "diagnostics": {
-      "unreadableHistoricalVersions": 11,
-      "treeVersions": 57,
+      "unreadableHistoricalVersions": 14,
+      "treeVersions": 59,
       "conversations": 30,
-      "conversationsWithOlderUncachedMessages": 27
+      "conversationsWithOlderUncachedMessages": 28
     },
     "products": {
       "cowork": 30
