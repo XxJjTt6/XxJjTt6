@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T09:23:31.717Z",
+  "generatedAt": "2026-10-04T10:52:45.974Z",
   "tokscaleVersion": "4.17.0",
   "asOfDate": "2026-10-03",
   "firstActivityDate": "2026-01-07",
@@ -7664,16 +7664,6 @@
           "client": "codex",
           "modelId": "",
           "models": {
-            "gpt-5.5": {
-              "cost": 9.118398000000001,
-              "input": 720208,
-              "output": 39296,
-              "tokens": 9044169,
-              "messages": 82,
-              "cacheRead": 8278016,
-              "reasoning": 6649,
-              "cacheWrite": 0
-            },
             "gpt-5.6-sol": {
               "cost": 41.88819,
               "input": 2628052,
@@ -7683,6 +7673,16 @@
               "cacheRead": 37187584,
               "reasoning": 27772,
               "cacheWrite": 0
+            },
+            "gpt-5.5": {
+              "tokens": 9044169,
+              "cost": 9.118398000000001,
+              "input": 720208,
+              "output": 39296,
+              "cacheRead": 8278016,
+              "cacheWrite": 0,
+              "reasoning": 6649,
+              "messages": 82
             }
           },
           "tokens": {
@@ -9927,7 +9927,7 @@
             "cacheWrite": 0,
             "reasoning": 125936
           },
-          "cost": 13.06942559999999,
+          "cost": 13.069425599999988,
           "messages": 305
         }
       ]
