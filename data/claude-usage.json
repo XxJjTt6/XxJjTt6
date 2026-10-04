@@ -1,6 +1,6 @@
 {
   "schemaVersion": "claude-surfaces-v6",
-  "generatedAt": "2026-10-04T04:57:58.700Z",
+  "generatedAt": "2026-10-04T06:08:43.562Z",
   "timeZone": "Asia/Shanghai",
   "code": {
     "measurement": "provider-reported-local-transcripts",
@@ -382,9 +382,15 @@
     "complete": false
   },
   "desktop": {
-    "status": "error",
+    "status": "partial-cache",
     "diagnostics": {
-      "errorCode": "ETIMEDOUT"
+      "unreadableHistoricalVersions": 15,
+      "treeVersions": 59,
+      "conversations": 30,
+      "conversationsWithOlderUncachedMessages": 28
+    },
+    "products": {
+      "cowork": 30
     }
   },
   "chat": {
@@ -402,10 +408,10 @@
     "diagnostics": null
   },
   "health": {
-    "status": "degraded",
+    "status": "partial",
     "fullAccountCoverage": false,
     "issues": [
-      "DESKTOP_COLLECTOR_ERROR",
+      "DESKTOP_HISTORY_PARTIAL",
       "CHAT_EXPORT_REQUIRED",
       "CLI_NOT_OBSERVED",
       "VSCODE_NOT_OBSERVED",
