@@ -14,13 +14,14 @@ test("retains counters after cache eviction and merges larger streaming snapshot
   ledger = mergeLedger(ledger, [], "Asia/Shanghai");
   assert.equal(summarizeLedger(ledger).totals.totalTokens, 133);
   ledger = mergeLedger(ledger, [{ ...fixture, outputTokens: 18, surfaces: ["vscode"] }, fixture], "Asia/Shanghai");
-  const report = summarizeLedger(ledger);
+  const report = summarizeLedger(ledger, new Date("2026-09-30T00:00:00.000Z"));
   assert.equal(report.totals.totalTokens, 143);
   assert.equal(report.totals.messages, 1);
   assert.equal(report.surfaces.shared.messages, 1);
   assert.equal(report.coverage.vscode.status, "observed-partial");
   assert.equal(report.coverage.cli.status, "not-observed");
   assert.equal(report.complete, false);
+  assert.equal(summarizeLedger(ledger, new Date("2026-10-10T00:00:00.000Z")).coverage.vscode.status, "stale");
 });
 
 test("separates third party providers and rejects invalid ledgers instead of erasing them", () => {
@@ -56,6 +57,17 @@ test("collector lock prevents simultaneous writers and releases cleanly", async 
   const release = await acquireLock(root);
   await assert.rejects(acquireLock(root), /already running/);
   await release();
+  await (await acquireLock(root))();
+});
+
+test("collector reclaims an abandoned ownerless lock after the grace period", async (t) => {
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), "claude-empty-lock-"));
+  t.after(() => fs.rm(root, { recursive: true, force: true }));
+  const lock = path.join(root, ".private", "collector.lock");
+  await fs.mkdir(lock, { recursive: true });
+  await assert.rejects(acquireLock(root), /owner not yet written/);
+  const stale = new Date(Date.now() - 120_000);
+  await fs.utimes(lock, stale, stale);
   await (await acquireLock(root))();
 });
 

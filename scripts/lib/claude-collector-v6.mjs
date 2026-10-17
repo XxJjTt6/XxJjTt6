@@ -73,9 +73,16 @@ export async function acquireLock(root, name = "collector") {
     if (error.code !== "EEXIST") throw error;
     // Owner PID allows crash recovery without stealing a lock from a slow live scan.
     const owner = await readJson(path.join(lock, "owner.json"));
-    if (!owner) throw new Error("Collector lock has no owner; inspect .private/collector.lock.");
-    try { process.kill(owner.pid, 0); throw new Error("Collector is already running."); }
-    catch (e) { if (e.code !== "ESRCH") throw e; }
+    if (!owner) {
+      // A crash between mkdir and writing owner.json can leave an empty lock.
+      // Give a concurrent starter time to finish before reclaiming it.
+      const ageMs = Date.now() - (await fs.stat(lock)).mtimeMs;
+      if (ageMs < 60_000) throw new Error(`Collector lock owner not yet written: ${lock}`);
+    } else {
+      if (!Number.isSafeInteger(owner.pid) || owner.pid <= 0) throw new Error(`Collector lock has an invalid owner: ${lock}`);
+      try { process.kill(owner.pid, 0); throw new Error("Collector is already running."); }
+      catch (e) { if (e.code !== "ESRCH") throw e; }
+    }
     await fs.rm(lock, { recursive: true });
     await fs.mkdir(lock, { mode: 0o700 });
   }
