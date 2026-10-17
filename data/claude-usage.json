@@ -1,6 +1,6 @@
 {
   "schemaVersion": "claude-surfaces-v6",
-  "generatedAt": "2026-10-04T06:08:43.562Z",
+  "generatedAt": "2026-10-17T04:42:46.625Z",
   "timeZone": "Asia/Shanghai",
   "code": {
     "measurement": "provider-reported-local-transcripts",
@@ -160,12 +160,12 @@
     "measurement": "provider-reported-observed-usage",
     "scope": "Deduplicated retained Claude-model usage only. Partial; not a full account bill. Do not add to Tokscale totals.",
     "totals": {
-      "messages": 884,
-      "inputTokens": 1748,
-      "outputTokens": 22068,
-      "cacheReadTokens": 301664676,
-      "cacheWriteTokens": 8458478,
-      "totalTokens": 310146970
+      "messages": 1336,
+      "inputTokens": 2652,
+      "outputTokens": 34831,
+      "cacheReadTokens": 491556630,
+      "cacheWriteTokens": 14659554,
+      "totalTokens": 506253667
     },
     "surfaces": {
       "desktop-code": {
@@ -179,12 +179,12 @@
       },
       "desktop-cowork": {
         "status": "observed",
-        "messages": 884,
-        "inputTokens": 1748,
-        "outputTokens": 22068,
-        "cacheReadTokens": 301664676,
-        "cacheWriteTokens": 8458478,
-        "totalTokens": 310146970
+        "messages": 1336,
+        "inputTokens": 2652,
+        "outputTokens": 34831,
+        "cacheReadTokens": 491556630,
+        "cacheWriteTokens": 14659554,
+        "totalTokens": 506253667
       },
       "desktop-chat": {
         "status": "no-attributed-records",
@@ -325,12 +325,111 @@
       },
       {
         "date": "2026-10-03",
-        "messages": 116,
-        "inputTokens": 232,
-        "outputTokens": 1899,
-        "cacheReadTokens": 45407915,
-        "cacheWriteTokens": 1683444,
-        "totalTokens": 47093490
+        "messages": 123,
+        "inputTokens": 246,
+        "outputTokens": 2452,
+        "cacheReadTokens": 49405364,
+        "cacheWriteTokens": 1689499,
+        "totalTokens": 51097561
+      },
+      {
+        "date": "2026-10-04",
+        "messages": 39,
+        "inputTokens": 78,
+        "outputTokens": 362,
+        "cacheReadTokens": 18243642,
+        "cacheWriteTokens": 1432560,
+        "totalTokens": 19676642
+      },
+      {
+        "date": "2026-10-05",
+        "messages": 48,
+        "inputTokens": 96,
+        "outputTokens": 1342,
+        "cacheReadTokens": 17247614,
+        "cacheWriteTokens": 407286,
+        "totalTokens": 17656338
+      },
+      {
+        "date": "2026-10-06",
+        "messages": 61,
+        "inputTokens": 122,
+        "outputTokens": 1833,
+        "cacheReadTokens": 27986784,
+        "cacheWriteTokens": 818068,
+        "totalTokens": 28806807
+      },
+      {
+        "date": "2026-10-07",
+        "messages": 61,
+        "inputTokens": 122,
+        "outputTokens": 1494,
+        "cacheReadTokens": 26782619,
+        "cacheWriteTokens": 622737,
+        "totalTokens": 27406972
+      },
+      {
+        "date": "2026-10-11",
+        "messages": 17,
+        "inputTokens": 34,
+        "outputTokens": 214,
+        "cacheReadTokens": 3590787,
+        "cacheWriteTokens": 74860,
+        "totalTokens": 3665895
+      },
+      {
+        "date": "2026-10-12",
+        "messages": 28,
+        "inputTokens": 56,
+        "outputTokens": 294,
+        "cacheReadTokens": 5775628,
+        "cacheWriteTokens": 80185,
+        "totalTokens": 5856163
+      },
+      {
+        "date": "2026-10-13",
+        "messages": 18,
+        "inputTokens": 36,
+        "outputTokens": 165,
+        "cacheReadTokens": 8814136,
+        "cacheWriteTokens": 595087,
+        "totalTokens": 9409424
+      },
+      {
+        "date": "2026-10-14",
+        "messages": 22,
+        "inputTokens": 44,
+        "outputTokens": 163,
+        "cacheReadTokens": 9114732,
+        "cacheWriteTokens": 47541,
+        "totalTokens": 9162480
+      },
+      {
+        "date": "2026-10-15",
+        "messages": 50,
+        "inputTokens": 100,
+        "outputTokens": 2115,
+        "cacheReadTokens": 23950309,
+        "cacheWriteTokens": 575113,
+        "totalTokens": 24527637
+      },
+      {
+        "date": "2026-10-16",
+        "messages": 15,
+        "inputTokens": 30,
+        "outputTokens": 201,
+        "cacheReadTokens": 5528146,
+        "cacheWriteTokens": 333498,
+        "totalTokens": 5861875
+      },
+      {
+        "date": "2026-10-17",
+        "messages": 86,
+        "inputTokens": 172,
+        "outputTokens": 4027,
+        "cacheReadTokens": 38860108,
+        "cacheWriteTokens": 1208086,
+        "totalTokens": 40072393
       }
     ],
     "coverage": {
@@ -340,7 +439,7 @@
       },
       "desktop-cowork": {
         "status": "observed-partial",
-        "lastRecordDate": "2026-10-03"
+        "lastRecordDate": "2026-10-17"
       },
       "desktop-chat": {
         "status": "not-observed",
@@ -384,13 +483,14 @@
   "desktop": {
     "status": "partial-cache",
     "diagnostics": {
-      "unreadableHistoricalVersions": 15,
-      "treeVersions": 59,
-      "conversations": 30,
-      "conversationsWithOlderUncachedMessages": 28
+      "unreadableHistoricalVersions": 21,
+      "treeVersions": 62,
+      "unreadableBlobs": 7,
+      "conversations": 29,
+      "conversationsWithOlderUncachedMessages": 25
     },
     "products": {
-      "cowork": 30
+      "cowork": 29
     }
   },
   "chat": {
