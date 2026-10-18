@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-18T10:58:32.822Z",
+    "generatedAt": "2026-10-18T13:47:17.361Z",
     "version": "4.20.0",
     "source": "https://tokscale.ai/u/XxJjTt6",
     "dateRange": {
@@ -13,12 +13,12 @@
     "displayName": "Saber",
     "rank": 741,
     "rankText": "#741",
-    "updatedAt": "2026-10-18T10:58:32.822Z",
-    "submissionCount": 3055
+    "updatedAt": "2026-10-18T13:47:17.361Z",
+    "submissionCount": 3056
   },
   "summary": {
-    "totalTokens": 24777593801,
-    "totalCost": 23409.0213,
+    "totalTokens": 24778687333,
+    "totalCost": 23409.2159,
     "totalDays": 214,
     "activeDays": 214
   },
@@ -7995,6 +7995,16 @@
           "client": "codex",
           "modelId": "",
           "models": {
+            "gpt-5.5": {
+              "cost": 9.118398000000001,
+              "input": 720208,
+              "output": 39296,
+              "tokens": 9044169,
+              "messages": 82,
+              "cacheRead": 8278016,
+              "reasoning": 6649,
+              "cacheWrite": 0
+            },
             "gpt-5.6-sol": {
               "cost": 41.88819,
               "input": 2628052,
@@ -8004,16 +8014,6 @@
               "cacheRead": 37187584,
               "reasoning": 27772,
               "cacheWrite": 0
-            },
-            "gpt-5.5": {
-              "tokens": 9044169,
-              "cost": 9.118398000000001,
-              "input": 720208,
-              "output": 39296,
-              "cacheRead": 8278016,
-              "cacheWrite": 0,
-              "reasoning": 6649,
-              "messages": 82
             }
           },
           "tokens": {
@@ -10400,7 +10400,7 @@
             "cacheWrite": 0,
             "reasoning": 166002
           },
-          "cost": 28.603268799999995,
+          "cost": 28.6032688,
           "messages": 275
         }
       ]
@@ -10997,7 +10997,7 @@
           "modelId": "",
           "models": {
             "claude-opus-5-5": {
-              "cost": 6.526967199999999,
+              "cost": 6.5269672,
               "input": 36,
               "output": 165,
               "tokens": 9409424,
@@ -11014,7 +11014,7 @@
             "cacheWrite": 595087,
             "reasoning": 0
           },
-          "cost": 6.526967199999999,
+          "cost": 6.5269672,
           "messages": 18
         }
       ]
@@ -11085,7 +11085,7 @@
           "modelId": "",
           "models": {
             "claude-opus-5-5": {
-              "cost": 9.4336658,
+              "cost": 9.433665799999998,
               "input": 100,
               "output": 2115,
               "tokens": 24527637,
@@ -11102,7 +11102,7 @@
             "cacheWrite": 575113,
             "reasoning": 0
           },
-          "cost": 9.4336658,
+          "cost": 9.433665799999998,
           "messages": 50
         }
       ]
@@ -11269,16 +11269,16 @@
       "date": "2026-10-18",
       "timestampMs": null,
       "totals": {
-        "tokens": 24526838,
-        "cost": 8.5617,
+        "tokens": 25620370,
+        "cost": 8.7563,
         "messages": 0
       },
       "intensity": 1,
       "tokenBreakdown": {
-        "input": 162,
-        "output": 4439,
-        "cacheRead": 23976926,
-        "cacheWrite": 545311,
+        "input": 180,
+        "output": 4547,
+        "cacheRead": 25073705,
+        "cacheWrite": 541938,
         "reasoning": 0
       },
       "clients": [
@@ -11287,14 +11287,14 @@
           "modelId": "",
           "models": {
             "claude-opus-5-5": {
-              "cost": 8.550414799999997,
-              "input": 154,
-              "output": 4413,
-              "tokens": 24342855,
-              "messages": 77,
-              "cacheRead": 23874909,
+              "cost": 8.745018599999996,
+              "input": 172,
+              "output": 4521,
+              "tokens": 25436387,
+              "messages": 86,
+              "cacheRead": 24971688,
               "reasoning": 0,
-              "cacheWrite": 463379
+              "cacheWrite": 460006
             },
             "claude-haiku-5-5": {
               "cost": 0.01127547,
@@ -11308,14 +11308,14 @@
             }
           },
           "tokens": {
-            "input": 162,
-            "output": 4439,
-            "cacheRead": 23976926,
-            "cacheWrite": 545311,
+            "input": 180,
+            "output": 4547,
+            "cacheRead": 25073705,
+            "cacheWrite": 541938,
             "reasoning": 0
           },
-          "cost": 8.561690269999996,
-          "messages": 81
+          "cost": 8.756294069999996,
+          "messages": 90
         }
       ]
     }
