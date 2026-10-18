@@ -1,6 +1,6 @@
 {
   "schemaVersion": "claude-surfaces-v6",
-  "generatedAt": "2026-10-18T15:50:33.701Z",
+  "generatedAt": "2026-10-18T17:30:54.206Z",
   "timeZone": "Asia/Shanghai",
   "code": {
     "measurement": "provider-reported-local-transcripts",
@@ -160,12 +160,12 @@
     "measurement": "provider-reported-observed-usage",
     "scope": "Deduplicated retained Claude-model usage only. Partial; not a full account bill. Do not add to Tokscale totals.",
     "totals": {
-      "messages": 1714,
-      "inputTokens": 3442,
-      "outputTokens": 46403,
-      "cacheReadTokens": 601371930,
-      "cacheWriteTokens": 17015867,
-      "totalTokens": 618437642
+      "messages": 1768,
+      "inputTokens": 3552,
+      "outputTokens": 50003,
+      "cacheReadTokens": 627178184,
+      "cacheWriteTokens": 17897231,
+      "totalTokens": 645128970
     },
     "surfaces": {
       "desktop-code": {
@@ -179,12 +179,12 @@
       },
       "desktop-cowork": {
         "status": "observed",
-        "messages": 1714,
-        "inputTokens": 3442,
-        "outputTokens": 46403,
-        "cacheReadTokens": 601371930,
-        "cacheWriteTokens": 17015867,
-        "totalTokens": 618437642
+        "messages": 1768,
+        "inputTokens": 3552,
+        "outputTokens": 50003,
+        "cacheReadTokens": 627178184,
+        "cacheWriteTokens": 17897231,
+        "totalTokens": 645128970
       },
       "desktop-chat": {
         "status": "no-attributed-records",
@@ -433,12 +433,21 @@
       },
       {
         "date": "2026-10-18",
-        "messages": 201,
-        "inputTokens": 402,
-        "outputTokens": 7919,
-        "cacheReadTokens": 62491137,
-        "cacheWriteTokens": 1222760,
-        "totalTokens": 63722218
+        "messages": 224,
+        "inputTokens": 448,
+        "outputTokens": 9625,
+        "cacheReadTokens": 72742001,
+        "cacheWriteTokens": 2058447,
+        "totalTokens": 74810521
+      },
+      {
+        "date": "2026-10-19",
+        "messages": 31,
+        "inputTokens": 64,
+        "outputTokens": 1894,
+        "cacheReadTokens": 15555390,
+        "cacheWriteTokens": 45677,
+        "totalTokens": 15603025
       }
     ],
     "coverage": {
@@ -448,7 +457,7 @@
       },
       "desktop-cowork": {
         "status": "observed-partial",
-        "lastRecordDate": "2026-10-18"
+        "lastRecordDate": "2026-10-19"
       },
       "desktop-chat": {
         "status": "not-observed",
@@ -492,11 +501,11 @@
   "desktop": {
     "status": "partial-cache",
     "diagnostics": {
-      "treeVersions": 57,
-      "unreadableHistoricalVersions": 10,
+      "treeVersions": 59,
+      "unreadableHistoricalVersions": 23,
       "unreadableBlobs": 7,
       "conversations": 30,
-      "conversationsWithOlderUncachedMessages": 25
+      "conversationsWithOlderUncachedMessages": 26
     },
     "products": {
       "cowork": 30
