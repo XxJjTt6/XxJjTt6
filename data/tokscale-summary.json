@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T06:19:40.933Z",
+  "generatedAt": "2026-10-20T08:31:08.768Z",
   "tokscaleVersion": "4.20.0",
   "asOfDate": "2026-10-20",
   "firstActivityDate": "2026-01-07",
@@ -7774,16 +7774,6 @@
           "client": "codex",
           "modelId": "",
           "models": {
-            "gpt-5.5": {
-              "cost": 3.6873050000000003,
-              "input": 453181,
-              "output": 17636,
-              "tokens": 2095921,
-              "messages": 24,
-              "cacheRead": 1622400,
-              "reasoning": 2704,
-              "cacheWrite": 0
-            },
             "gpt-5.6-sol": {
               "cost": 37.058197,
               "input": 2712369,
@@ -7793,6 +7783,16 @@
               "cacheRead": 29704064,
               "reasoning": 28945,
               "cacheWrite": 0
+            },
+            "gpt-5.5": {
+              "tokens": 2095921,
+              "cost": 3.6873050000000003,
+              "input": 453181,
+              "output": 17636,
+              "cacheRead": 1622400,
+              "cacheWrite": 0,
+              "reasoning": 2704,
+              "messages": 24
             }
           },
           "tokens": {
@@ -10490,7 +10490,7 @@
           "modelId": "",
           "models": {
             "claude-opus-5-5": {
-              "cost": 2.206710399999999,
+              "cost": 2.2067104,
               "input": 44,
               "output": 163,
               "tokens": 9162480,
@@ -10507,7 +10507,7 @@
             "cacheWrite": 47541,
             "reasoning": 0
           },
-          "cost": 2.206710399999999,
+          "cost": 2.2067104,
           "messages": 22
         }
       ]
@@ -10795,7 +10795,7 @@
           "modelId": "",
           "models": {
             "claude-opus-5-5": {
-              "cost": 8.9184826,
+              "cost": 8.918482599999999,
               "input": 100,
               "output": 2153,
               "tokens": 21072331,
@@ -10812,7 +10812,7 @@
             "cacheWrite": 597565,
             "reasoning": 0
           },
-          "cost": 8.9184826,
+          "cost": 8.918482599999999,
           "messages": 49
         }
       ]
