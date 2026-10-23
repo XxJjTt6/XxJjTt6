@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-22T21:22:54.449Z",
+    "generatedAt": "2026-10-23T00:48:41.626Z",
     "version": "4.20.0",
     "source": "https://tokscale.ai/u/XxJjTt6",
     "dateRange": {
@@ -13,8 +13,8 @@
     "displayName": "Saber",
     "rank": 762,
     "rankText": "#762",
-    "updatedAt": "2026-10-22T21:22:54.449Z",
-    "submissionCount": 3113
+    "updatedAt": "2026-10-23T00:48:41.626Z",
+    "submissionCount": 3114
   },
   "summary": {
     "totalTokens": 24827396880,
@@ -8093,16 +8093,6 @@
           "client": "codex",
           "modelId": "",
           "models": {
-            "gpt-5.5": {
-              "cost": 3.6873050000000003,
-              "input": 453181,
-              "output": 17636,
-              "tokens": 2095921,
-              "messages": 24,
-              "cacheRead": 1622400,
-              "reasoning": 2704,
-              "cacheWrite": 0
-            },
             "gpt-5.6-sol": {
               "cost": 37.058197,
               "input": 2712369,
@@ -8112,6 +8102,16 @@
               "cacheRead": 29704064,
               "reasoning": 28945,
               "cacheWrite": 0
+            },
+            "gpt-5.5": {
+              "tokens": 2095921,
+              "cost": 3.6873050000000003,
+              "input": 453181,
+              "output": 17636,
+              "cacheRead": 1622400,
+              "cacheWrite": 0,
+              "reasoning": 2704,
+              "messages": 24
             }
           },
           "tokens": {
@@ -11041,7 +11041,7 @@
           "modelId": "",
           "models": {
             "claude-opus-5-5": {
-              "cost": 2.2067104,
+              "cost": 2.2067104000000004,
               "input": 44,
               "output": 163,
               "tokens": 9162480,
@@ -11058,7 +11058,7 @@
             "cacheWrite": 47541,
             "reasoning": 0
           },
-          "cost": 2.2067104,
+          "cost": 2.2067104000000004,
           "messages": 22
         }
       ]
