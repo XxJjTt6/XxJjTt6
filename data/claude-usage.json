@@ -1,27 +1,27 @@
 {
   "schemaVersion": "claude-surfaces-v6",
-  "generatedAt": "2026-10-27T07:30:41.860Z",
+  "generatedAt": "2026-10-27T08:34:34.504Z",
   "timeZone": "Asia/Shanghai",
   "code": {
     "measurement": "provider-reported-local-transcripts",
     "scope": "Local Claude Code client usage, including non-Anthropic models if configured. A subset of Tokscale, never added again.",
     "totals": {
-      "messages": 277,
-      "inputTokens": 1231306,
-      "outputTokens": 260713,
-      "cacheReadTokens": 38756864,
+      "messages": 15,
+      "inputTokens": 65664,
+      "outputTokens": 7877,
+      "cacheReadTokens": 315648,
       "cacheWriteTokens": 0,
-      "totalTokens": 40248883
+      "totalTokens": 389189
     },
     "surfaces": {
       "desktop-code": {
         "status": "observed",
-        "messages": 277,
-        "inputTokens": 1231306,
-        "outputTokens": 260713,
-        "cacheReadTokens": 38756864,
+        "messages": 15,
+        "inputTokens": 65664,
+        "outputTokens": 7877,
+        "cacheReadTokens": 315648,
         "cacheWriteTokens": 0,
-        "totalTokens": 40248883
+        "totalTokens": 389189
       },
       "desktop-cowork": {
         "status": "no-attributed-records",
@@ -99,56 +99,20 @@
     "daily": [
       {
         "date": "2026-08-26",
-        "messages": 131,
-        "inputTokens": 717685,
-        "outputTokens": 125430,
-        "cacheReadTokens": 16205824,
+        "messages": 15,
+        "inputTokens": 65664,
+        "outputTokens": 7877,
+        "cacheReadTokens": 315648,
         "cacheWriteTokens": 0,
-        "totalTokens": 17048939
-      },
-      {
-        "date": "2026-08-27",
-        "messages": 65,
-        "inputTokens": 220040,
-        "outputTokens": 69572,
-        "cacheReadTokens": 14085120,
-        "cacheWriteTokens": 0,
-        "totalTokens": 14374732
-      },
-      {
-        "date": "2026-08-28",
-        "messages": 56,
-        "inputTokens": 162071,
-        "outputTokens": 54398,
-        "cacheReadTokens": 4771456,
-        "cacheWriteTokens": 0,
-        "totalTokens": 4987925
-      },
-      {
-        "date": "2026-08-29",
-        "messages": 11,
-        "inputTokens": 127324,
-        "outputTokens": 6460,
-        "cacheReadTokens": 1511424,
-        "cacheWriteTokens": 0,
-        "totalTokens": 1645208
-      },
-      {
-        "date": "2026-08-30",
-        "messages": 14,
-        "inputTokens": 4186,
-        "outputTokens": 4853,
-        "cacheReadTokens": 2183040,
-        "cacheWriteTokens": 0,
-        "totalTokens": 2192079
+        "totalTokens": 389189
       }
     ],
     "diagnostics": {
       "missingRoots": 3,
       "unreadableEntries": 0,
       "invalidLines": 0,
-      "ignoredUsageRecords": 2,
-      "filesScanned": 6
+      "ignoredUsageRecords": 3,
+      "filesScanned": 5
     }
   },
   "inbox": {
