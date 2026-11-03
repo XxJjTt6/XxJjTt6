@@ -24,7 +24,7 @@ export function dailyTarget(graph, date) {
   // from turning the schedule back into an identical count every day.
   let hash = 2166136261;
   for (const char of date) hash = Math.imul(hash ^ char.charCodeAt(0), 16777619) >>> 0;
-  const spread = hash % 6;
+  const spread = hash % 9;
   return Math.min(40, 21 + Math.round(14 * tokens / (tokens + 15_000_000)) + spread);
 }
 
