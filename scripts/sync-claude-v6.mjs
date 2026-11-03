@@ -7,6 +7,7 @@ import { spawnSync } from "node:child_process";
 import { scanClaudeUsage } from "./scan-claude-usage-v1.mjs";
 import { readJson, acquireLock } from "./lib/claude-collector-v6.mjs";
 import { readLocalConfig, tokscaleScanEnv, writeJsonAtomic } from "./lib/claude-usage-v1.mjs";
+import { decideAdaptiveSync, readOwnerCommitDates } from "./lib/adaptive-profile-sync-v1.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const args = process.argv.slice(2);
@@ -37,8 +38,9 @@ try {
   catch (error) { if (error.code !== "EEXIST") throw error; }
   const backups = (await fs.readdir(path.dirname(backup))).filter((s) => /^\d{4}-\d{2}-\d{2}\.json$/.test(s)).sort();
   for (const old of backups.slice(0, -14)) await fs.rm(path.join(path.dirname(backup), old));
-  const due = !status.lastPublishAt || Date.now() - new Date(status.lastPublishAt).getTime() > 3600000;
+  const due = !status.lastPublishCheckAt || Date.now() - new Date(status.lastPublishCheckAt).getTime() > 3600000;
   if ((args.includes("--publish") && due) || args.includes("--force-publish")) {
+    status.lastPublishCheckAt = new Date().toISOString();
     try {
       // Preserve the pre-existing Codex/Claude Tokscale submission workflow. Its
       // failure is independent of the Desktop numeric ledger and GitHub publication.
@@ -70,6 +72,14 @@ try {
       if (git(outbox, ["branch", "--show-current"]) !== "main") throw new Error("OUTBOX_BRANCH_MISMATCH");
       git(outbox, ["fetch", "origin", "main"]);
       git(outbox, ["rebase", "origin/main"]);
+      const decision = decideAdaptiveSync({ graph: await readJson(path.join(outbox, "data", "tokscale-graph.json")),
+        commitDates: readOwnerCommitDates(outbox) });
+      if (!decision.shouldCommit && !args.includes("--force-publish")) {
+        status.publication = "deferred";
+        status.consecutivePublishFailures = 0;
+        delete status.publishError;
+        console.log(`GitHub publication deferred by daily budget (${decision.existing}/${decision.target}).`);
+      } else {
       await writeJsonAtomic(path.join(outbox, "data", "claude-usage.json"), snapshot);
       // A deployed outbox regenerates the original Codex/DeepSeek presentation using
       // the newest remote Tokscale graph, so replacing v4 does not drop its sources.
@@ -99,6 +109,7 @@ try {
       status.consecutivePublishFailures = 0;
       delete status.publishError;
       console.log("Claude aggregate snapshot published to GitHub.");
+      }
     } catch (error) {
       status.publication = "error";
       status.publishError = /^[A-Z_]+$/.test(error.message) ? error.message : "PUBLICATION_FAILED";

@@ -33,15 +33,18 @@ test("buildHourlySyncSnapshot creates a changing hourly token snapshot", () => {
   });
 });
 
-test("hourly token sync workflow refreshes public data and commits every hour as the profile owner", () => {
+test("profile sync checks twice per hour and applies the adaptive commit budget", () => {
   const workflow = readFileSync(new URL("../.github/workflows/hourly-token-sync-v2.yml", import.meta.url), "utf8");
 
   assert.match(workflow, /name: Hourly token sync/);
-  assert.match(workflow, /cron: "13 \* \* \* \*"/);
+  assert.match(workflow, /cron: "13,43 \* \* \* \*"/);
   assert.match(workflow, /npm run refresh:public/);
+  assert.match(workflow, /node scripts\/adaptive-profile-sync-v1\.mjs/);
+  assert.match(workflow, /if: steps\.budget\.outputs\.commit == 'true'/);
   assert.match(workflow, /npm run sync:hourly/);
   assert.match(workflow, /git config user\.name "Xu jiangtao"/);
   assert.match(workflow, /git config user\.email "77684124\+XxJjTt6@users\.noreply\.github\.com"/);
   assert.match(workflow, /data\/tokscale-hourly-sync\.json/);
-  assert.doesNotMatch(workflow, /No Tokscale profile changes to commit/);
+  const refresh = readFileSync(new URL("../.github/workflows/refresh-tokscale-profile.yml", import.meta.url), "utf8");
+  assert.doesNotMatch(refresh, /schedule:/);
 });
