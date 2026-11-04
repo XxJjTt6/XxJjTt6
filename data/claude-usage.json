@@ -1,27 +1,27 @@
 {
   "schemaVersion": "claude-surfaces-v6",
-  "generatedAt": "2026-10-27T10:46:22.708Z",
+  "generatedAt": "2026-11-04T06:30:10.146Z",
   "timeZone": "Asia/Shanghai",
   "code": {
     "measurement": "provider-reported-local-transcripts",
     "scope": "Local Claude Code client usage, including non-Anthropic models if configured. A subset of Tokscale, never added again.",
     "totals": {
-      "messages": 15,
-      "inputTokens": 65664,
-      "outputTokens": 7877,
-      "cacheReadTokens": 315648,
+      "messages": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "cacheReadTokens": 0,
       "cacheWriteTokens": 0,
-      "totalTokens": 389189
+      "totalTokens": 0
     },
     "surfaces": {
       "desktop-code": {
-        "status": "observed",
-        "messages": 15,
-        "inputTokens": 65664,
-        "outputTokens": 7877,
-        "cacheReadTokens": 315648,
+        "status": "no-attributed-records",
+        "messages": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
         "cacheWriteTokens": 0,
-        "totalTokens": 389189
+        "totalTokens": 0
       },
       "desktop-cowork": {
         "status": "no-attributed-records",
@@ -96,23 +96,13 @@
         "totalTokens": 0
       }
     },
-    "daily": [
-      {
-        "date": "2026-08-26",
-        "messages": 15,
-        "inputTokens": 65664,
-        "outputTokens": 7877,
-        "cacheReadTokens": 315648,
-        "cacheWriteTokens": 0,
-        "totalTokens": 389189
-      }
-    ],
+    "daily": [],
     "diagnostics": {
-      "missingRoots": 3,
+      "missingRoots": 4,
       "unreadableEntries": 0,
       "invalidLines": 0,
-      "ignoredUsageRecords": 3,
-      "filesScanned": 5
+      "ignoredUsageRecords": 0,
+      "filesScanned": 0
     }
   },
   "inbox": {
@@ -438,7 +428,7 @@
         "lastRecordDate": null
       },
       "desktop-cowork": {
-        "status": "observed-partial",
+        "status": "stale",
         "lastRecordDate": "2026-10-21"
       },
       "desktop-chat": {
@@ -481,16 +471,9 @@
     "complete": false
   },
   "desktop": {
-    "status": "partial-cache",
+    "status": "error",
     "diagnostics": {
-      "unreadableHistoricalVersions": 6,
-      "treeVersions": 56,
-      "unreadableBlobs": 7,
-      "conversations": 30,
-      "conversationsWithOlderUncachedMessages": 26
-    },
-    "products": {
-      "cowork": 30
+      "errorType": "KeyError"
     }
   },
   "chat": {
@@ -508,10 +491,10 @@
     "diagnostics": null
   },
   "health": {
-    "status": "partial",
+    "status": "degraded",
     "fullAccountCoverage": false,
     "issues": [
-      "DESKTOP_HISTORY_PARTIAL",
+      "DESKTOP_COLLECTOR_ERROR",
       "CHAT_EXPORT_REQUIRED",
       "CLI_NOT_OBSERVED",
       "VSCODE_NOT_OBSERVED",
