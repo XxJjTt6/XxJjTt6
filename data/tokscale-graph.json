@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-04T06:31:33.176Z",
+    "generatedAt": "2026-11-04T07:33:18.647Z",
     "version": "4.21.0",
     "source": "https://tokscale.ai/u/XxJjTt6",
     "dateRange": {
@@ -13,12 +13,12 @@
     "displayName": "Saber",
     "rank": 805,
     "rankText": "#805",
-    "updatedAt": "2026-11-04T06:31:33.176Z",
-    "submissionCount": 3202
+    "updatedAt": "2026-11-04T07:33:18.647Z",
+    "submissionCount": 3203
   },
   "summary": {
-    "totalTokens": 25212163201,
-    "totalCost": 23556.4787,
+    "totalTokens": 25212591952,
+    "totalCost": 23558.1498,
     "totalDays": 229,
     "activeDays": 229
   },
@@ -12024,17 +12024,17 @@
       "date": "2026-11-04",
       "timestampMs": null,
       "totals": {
-        "tokens": 20851296,
-        "cost": 6.1359,
+        "tokens": 21280047,
+        "cost": 7.807,
         "messages": 0
       },
       "intensity": 1,
       "tokenBreakdown": {
-        "input": 1304994,
-        "output": 41345,
-        "cacheRead": 19473920,
+        "input": 1555302,
+        "output": 51351,
+        "cacheRead": 19639680,
         "cacheWrite": 0,
-        "reasoning": 31037
+        "reasoning": 33714
       },
       "clients": [
         {
@@ -12051,26 +12051,36 @@
               "reasoning": 11619,
               "cacheWrite": 0
             },
+            "gpt-6-astra": {
+              "cost": 1.2791420000000002,
+              "input": 100966,
+              "output": 3132,
+              "tokens": 143235,
+              "messages": 3,
+              "cacheRead": 37632,
+              "reasoning": 1505,
+              "cacheWrite": 0
+            },
             "gpt-6.1-sol": {
-              "cost": 3.8849772000000002,
-              "input": 1147122,
-              "output": 30383,
-              "tokens": 12124155,
-              "messages": 103,
-              "cacheRead": 10927232,
-              "reasoning": 19418,
+              "cost": 4.276934000000001,
+              "input": 1296464,
+              "output": 37257,
+              "tokens": 12409671,
+              "messages": 106,
+              "cacheRead": 11055360,
+              "reasoning": 20590,
               "cacheWrite": 0
             }
           },
           "tokens": {
-            "input": 1304994,
-            "output": 41345,
-            "cacheRead": 19473920,
+            "input": 1555302,
+            "output": 51351,
+            "cacheRead": 19639680,
             "cacheWrite": 0,
-            "reasoning": 31037
+            "reasoning": 33714
           },
-          "cost": 6.135868800000001,
-          "messages": 159
+          "cost": 7.806967600000002,
+          "messages": 165
         }
       ]
     }
