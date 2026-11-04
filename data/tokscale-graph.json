@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-04T18:45:48.456Z",
+    "generatedAt": "2026-11-04T19:47:09.297Z",
     "version": "4.21.0",
     "source": "https://tokscale.ai/u/XxJjTt6",
     "dateRange": {
@@ -11,10 +11,10 @@
   "profile": {
     "username": "XxJjTt6",
     "displayName": "Saber",
-    "rank": 810,
-    "rankText": "#810",
-    "updatedAt": "2026-11-04T18:45:48.456Z",
-    "submissionCount": 3214
+    "rank": 809,
+    "rankText": "#809",
+    "updatedAt": "2026-11-04T19:47:09.297Z",
+    "submissionCount": 3215
   },
   "summary": {
     "totalTokens": 25214518664,
@@ -8093,16 +8093,6 @@
           "client": "codex",
           "modelId": "",
           "models": {
-            "gpt-5.5": {
-              "cost": 3.6873050000000003,
-              "input": 453181,
-              "output": 17636,
-              "tokens": 2095921,
-              "messages": 24,
-              "cacheRead": 1622400,
-              "reasoning": 2704,
-              "cacheWrite": 0
-            },
             "gpt-5.6-sol": {
               "cost": 37.058197,
               "input": 2712369,
@@ -8112,6 +8102,16 @@
               "cacheRead": 29704064,
               "reasoning": 28945,
               "cacheWrite": 0
+            },
+            "gpt-5.5": {
+              "tokens": 2095921,
+              "cost": 3.6873050000000003,
+              "input": 453181,
+              "output": 17636,
+              "cacheRead": 1622400,
+              "cacheWrite": 0,
+              "reasoning": 2704,
+              "messages": 24
             }
           },
           "tokens": {
