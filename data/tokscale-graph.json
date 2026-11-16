@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-15T23:04:23.219Z",
+    "generatedAt": "2026-11-16T00:05:01.574Z",
     "version": "4.23.0",
     "source": "https://tokscale.ai/u/XxJjTt6",
     "dateRange": {
@@ -11,10 +11,10 @@
   "profile": {
     "username": "XxJjTt6",
     "displayName": "Saber",
-    "rank": 851,
-    "rankText": "#851",
-    "updatedAt": "2026-11-15T23:04:23.219Z",
-    "submissionCount": 3301
+    "rank": 852,
+    "rankText": "#852",
+    "updatedAt": "2026-11-16T00:05:01.574Z",
+    "submissionCount": 3302
   },
   "summary": {
     "totalTokens": 25375150615,
@@ -8093,6 +8093,16 @@
           "client": "codex",
           "modelId": "",
           "models": {
+            "gpt-5.5": {
+              "cost": 3.6873050000000003,
+              "input": 453181,
+              "output": 17636,
+              "tokens": 2095921,
+              "messages": 24,
+              "cacheRead": 1622400,
+              "reasoning": 2704,
+              "cacheWrite": 0
+            },
             "gpt-5.6-sol": {
               "cost": 37.058197,
               "input": 2712369,
@@ -8102,16 +8112,6 @@
               "cacheRead": 29704064,
               "reasoning": 28945,
               "cacheWrite": 0
-            },
-            "gpt-5.5": {
-              "tokens": 2095921,
-              "cost": 3.6873050000000003,
-              "input": 453181,
-              "output": 17636,
-              "cacheRead": 1622400,
-              "cacheWrite": 0,
-              "reasoning": 2704,
-              "messages": 24
             }
           },
           "tokens": {
@@ -10400,7 +10400,7 @@
             "cacheWrite": 0,
             "reasoning": 166002
           },
-          "cost": 28.603268799999995,
+          "cost": 28.6032688,
           "messages": 275
         }
       ]
@@ -12079,7 +12079,7 @@
             "cacheWrite": 0,
             "reasoning": 43280
           },
-          "cost": 12.944915600000003,
+          "cost": 12.944915600000002,
           "messages": 184
         }
       ]
