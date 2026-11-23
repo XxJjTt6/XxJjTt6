@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-23T11:50:06.675Z",
+    "generatedAt": "2026-11-23T12:50:32.891Z",
     "version": "4.23.1",
     "source": "https://tokscale.ai/u/XxJjTt6",
     "dateRange": {
@@ -11,14 +11,14 @@
   "profile": {
     "username": "XxJjTt6",
     "displayName": "Saber",
-    "rank": 841,
-    "rankText": "#841",
-    "updatedAt": "2026-11-23T11:50:06.675Z",
-    "submissionCount": 3406
+    "rank": 839,
+    "rankText": "#839",
+    "updatedAt": "2026-11-23T12:50:32.891Z",
+    "submissionCount": 3408
   },
   "summary": {
-    "totalTokens": 27552634444,
-    "totalCost": 24649.0399,
+    "totalTokens": 27640701078,
+    "totalCost": 24877.3644,
     "totalDays": 243,
     "activeDays": 243
   },
@@ -8093,6 +8093,16 @@
           "client": "codex",
           "modelId": "",
           "models": {
+            "gpt-5.5": {
+              "cost": 3.6873050000000003,
+              "input": 453181,
+              "output": 17636,
+              "tokens": 2095921,
+              "messages": 24,
+              "cacheRead": 1622400,
+              "reasoning": 2704,
+              "cacheWrite": 0
+            },
             "gpt-5.6-sol": {
               "cost": 37.058197,
               "input": 2712369,
@@ -8102,16 +8112,6 @@
               "cacheRead": 29704064,
               "reasoning": 28945,
               "cacheWrite": 0
-            },
-            "gpt-5.5": {
-              "tokens": 2095921,
-              "cost": 3.6873050000000003,
-              "input": 453181,
-              "output": 17636,
-              "cacheRead": 1622400,
-              "cacheWrite": 0,
-              "reasoning": 2704,
-              "messages": 24
             }
           },
           "tokens": {
@@ -12407,7 +12407,7 @@
       "timestampMs": null,
       "totals": {
         "tokens": 216669180,
-        "cost": 124.4956,
+        "cost": 159.07860000000002,
         "messages": 0
       },
       "intensity": 1,
@@ -12459,7 +12459,7 @@
           "modelId": "",
           "models": {
             "claude-opus-5-5": {
-              "cost": 68.76983039999999,
+              "cost": 89.99226239999996,
               "input": 674,
               "output": 374635,
               "tokens": 136968025,
@@ -12469,7 +12469,7 @@
               "cacheWrite": 7074144
             },
             "claude-fable-5-2": {
-              "cost": 47.23277919999999,
+              "cost": 60.59336919999998,
               "input": 398,
               "output": 254633,
               "tokens": 76364922,
@@ -12486,7 +12486,7 @@
             "cacheWrite": 9300909,
             "reasoning": 0
           },
-          "cost": 116.00260959999997,
+          "cost": 150.58563159999994,
           "messages": 451
         }
       ]
@@ -12496,7 +12496,7 @@
       "timestampMs": null,
       "totals": {
         "tokens": 136124143,
-        "cost": 63.1137,
+        "cost": 80.4008,
         "messages": 0
       },
       "intensity": 1,
@@ -12513,7 +12513,7 @@
           "modelId": "",
           "models": {
             "claude-opus-5-5": {
-              "cost": 63.11366819999998,
+              "cost": 80.4007662,
               "input": 1034,
               "output": 415432,
               "tokens": 136124143,
@@ -12530,7 +12530,7 @@
             "cacheWrite": 5762366,
             "reasoning": 0
           },
-          "cost": 63.11366819999998,
+          "cost": 80.4007662,
           "messages": 441
         }
       ]
@@ -12540,7 +12540,7 @@
       "timestampMs": null,
       "totals": {
         "tokens": 250738859,
-        "cost": 95.5872,
+        "cost": 113.4435,
         "messages": 0
       },
       "intensity": 1,
@@ -12557,7 +12557,7 @@
           "modelId": "",
           "models": {
             "claude-opus-5-5": {
-              "cost": 63.49973220000003,
+              "cost": 75.79262819999992,
               "input": 986,
               "output": 487997,
               "tokens": 170825056,
@@ -12567,7 +12567,7 @@
               "cacheWrite": 4097632
             },
             "claude-fable-5-2": {
-              "cost": 32.087458800000014,
+              "cost": 37.65085080000001,
               "input": 236,
               "output": 176281,
               "tokens": 79913803,
@@ -12584,7 +12584,7 @@
             "cacheWrite": 5024864,
             "reasoning": 0
           },
-          "cost": 95.58719100000005,
+          "cost": 113.44347899999994,
           "messages": 503
         }
       ]
@@ -12594,7 +12594,7 @@
       "timestampMs": null,
       "totals": {
         "tokens": 349530809,
-        "cost": 146.3924,
+        "cost": 169.7667,
         "messages": 0
       },
       "intensity": 1,
@@ -12611,7 +12611,7 @@
           "modelId": "",
           "models": {
             "claude-opus-5-5": {
-              "cost": 46.506923199999974,
+              "cost": 51.802574199999974,
               "input": 820,
               "output": 421236,
               "tokens": 148451464,
@@ -12621,7 +12621,7 @@
               "cacheWrite": 1765217
             },
             "claude-fable-5-2": {
-              "cost": 99.88543239999998,
+              "cost": 117.96416439999997,
               "input": 958,
               "output": 757123,
               "tokens": 201079345,
@@ -12638,7 +12638,7 @@
             "cacheWrite": 4778339,
             "reasoning": 0
           },
-          "cost": 146.39235559999997,
+          "cost": 169.76673859999994,
           "messages": 768
         }
       ]
@@ -12648,7 +12648,7 @@
       "timestampMs": null,
       "totals": {
         "tokens": 309453907,
-        "cost": 149.4142,
+        "cost": 167.9784,
         "messages": 0
       },
       "intensity": 1,
@@ -12690,7 +12690,7 @@
           "modelId": "",
           "models": {
             "claude-opus-5-5": {
-              "cost": 40.13019260000001,
+              "cost": 45.8149196,
               "input": 744,
               "output": 400386,
               "tokens": 115520797,
@@ -12700,7 +12700,7 @@
               "cacheWrite": 1894909
             },
             "claude-fable-5-2": {
-              "cost": 102.47669120000003,
+              "cost": 115.35621319999998,
               "input": 894,
               "output": 972752,
               "tokens": 167870395,
@@ -12717,7 +12717,7 @@
             "cacheWrite": 4974512,
             "reasoning": 0
           },
-          "cost": 142.60688380000005,
+          "cost": 161.17113279999998,
           "messages": 728
         }
       ]
@@ -12727,7 +12727,7 @@
       "timestampMs": null,
       "totals": {
         "tokens": 283253359,
-        "cost": 136.3459,
+        "cost": 154.2011,
         "messages": 0
       },
       "intensity": 1,
@@ -12769,7 +12769,7 @@
           "modelId": "",
           "models": {
             "claude-opus-5-5": {
-              "cost": 108.0589212000001,
+              "cost": 120.78718020000002,
               "input": 2368,
               "output": 1688916,
               "tokens": 220950338,
@@ -12779,7 +12779,7 @@
               "cacheWrite": 6337358
             },
             "claude-fable-5-2": {
-              "cost": 20.7115644,
+              "cost": 25.838546399999995,
               "input": 200,
               "output": 138514,
               "tokens": 34115383,
@@ -12796,7 +12796,7 @@
             "cacheWrite": 7191855,
             "reasoning": 0
           },
-          "cost": 128.7704856000001,
+          "cost": 146.6257266,
           "messages": 1157
         }
       ]
@@ -12805,17 +12805,17 @@
       "date": "2026-11-23",
       "timestampMs": null,
       "totals": {
-        "tokens": 616902403,
-        "cost": 313.4624,
+        "tokens": 704969037,
+        "cost": 412.2668,
         "messages": 0
       },
       "intensity": 2,
       "tokenBreakdown": {
-        "input": 6333990,
-        "output": 1632416,
-        "cacheRead": 603685648,
-        "cacheWrite": 5120238,
-        "reasoning": 130111
+        "input": 7912393,
+        "output": 1718849,
+        "cacheRead": 688122614,
+        "cacheWrite": 7046742,
+        "reasoning": 168439
       },
       "clients": [
         {
@@ -12833,70 +12833,70 @@
               "cacheWrite": 0
             },
             "gpt-6.2-sol": {
-              "cost": 1.3114555999999997,
-              "input": 466819,
-              "output": 9917,
-              "tokens": 2920771,
-              "messages": 36,
-              "cacheRead": 2440576,
-              "reasoning": 3459,
+              "cost": 1.6077083999999997,
+              "input": 539378,
+              "output": 14238,
+              "tokens": 3967207,
+              "messages": 46,
+              "cacheRead": 3409024,
+              "reasoning": 4567,
               "cacheWrite": 0
             },
             "gpt-6.2-astra": {
-              "cost": 154.93556240000012,
-              "input": 5751768,
-              "output": 240652,
-              "tokens": 205981231,
-              "messages": 698,
-              "cacheRead": 199863067,
-              "reasoning": 125744,
+              "cost": 205.1126744,
+              "input": 7257532,
+              "output": 292738,
+              "tokens": 269270751,
+              "messages": 834,
+              "cacheRead": 261557517,
+              "reasoning": 162964,
               "cacheWrite": 0
             }
           },
           "tokens": {
-            "input": 6331874,
-            "output": 253003,
-            "cacheRead": 203572891,
+            "input": 7910197,
+            "output": 309410,
+            "cacheRead": 266235789,
             "cacheWrite": 0,
-            "reasoning": 130111
+            "reasoning": 168439
           },
-          "cost": 156.63393680000013,
-          "messages": 754
+          "cost": 207.1073016,
+          "messages": 900
         },
         {
           "client": "claude",
           "modelId": "",
           "models": {
             "claude-opus-5-5": {
-              "cost": 75.85764839999997,
-              "input": 1450,
-              "output": 679345,
-              "tokens": 235218665,
-              "messages": 623,
-              "cacheRead": 231338417,
+              "cost": 96.05874499999996,
+              "input": 1482,
+              "output": 686151,
+              "tokens": 243506047,
+              "messages": 637,
+              "cacheRead": 238489425,
               "reasoning": 0,
-              "cacheWrite": 3199453
+              "cacheWrite": 4328989
             },
             "claude-fable-5-2": {
-              "cost": 80.97076599999998,
-              "input": 666,
-              "output": 700068,
-              "tokens": 171395859,
-              "messages": 309,
-              "cacheRead": 168774340,
+              "cost": 109.10075999999997,
+              "input": 714,
+              "output": 723288,
+              "tokens": 186839155,
+              "messages": 328,
+              "cacheRead": 183397400,
               "reasoning": 0,
-              "cacheWrite": 1920785
+              "cacheWrite": 2717753
             }
           },
           "tokens": {
-            "input": 2116,
-            "output": 1379413,
-            "cacheRead": 400112757,
-            "cacheWrite": 5120238,
+            "input": 2196,
+            "output": 1409439,
+            "cacheRead": 421886825,
+            "cacheWrite": 7046742,
             "reasoning": 0
           },
-          "cost": 156.82841439999996,
-          "messages": 932
+          "cost": 205.1595049999999,
+          "messages": 965
         }
       ]
     }
