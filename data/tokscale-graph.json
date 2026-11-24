@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-24T06:47:03.236Z",
+    "generatedAt": "2026-11-24T06:51:58.092Z",
     "version": "4.23.1",
     "source": "https://tokscale.ai/u/XxJjTt6",
     "dateRange": {
@@ -13,8 +13,8 @@
     "displayName": "Saber",
     "rank": 839,
     "rankText": "#839",
-    "updatedAt": "2026-11-24T06:47:03.236Z",
-    "submissionCount": 3434
+    "updatedAt": "2026-11-24T06:51:58.092Z",
+    "submissionCount": 3435
   },
   "summary": {
     "totalTokens": 27854796392,
@@ -10400,7 +10400,7 @@
             "cacheWrite": 0,
             "reasoning": 166002
           },
-          "cost": 28.603268799999995,
+          "cost": 28.6032688,
           "messages": 275
         }
       ]
@@ -12079,7 +12079,7 @@
             "cacheWrite": 0,
             "reasoning": 43280
           },
-          "cost": 12.944915600000002,
+          "cost": 12.944915600000003,
           "messages": 184
         }
       ]
@@ -12921,25 +12921,25 @@
           "client": "codex",
           "modelId": "",
           "models": {
-            "gpt-6.1-sol": {
-              "cost": 2.0258512,
-              "input": 436053,
-              "output": 4252,
-              "tokens": 10601464,
-              "messages": 57,
-              "cacheRead": 10151552,
-              "reasoning": 9607,
-              "cacheWrite": 0
-            },
             "gpt-6.2-sol": {
-              "tokens": 1560295,
               "cost": 0.9983356000000001,
               "input": 385404,
               "output": 9393,
+              "tokens": 1560295,
+              "messages": 20,
               "cacheRead": 1163776,
-              "cacheWrite": 0,
               "reasoning": 1722,
-              "messages": 20
+              "cacheWrite": 0
+            },
+            "gpt-6.1-sol": {
+              "tokens": 10601464,
+              "cost": 2.0258512,
+              "input": 436053,
+              "output": 4252,
+              "cacheRead": 10151552,
+              "cacheWrite": 0,
+              "reasoning": 9607,
+              "messages": 57
             }
           },
           "tokens": {
