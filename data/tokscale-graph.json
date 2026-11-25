@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-25T02:11:24.900Z",
+    "generatedAt": "2026-11-25T03:12:00.200Z",
     "version": "4.23.1",
     "source": "https://tokscale.ai/u/XxJjTt6",
     "dateRange": {
@@ -13,12 +13,12 @@
     "displayName": "Saber",
     "rank": 839,
     "rankText": "#839",
-    "updatedAt": "2026-11-25T02:11:24.900Z",
-    "submissionCount": 3470
+    "updatedAt": "2026-11-25T03:12:00.200Z",
+    "submissionCount": 3472
   },
   "summary": {
-    "totalTokens": 28097110640,
-    "totalCost": 25083.7536,
+    "totalTokens": 28114180159,
+    "totalCost": 25103.9857,
     "totalDays": 245,
     "activeDays": 245
   },
@@ -12993,16 +12993,16 @@
       "date": "2026-11-25",
       "timestampMs": null,
       "totals": {
-        "tokens": 78132044,
-        "cost": 28.3059,
+        "tokens": 95201563,
+        "cost": 48.538000000000004,
         "messages": 0
       },
       "intensity": 1,
       "tokenBreakdown": {
-        "input": 84757,
-        "output": 211825,
-        "cacheRead": 77412567,
-        "cacheWrite": 420487,
+        "input": 84931,
+        "output": 408434,
+        "cacheRead": 93254666,
+        "cacheWrite": 1451124,
         "reasoning": 2408
       },
       "clients": [
@@ -13036,35 +13036,35 @@
           "modelId": "",
           "models": {
             "claude-opus-5-5": {
-              "cost": 6.822023600000001,
-              "input": 172,
-              "output": 60516,
-              "tokens": 21950022,
-              "messages": 77,
-              "cacheRead": 21731238,
+              "cost": 15.845305199999999,
+              "input": 276,
+              "output": 128014,
+              "tokens": 31415565,
+              "messages": 125,
+              "cacheRead": 30386446,
               "reasoning": 0,
-              "cacheWrite": 158096
+              "cacheWrite": 900829
             },
             "claude-fable-5-2": {
-              "cost": 21.226089799999993,
-              "input": 186,
-              "output": 149684,
-              "tokens": 55607190,
-              "messages": 79,
-              "cacheRead": 55194929,
+              "cost": 32.43493199999999,
+              "input": 256,
+              "output": 278795,
+              "tokens": 63211166,
+              "messages": 110,
+              "cacheRead": 62381820,
               "reasoning": 0,
-              "cacheWrite": 262391
+              "cacheWrite": 550295
             }
           },
           "tokens": {
-            "input": 358,
-            "output": 210200,
-            "cacheRead": 76926167,
-            "cacheWrite": 420487,
+            "input": 532,
+            "output": 406809,
+            "cacheRead": 92768266,
+            "cacheWrite": 1451124,
             "reasoning": 0
           },
-          "cost": 28.048113399999995,
-          "messages": 156
+          "cost": 48.28023719999999,
+          "messages": 235
         }
       ]
     }
