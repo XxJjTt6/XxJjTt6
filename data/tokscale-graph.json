@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-26T01:47:27.334Z",
+    "generatedAt": "2026-11-26T02:26:39.353Z",
     "version": "4.23.1",
     "source": "https://tokscale.ai/u/XxJjTt6",
     "dateRange": {
@@ -13,8 +13,8 @@
     "displayName": "Saber",
     "rank": 841,
     "rankText": "#841",
-    "updatedAt": "2026-11-26T01:47:27.334Z",
-    "submissionCount": 3514
+    "updatedAt": "2026-11-26T02:26:39.353Z",
+    "submissionCount": 3515
   },
   "summary": {
     "totalTokens": 28198354910,
@@ -8093,16 +8093,6 @@
           "client": "codex",
           "modelId": "",
           "models": {
-            "gpt-5.5": {
-              "cost": 3.6873050000000003,
-              "input": 453181,
-              "output": 17636,
-              "tokens": 2095921,
-              "messages": 24,
-              "cacheRead": 1622400,
-              "reasoning": 2704,
-              "cacheWrite": 0
-            },
             "gpt-5.6-sol": {
               "cost": 37.058197,
               "input": 2712369,
@@ -8112,6 +8102,16 @@
               "cacheRead": 29704064,
               "reasoning": 28945,
               "cacheWrite": 0
+            },
+            "gpt-5.5": {
+              "tokens": 2095921,
+              "cost": 3.6873050000000003,
+              "input": 453181,
+              "output": 17636,
+              "cacheRead": 1622400,
+              "cacheWrite": 0,
+              "reasoning": 2704,
+              "messages": 24
             }
           },
           "tokens": {
@@ -10400,7 +10400,7 @@
             "cacheWrite": 0,
             "reasoning": 166002
           },
-          "cost": 28.6032688,
+          "cost": 28.603268799999995,
           "messages": 275
         }
       ]
@@ -12423,16 +12423,6 @@
           "client": "codex",
           "modelId": "",
           "models": {
-            "gpt-6-astra": {
-              "cost": 7.828171999999999,
-              "input": 378581,
-              "output": 1008,
-              "tokens": 2638386,
-              "messages": 7,
-              "cacheRead": 2257026,
-              "reasoning": 1771,
-              "cacheWrite": 0
-            },
             "gpt-6.1-sol": {
               "cost": 0.6648282,
               "input": 277942,
@@ -12442,6 +12432,16 @@
               "cacheRead": 413142,
               "reasoning": 3414,
               "cacheWrite": 0
+            },
+            "gpt-6-astra": {
+              "tokens": 2638386,
+              "cost": 7.828171999999999,
+              "input": 378581,
+              "output": 1008,
+              "cacheRead": 2257026,
+              "cacheWrite": 0,
+              "reasoning": 1771,
+              "messages": 7
             }
           },
           "tokens": {
