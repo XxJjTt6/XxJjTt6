@@ -27,7 +27,7 @@ Click targets open the Tokscale public profile, not image files.
 #### Internship Experience
 
 <p>
-<strong>Bilibili</strong> · <code>Test Development Intern · Agent Evaluation</code> · <code>2026.05 - 2026.08</code><br/>
+<strong>Bilibili</strong> · <code>Agent Developer Intern · Agent Evaluation</code> · <code>2026.05 - 2026.08</code><br/>
 <strong>StarVC</strong> · <code>Agent Developer Intern</code> · <code>2026.02 - 2026.04</code>
 </p>
 
